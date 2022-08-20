@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(78,33,88);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
+    width: 100%;
+    height: 90vh;
+}
+
+/* Solo para el logo */
+.img_logo{
+    display: flex;
+    width: 7rem;
+}
+
+.img_mapa{
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem 0 ;
+}
+
+.imagen_de_fondo{
+    background: linear-gradient(rgba(113, 24, 118, 0.4),rgba(113, 24, 118, 0.4)),url(../images/img_main_fondo.jpg)  center center fixed;
+    background-size: 40%;
+}
+
+/* estilos de titulos h1---h6*/
+
+h1{
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-style:italic;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+h3{
+    text-align: center;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    margin-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+h4{
+    color: #5b1257;
+    font-family: 'Roboto', sans-serif;
+    font-style:oblique;
+}
+
+h5{
+    color: white;
+    padding-left: 1rem;
+    font-size: 10px;
+}
+
+.tituloh2{
+    padding-top: 0.5rem;
+}
+
+.spanh6{
+    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;  
+    padding: .5rem;
+    margin-left: 20rem;
+}
+
+/**/
+
+/* Estilo de Form - fieldset - Legend - */
+legend{
+    /* background-color:  rgba(113, 24, 118, 0.84);  */
+    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;  
+    padding: 1rem;
+}
+/**/
+/***Contenedores ****/
+.div_contain_form{
+    background-color:  #e2e0e5ea;
+    border: 0.15rem solid black;
+    color: #5b1257;
+    width: 0 auto;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0rem auto;
+    padding: 1rem;
+    width: 60%; 
+    background-color: transparent;
+    color: white;
+    justify-content: space-around;
+}
+
+.contain p{
+    text-align: center;
+}
+
+.contain_formulario{
+    background: rgb(241,236,241);
+    background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
+    border-radius: 2rem;
+    color: #5b1257;
+    width: 21rem;
+    height: auto;
+    margin:auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contain_formulario >div{
+    text-align: left;
+    text-indent: 1.5rem;
+}
+
+textarea{
+    margin-left: 1.5rem;
+    text-align: left;
+    text-indent: 1.5rem;
+}
+
+/* Formularios Contacto y Consultas*/
+.contain_formulario .contacto{
+    color: #5b1257;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    width: fit-content;
+    margin: 0;
+    
+}
+
+/**/
+
+/*Botones */
+.btn-secondary{
+    background-color: #a958a4;
+    border-color: #5b1257;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 30%;
+
+}
+
+.botones{
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    border-radius: 2rem;
+    color:white;
+    margin-top: 0.2rem;
+    padding: 0.3rem;
+    width: 140px;
+    height: 41px;
+    border:2px solid black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.botones:hover{
+    background-color: #a958a4;
+
+}
+
+/* 
+
+/*Whatsapp*/
+.btn_wp{
+    position:fixed;
+    bottom:2rem;
+    right:1rem;
+    width: 4%;
+}
+
+.btn_ico{
+    width: 35%;
+    padding-left: 2rem;
+}
+    
+/**/
+
+/*Boton redes*/
+.btn_red{
+    margin-left: 0.3rem;
+    padding-left: 0.1rem;
+    width: 2%;
+}
+/**/
+
+
+
+/*footer*/
+.footer_box{
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    width: 100%;
+}
+
+.footer_box span{
+    margin-left: 22px;
+}
+
+.footer_box a{
+    color:whitesmoke;
+
+}
+.footer_formularios{
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    width: 100%;
+    bottom:0rem;
+}
+
+.footer_formularios_fijo{
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    width: 100%;
+    bottom:rem;
+    left:1rem; 
+    position:fixed;
+}
+
+.footer_formularios span{
+    margin-left: 22px;
+}
+
+.footer_formularios a{
+    color:whitesmoke;
+}
+/**/
+
+/*Iconos */
+.home_ico{
+    max-width: 28px;
+    padding-left: 0.2rem;
+    display: flex;
+}
+
+/**/
+
+/*Videos*/
+.seccion_videos{
+    margin:0 auto;
+    padding: 1rem;
+}
+/**/
+
+/* PROPIEDADES de las imagenes de PROMOCION*/
+.back_imagen{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 230px;
+    width: 300px;
+    text-align: center;
+}
+
+.botonh5{
+    border:none;
+    color:white;
+    background-color: #5b1257;
+    
+}
+
+.botonh6 {
+    color:white;
+    border:none;
+    background-color: #5b1257;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+
+}
+
+.info_contenedor{
+    padding-top: 0.5rem;
+}
+
+.tarjeta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+    border: 2px solid #5b1257;
+    border-radius: 20px;
+    text-align: center;
+    background-position: center center; 
+    
+    /*shadow*/
+    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0.2rem;
+}
+
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+
+}
+/******* GRID INDEX */
+.grilla_index{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "ropa   olor    eco";
+    justify-content: space-around;
+
+}
+.ico{
+    border: 0.1px solid transparent;
+    color: rgb(3, 48, 3);
+    font-weight: bold;
+    font-size: 10px;
+}
+.ropa{
+    grid-area: ropa;
+}
+
+.olor{
+    grid-area: olor;
+}
+
+.eco{
+    grid-area: eco;
+}
+
+.centrar{
+    font-size: 15px;
+    padding-left: 2rem;
+}
+/*****GRID TINTORERIA *********/
+.grilla_tintoreria > div{
+    display: flex;      
+}
+
+.grilla_tintoreria{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+        "hombre     mujer  tenido"
+        "cuero     casa  alfombra";
+    gap: 1rem;  
+    padding:1rem;
+}
+
+
+.hombre{
+    grid-area: hombre;
+    background-image: url(../images/hombre_prueba.webp);
+}
+
+.mujer{
+   grid-area: mujer;
+   background-image: url(../images/mujer_prueba.webp);
+}
+
+.cuero{
+    grid-area: cuero;
+    background-image: url(../images/cuero_prueba2.webp);
+}
+
+.tenido{
+    grid-area: tenido;
+    background-image: url(../images/cat_tenido.jpg);
+}
+
+.casa{
+    grid-area: casa;
+    background-image: url(../images/valet_prueba.webp);
+}
+
+.alfombra{
+    grid-area: alfombra;
+    background-image: url(../images/alfombra_prueba.webp);
+}
+
+.card{
+    width: 33%;
+    justify-content: space-around;
+    background-color: white;
+    border: 2px solid #f6f4f5;
+    border-radius: 20px;
+    /*shadow*/
+    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0.2rem;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+}
+
+/******************ESTILO B ****************/
+
+.seccion_categoria-b{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.estilo-b{
+    font-family: 'Roboto', sans-serif;
+    width: 32%;
+    margin-bottom: 2rem;
+}
+/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
+.estilo-b .img_contenedor{
+    height: 280px;
+    position: relative;
+    border-radius: 22rem;
+}
+.estilo-b a{
+    text-decoration: none;
+}
+/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
+.estilo-b .img_contenedor img{  
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    min-height: 250px;
+}
+
+.estilo-b a:hover{
+    color: #f47c20;
+}
+
+/*cartel amarillo absoluto al contenedor padre*/
+.estilo-b .img_contenedor .promo{
+position: absolute;
+bottom:50%;
+left: 50%;
+font-size: 12px;
+font-style:italic ;
+background-color: yellow;
+padding: 5px;
+text-align: center;
+border-radius: 1rem;
+}
+/********************/
+/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
+
+.estilo-b .add-cart{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    padding: 0.3rem;
+    border: 0.1rem #5b1257 solid;
+    border-radius: 1rem;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.estilo-b .add-cart:hover{
+    color: black;
+    border: 0.1rem #5b1257 solid;
+}
+/*Para centrar un elemento*/
+.seccion_categoria-b h4{
+    color:#5b1257;
+    width: fit-content;
+    margin:0 auto;
+}
+
+
+/**********************FIN ESTILO B******/
+
+/******************ESTILO C ****************/
+.seccion_categoria-c{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.estilo-c{
+    font-family: 'Roboto', sans-serif;
+    width: 32%;
+}
+/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
+.estilo-c .img_contenedor{
+    height: 290px;
+    position: relative;
+    border-radius: 2rem;
+}
+.estilo-c a{
+    text-decoration: none;
+}
+/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
+.estilo-c .img_contenedor img{  
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    min-height: 250px;
+}
+
+/*cartel amarillo absoluto al contenedor padre*/
+.estilo-c .img_contenedor .promo{
+position: absolute;
+bottom:50%;
+left: 50%;
+font-size: 12px;
+font-style:italic ;
+background-color: yellow;
+padding: 5px;
+text-align: center;
+border-radius: 1rem;
+}
+/********************/
+/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
+
+.estilo-c .add-cart{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    padding: 0.3rem;
+    border: 0.1rem #5b1257 solid;
+    border-radius: 1rem;
+    justify-content: center;
+}
+.estilo-c .add-cart:hover{
+    color: black;
+    border: 0.1rem #5b1257 solid;
+}
+/*Para centrar un elemento*/
+.seccion_categoria-c h4{
+    color:#5b1257;
+    width: fit-content;
+    margin:0 auto;
+}
+
+.parrafo{
+    font-size: small;
+}
+/************************** ANIMACION PANTALLAS EN LA ENTRADA */
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-12 13:12:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 1024px) {
+    .header_box{        
+        width: 100%;
+        height: auto;
+        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%);
+
+    }
+    iframe {
+        height:auto;
+    }
+    .grilla_index {
+        width: auto;
+    }
+    .btn_ico{
+        width: 60%;
+        padding-left: 2rem;
+    }
+.tituloh2 {
+    margin-top: 0;
+}
+  
+.card{
+    width: 45%;
+}
+
+legend{
+    padding: 0.5rem;
+}
+.contain_formulario{
+    background: rgb(241,236,241);
+background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
+    margin-top: 2.5rem;
+    height: 50%;
+}
+
+.contain_formulario legend{
+    text-align: center;
+}
+
+.contain_formulario .contacto{
+    width: 40%;
+    height: 50%;
+    margin-top: 1.5rem;
+    width: fit-content;
+    margin: 0;
+}
+.img_mapa{
+    width: 15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+} 
+.btn_wp{
+    width: 5%;
+}
+
+}
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 900px) {
+    .grilla_index {
+        width: auto;
+    }
+    .btn_ico{
+        width: 60%;
+        padding-left: 2rem;
+    }
+
+    h1{
+        width: 25px;
+        margin: 0;
+        padding-left: 0;
+        font-size: small;
+    }
+
+    h5{
+        width: 48px;
+        padding-left: 0;
+        font-size: small;
+    }
+
+    .home_ico{
+        max-width: 18px;
+        padding-left: 0.1rem;
+    }
+
+}
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 780px) {
+    .grilla_index {
+        width: auto;
+    }
+    .btn_ico{
+        width: 80%;
+    }
+
+}
+
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 610px) {
+ 
+    .btn_ico{
+        width: 80%;
+    }
+
+    .seccion.contain{
+        height: 280px;
+        width: 280px;
+        margin:0;
+        padding: 0;
+    }  
+    .seccion.contain{
+        height: 280px;
+        width: 280px;
+        margin:0;
+        padding: 0;
+    }  
+    
+    
+        /*Videos*/
+    .seccion_videos{
+        width: 100%;
+        margin:0 auto;
+    }
+  
+}
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 520px) {
+  
+    .btn_ico{
+        width: 90%;
+        padding-left: 2rem;
+    }
+}
+
+/*********MEDIA QUERY - Mobile *******/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.header_box{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(78,33,88);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
+
+}
+
+.contain{
+    height: 80%;
+    width: 80%; 
+} 
+*****CENTRAR EL CONTAIN*******/  
+.seccion.contain{
+    height: 250px;
+    width: 250px;
+    margin:0;
+    padding: 0;
+}  
+    /*Videos*/
+.seccion_videos{
+    width: 100%;
+    margin:0 auto;
+}
+.div_contain_form .div_principal{
+    color: black;
+    font-size: xx-small;
+}  
+.grilla_index {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+}
+.grilla_tintoreria {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.card{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.2rem;
+}
+.seccion_categoria-b{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.estilo-b .add-cart{
+    width: fit-content;
+    margin: 0;
+    font-size: small;
+}
+.seccion_categoria-c{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-left: 3rem;
+}
+.estilo-c .add-cart{
+    width: fit-content;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: small;
+}
+.contacto{
+    padding: 0.1rem;
+}
+.img_mapa{
+    width: 15rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.btn_wp{
+        width: 8%;
+}
+.btn_ico{
+    width: 35%;
+    padding-left: 2rem;
+}
+.ico{
+    color:rgb(162, 159, 159);
+}
+.botones{
+    width: 100px;
+}  
+.boton-centrado{
+    padding-left: 1.3rem;
+}
+.btn-secondary{
+    background-color: #a958a4;
+    border-color: #5b1257;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+
+}
+
+
+
+.footer_formularios_fijo{
+    position:fixed;
+}
+
+.titulo_direccion{
+    position:fixed;
+    top:0rem;
+    left:10rem;
+}
+.contain_formulario{
+    margin-top: 0rem;
+}
+
+.footer_formularios{
+     position:fixed;
+
+}  
+
+}
