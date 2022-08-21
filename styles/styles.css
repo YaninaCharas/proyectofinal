@@ -191,7 +191,10 @@ textarea{
     justify-content: center;
 }
 
-
+.btn-mail{
+    text-decoration: none;
+    color:white;
+}
 
 .botones{
     background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
@@ -236,18 +239,14 @@ textarea{
 }
 /**/
 
-
-
 /*footer*/
 .footer_box{
     color: whitesmoke;
-    font-size: 0.7rem;
-    font-weight: bold;
-    height: auto; 
-    margin: auto;
     padding: 0.5rem;
-    padding-top: 0.2rem;
+    padding-top: 1.5rem;
     width: 100%;
+    bottom:0rem;
+    left:1rem; 
 }
 
 .footer_box span{
@@ -260,29 +259,25 @@ textarea{
 }
 .footer_formularios{
     color: whitesmoke;
-    font-size: 0.7rem;
-    font-weight: bold;
-    height: auto; 
-    margin: auto;
     padding: 0.5rem;
-    padding-top: 0.2rem;
+    padding-top: 1.5rem;
     width: 100%;
     bottom:0rem;
+    left:1rem; 
 }
+
 
 .footer_formularios_fijo{
     color: whitesmoke;
-    font-size: 0.7rem;
-    font-weight: bold;
-    height: auto; 
-    margin: auto;
     padding: 0.5rem;
-    padding-top: 0.2rem;
+    padding-top: 1.5rem;
     width: 100%;
-    bottom:rem;
+    bottom:0rem;
     left:1rem; 
     position:fixed;
 }
+
+
 
 .footer_formularios span{
     margin-left: 22px;
@@ -378,6 +373,11 @@ textarea{
     justify-content: space-around;
 
 }
+
+.top-6rem{
+    margin-top: 6rem;
+}
+
 .ico{
     border: 0.1px solid transparent;
     color: rgb(3, 48, 3);
@@ -398,8 +398,16 @@ textarea{
 
 .centrar{
     font-size: 15px;
-    padding-left: 2rem;
+    text-align: center;
+    justify-content: center;
 }
+
+.centrar-h1{
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
 /*****GRID TINTORERIA *********/
 .grilla_tintoreria > div{
     display: flex;      
@@ -407,6 +415,7 @@ textarea{
 
 .grilla_tintoreria{
     display: grid;
+    margin-top: 6.5rem;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: 
@@ -476,6 +485,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 5rem;
 }
 
 .estilo-b{
@@ -931,11 +941,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     justify-content: center;
     padding-left: 3rem;
 }
-.estilo-b .add-cart{
-    width: fit-content;
-    margin: 0;
-    font-size: small;
-}
+
 .seccion_categoria-c{
     display: flex;
     flex-direction: column;
@@ -943,12 +949,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     height: auto;
     padding-left: 3rem;
 }
-.estilo-c .add-cart{
-    width: fit-content;
-    margin: 0;
-    margin-top: 1rem;
-    font-size: small;
-}
+
 .contacto{
     padding: 0.1rem;
 }
@@ -985,7 +986,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 
 
 .footer_formularios_fijo{
-    position:fixed;
+    position:relative;
 }
 
 .titulo_direccion{
