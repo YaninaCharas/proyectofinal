@@ -214,29 +214,49 @@ textarea{
 
 }
 
-/* 
-
-/*Whatsapp*/
-.btn_wp{
-    position:fixed;
-    bottom:2rem;
-    right:1rem;
-    width: 4%;
-}
-
 .btn_ico{
     width: 35%;
     padding-left: 2rem;
 }
     
-/**/
+
 
 /*Boton redes*/
-.btn_red{
-    margin-left: 0.3rem;
-    padding-left: 0.1rem;
-    width: 2%;
+.bi-facebook{
+    font-size: 25px;
+    text-decoration: none;
+    color:#fff;
+
 }
+.bi-facebook:hover{
+    text-decoration: none;
+    color:#3b5998;
+
+}
+
+.bi-instagram{
+    font-size: 25px;
+    text-decoration: none;
+    color:#fff;
+
+}
+.bi-instagram:hover{
+    text-decoration: none;
+    color:#8a3ab9;
+
+}
+ .bi-whatsapp{
+    font-size: 25px;
+    text-decoration: none;
+    color:#fff;
+
+ }
+
+ .bi-whatsapp:hover{
+    text-decoration: none;
+    color: #25D366;
+
+ }
 /**/
 
 /*footer*/
