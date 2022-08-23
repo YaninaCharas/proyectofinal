@@ -24,9 +24,10 @@ body{
 }
 
 .max-altura{
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 50%;
     height: auto;
+    border: 1.5px solid black;
 
 }
 
@@ -59,7 +60,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-size: 600;
     text-align: center;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
 }
 
 h3{
@@ -229,7 +230,7 @@ textarea{
 }
 .bi-facebook:hover{
     text-decoration: none;
-    color:#3b5998;
+    color:#425199;
 
 }
 
@@ -241,7 +242,7 @@ textarea{
 }
 .bi-instagram:hover{
     text-decoration: none;
-    color:#8a3ab9;
+    color:#e44a0d;
 
 }
  .bi-whatsapp{
@@ -422,7 +423,7 @@ textarea{
 }
 
 .centrar-h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     justify-content: center;
 }
@@ -575,39 +576,8 @@ border-radius: 1rem;
 
 /**********************FIN ESTILO B******/
 
-/******************ESTILO C ****************/
-.seccion_categoria-c{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.estilo-c{
-    margin-top: 3rem;
-    font-family: 'Roboto', sans-serif;
-    width: 30%;
-    height: 400px;
-}
-/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
-.estilo-c .img_contenedor{
-    height: 290px;
-    position: relative;
-    border-radius: 2rem;
-}
-.estilo-c a{
-    text-decoration: none;
-}
-/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
-.estilo-c .img_contenedor img{  
-    width: 100%;
-    border-radius: 1rem;
-    position: absolute;
-    min-height: 250px;
-}
-
 /*cartel amarillo absoluto al contenedor padre*/
-.estilo-c .img_contenedor .promo{
+.estilo-b .img_contenedor .promo{
 position: absolute;
 bottom:50%;
 left: 50%;
@@ -617,29 +587,6 @@ background-color: yellow;
 padding: 5px;
 text-align: center;
 border-radius: 1rem;
-}
-/********************/
-/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
-
-.estilo-c .add-cart{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
-    padding: 0.3rem;
-    border: 0.1rem #5b1257 solid;
-    border-radius: 1rem;
-    justify-content: center;
-}
-.estilo-c .add-cart:hover{
-    color: black;
-    border: 0.1rem #5b1257 solid;
-}
-/*Para centrar un elemento*/
-.seccion_categoria-c h4{
-    color:#5b1257;
-    width: fit-content;
-    margin:0 auto;
 }
 
 .parrafo{
@@ -958,14 +905,6 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     width: 90%;
     height: auto;
     justify-content: center;
-    padding-left: 3rem;
-}
-
-.seccion_categoria-c{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: auto;
     padding-left: 3rem;
 }
 
