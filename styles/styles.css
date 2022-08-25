@@ -144,19 +144,20 @@ body{
 /* estilos de titulos h1---h6*/
 
 h1{
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 2rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
 }
 
 h2{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    text-align: center;
-    /* padding-top: 1.5rem; */
 }
 
 h3{
@@ -518,6 +519,10 @@ textarea{
 
 }
 
+.grilla_index >div img{
+    padding: 0;  
+}
+
 /*GRID ORDER*/
 .grilla_service{
     width: auto;
@@ -630,13 +635,13 @@ textarea{
     box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
-    width: 25%;
+    width: 30%;
     height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 0.2rem;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .card:hover{
@@ -1031,11 +1036,35 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     color: black;
     font-size: xx-small;
 }  
+
+
+h1{
+        margin-top: 6rem;
+        font-size: medium;
+        text-align:center;
+        width: 100%;
+        height: auto;
+}
+
+h2{
+    font-size: medium;
+    
+}
+
+h6{
+    font-size: small;
+    color: whitesmoke;
+}
+.grilla_index >div img{
+    padding: 0;
+   
+}
+
+
 .grilla_index {
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding-left: 10%;
 }
 .grilla_tintoreria {
     display: flex;
@@ -1049,6 +1078,10 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     height: auto;
     justify-content: center;
     padding-left: 3rem;
+}
+
+.card{
+    width: 90%;
 }
 
 .contacto{
@@ -1103,5 +1136,34 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
      position:fixed;
 
 }  
+
+.discount{
+    margin-left: 60%; 
+    bottom: 2rem;
+    font-size: x-small;
+    width: 150px;
+    height: 80px;
+}
+
+.discount2{
+    margin-left: 68%;
+    top: 2rem;
+    font-size: x-small;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    /* shadow*/
+    /* box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; */
+    /* flex-direction: column;
+    justify-content: flex-end; */
+    /* padding-bottom: 0.1rem;
+    font-size: 9px;
+    position: fixed; */
+    /* margin-left: 60%; 
+    bottom: 0.2rem;
+ */
+}
 
 }
