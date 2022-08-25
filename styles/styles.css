@@ -925,6 +925,15 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     width: 5%;
 }
 
+.discount2{
+    margin-left: 88%;
+    top: 22rem;
+    font-size: small;
+    width: 180px;
+    height: 80px;
+    position: relative;
+}
+
 }
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 900px) {
@@ -937,10 +946,11 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     }
 
     h1{
-        width: 25px;
-        margin: 0;
-        padding-left: 0;
-        font-size: small;
+        margin-top: 6rem;
+        font-size: medium;
+        text-align:center;
+        width: 100%;
+        height: auto;
     }
 
     h5{
@@ -1037,14 +1047,6 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     font-size: xx-small;
 }  
 
-
-h1{
-        margin-top: 6rem;
-        font-size: medium;
-        text-align:center;
-        width: 100%;
-        height: auto;
-}
 
 h2{
     font-size: medium;
@@ -1152,18 +1154,6 @@ h6{
     width: 150px;
     height: 80px;
     position: relative;
-    /* shadow*/
-    /* box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease; */
-    /* flex-direction: column;
-    justify-content: flex-end; */
-    /* padding-bottom: 0.1rem;
-    font-size: 9px;
-    position: fixed; */
-    /* margin-left: 60%; 
-    bottom: 0.2rem;
- */
 }
 
 }
