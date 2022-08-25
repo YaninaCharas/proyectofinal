@@ -6,123 +6,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background: rgb(78,33,88);
-    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
+    /* background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%); */
+        background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgba(248,244,248,1) 100%);
     width: 100%;
-    height: 90vh;
+    height: 80vh;
 }
-/********/
-.discount-header{
-    color:white;
-    font-weight:bold;
-    text-align: center;
+.navbar{
+    height: 63px;
+    
 }
 
-.discount{
-    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
-    border: 2px solid black;
-    border-radius: 20px;
-    bottom: 3rem;
-    margin-left: 83%;
+.navbar-nav a{
+    margin-left: 3rem;
+    transition: all 1ms ease;
+    width: fit-content;
+    margin: 0;
     padding: 1rem;
-    position: fixed;
-    /* shadow*/
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    width: 280px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 0.2rem;
-    text-align: center;
+
 }
 
-.discount:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0.4);
-    transform: translatex(-5%); /*Se traslada verticalmente 3% con el cursor*/
-}
 
-.discount-btn{
-    background-color: #9ea6ce;
-    border:1px solid black;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-    padding-left: 0.75rem;
-    padding-right: 0.375rem;
-    display: inline-block;
-    text-align: center;
+.item-elegido{
+    color: white;
+    transform: scale(1.1);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
     text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    }
 
-
-/********************/
-.discount2-header{
-    color:white;
-    font-weight:bold;
-    text-align: center;
 }
 
-.discount2{
-    justify-content: space-around;
-    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
-    border: 2px solid black;
-    border-radius: 20px;
-    bottom: 2rem;
-    margin-left: 75%;
-    padding: 1rem;
+.banner{
     position: fixed;
-    /* shadow*/
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    width: 280px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 0.2rem;
-    font-size: 15px;
+    bottom: 50%;
+    left: 20px;
+
 }
 
-.discount2:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0.4);
-    transform: translatex(-5%); /*Se traslada verticalmente 3% con el cursor*/
+.banner img{
+width: 50%;
+height: auto;
+border-radius: 20px;
 }
-
-.discount2-btn{
-    background-color: #9ea6ce;
-    border:1px solid black;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-    padding-left: 0.75rem;
-    padding-right: 0.375rem;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    }
-
-
-/*******/
 
 /* Solo para el logo */
 .img_logo{
     display: flex;
-    width: 35%;
+    width: 30%;
 }
 
 .bg-pink{
     background-color: rgb(78,33,88);
+    border-bottom: 2px solid black;
 }
 
 .max-altura{
@@ -280,14 +216,28 @@ textarea{
 }
 
 /**/
+/**/
 
+/**/
 /*Botones */
 
 .btn{
     background-color: rgb(169, 88, 164);
 }
 
+.btn-primary{
+    margin-top: 0;
+    padding: 0.2rem;
+    border:none;
+}
+
+.btn-primary:hover{
+background-color: #25D366;
+border-color: none;
+}
+
 .btn-secondary{
+    background-color: green;
     display: flex;
     justify-content: center;
 }
@@ -295,6 +245,8 @@ textarea{
 .btn-mail{
     text-decoration: none;
     color:white;
+    padding-left: 15rem;
+    
 }
 .link-service{
     text-decoration: none;
@@ -335,6 +287,7 @@ textarea{
     font-size: 25px;
     text-decoration: none;
     color:#fff;
+    padding-left: 0.5rem;
 
 }
 .bi-facebook:hover{
@@ -347,6 +300,7 @@ textarea{
     font-size: 25px;
     text-decoration: none;
     color:#fff;
+    padding-left: 0.5rem;
 
 }
 .bi-instagram:hover{
@@ -358,6 +312,7 @@ textarea{
     font-size: 25px;
     text-decoration: none;
     color:#fff;
+    padding-left: 0.5rem;
 
  }
 
@@ -370,12 +325,14 @@ textarea{
 
 /*footer*/
 .footer_box{
-    color: whitesmoke;
+    color: white;
     padding: 0.5rem;
-    padding-top: 1.5rem;
+    margin-top: 1rem;
+    height: 50px;
     width: 100%;
     bottom:0rem;
-    left:1rem; 
+    background-color: rgb(78,33,88);
+    border-top: 2px solid black;
 }
 
 .footer_box span{
@@ -383,38 +340,23 @@ textarea{
 }
 
 .footer_box a{
-    color:whitesmoke;
+    color:white;
 
 }
-.footer_formularios{
-    color: whitesmoke;
-    padding: 0.5rem;
-    padding-top: 1.5rem;
-    width: 100%;
-    bottom:0rem;
-    left:1rem; 
-}
-
 
 .footer_formularios_fijo{
-    color: whitesmoke;
+    color: white;
     padding: 0.5rem;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
+    height: 50px;
     width: 100%;
     bottom:0rem;
-    left:1rem; 
     position:fixed;
+    background-color: rgb(78,33,88);
+    border-top: 2px solid black;
+
 }
 
-
-
-.footer_formularios span{
-    margin-left: 22px;
-}
-
-.footer_formularios a{
-    color:whitesmoke;
-}
 /**/
 
 /*Iconos */
@@ -434,7 +376,7 @@ textarea{
 /**/
 
 /* PROPIEDADES de las imagenes de PROMOCION*/
-.back_imagen{
+/* .back_imagen{
     background-repeat: no-repeat;
     background-size: contain;
     background-color: whitesmoke;
@@ -443,55 +385,12 @@ textarea{
     height: 230px;
     width: 300px;
     text-align: center;
-}
-
-.botonh5{
-    border:none;
-    color:white;
-    background-color: #5b1257;
-    
-}
-
-.botonh6 {
-    color:white;
-    border:none;
-    background-color: #5b1257;
-    border-bottom-left-radius: 0.7rem;
-    border-bottom-right-radius: 0.7rem;
-
-}
-
+} */
+/* 
 .info_contenedor{
     padding-top: 0.5rem;
-}
+} */
 
-.tarjeta{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: whitesmoke;
-    border: 2px solid #5b1257;
-    border-radius: 20px;
-    text-align: center;
-    background-position: center center; 
- 
-    /*shadow*/
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: all 400ms ease;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;/* pone abajo los botones*/
-    padding-bottom: 0.2rem;
-
-}
-
-.tarjeta:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0.4);
-    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
-
-}
 /*GRID SERVICES*/
 .grilla_service{
     margin-top: 1rem;
@@ -523,31 +422,6 @@ textarea{
     padding: 0;  
 }
 
-/*GRID ORDER*/
-.grilla_service{
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "1   2    3";
-    justify-content: space-around;
-
-}
-.register{
-    grid-area: 1;
-    
-}
-
-.water{
-    grid-area: 2;
-}
-
-.send{
-    grid-area: 3;
-}
-
 .top-6rem{
     margin-top: 6rem;
 }
@@ -577,77 +451,34 @@ textarea{
     justify-content: center;
 }
 
-
-/*****GRID TINTORERIA *********/
-.grilla_tintoreria > div{
-    display: flex;      
-}
-
-.grilla_tintoreria{
-    display: grid;
-    margin-top: 6.5rem;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: 
-        "hombre     mujer  tenido"
-        "cuero     casa  alfombra";
-    gap: 1rem;  
-    padding:1rem;
-}
-
-
-.hombre{
-    grid-area: hombre;
-    background-image: url(../images/hombre_prueba.webp);
-}
-
-.mujer{
-   grid-area: mujer;
-   background-image: url(../images/mujer_prueba.webp);
-}
-
-.cuero{
-    grid-area: cuero;
-    background-image: url(../images/cuero_prueba2.webp);
-}
-
-.tenido{
-    grid-area: tenido;
-    background-image: url(../images/cat_tenido.jpg);
-}
-
-.casa{
-    grid-area: casa;
-    background-image: url(../images/valet_prueba.webp);
-}
-
-.alfombra{
-    grid-area: alfombra;
-    background-image: url(../images/alfombra_prueba.webp);
-}
-
 .card{
     justify-content: space-around;
     background-color: white;
     border: 2px solid #f6f4f5;
-    border-radius: 20px;
+    border-radius: 55px;
     /* shadow*/
     box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
     width: 30%;
-    height: 450px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 0.2rem;
-    /* margin: 1rem; */
 }
 
 .card:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0.4);
     transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
 }
+
+.card-text{
+    font-size: medium;
+    font-weight:bold;
+
+}
+
 
 /******************ESTILO B ****************/
 
@@ -660,34 +491,35 @@ textarea{
 }
 
 .estilo-b{
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
     width: 100;
-    height: 400px;
+    height: 200px;
+    border-radius: 50%;
 }
 /* Que el contenedor padre sea relativo para los hijos que son absolutos*/
-.estilo-b .img_contenedor{
+/* .estilo-b .img_contenedor{
     height: 280px;
-    position: relative;
-    border-radius: 22rem;
+    position: relative; */
+    /* border-radius: 22rem; */
 }
-.estilo-b a{
+/* .estilo-b a{
     text-decoration: none;
-}
+} */
 /*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
-.estilo-b .img_contenedor img{  
+/* .estilo-b .img_contenedor img{  
     width: 100%;
     border-radius: 1rem;
     position: absolute;
     min-height: 250px;
-}
+} */
 
 .estilo-b a:hover{
     color: #f47c20;
 }
 
 /*cartel amarillo absoluto al contenedor padre*/
-.estilo-b .img_contenedor .promo{
+/* .estilo-b .img_contenedor .promo{
 position: absolute;
 bottom:50%;
 left: 50%;
@@ -697,11 +529,11 @@ background-color: yellow;
 padding: 5px;
 text-align: center;
 border-radius: 1rem;
-}
+} */
 /********************/
 /********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
 
-.estilo-b .add-cart{
+/* .estilo-b .add-cart{
     display: flex;
     text-decoration: none;
     color: white;
@@ -716,7 +548,7 @@ border-radius: 1rem;
 .estilo-b .add-cart:hover{
     color: black;
     border: 0.1rem #5b1257 solid;
-}
+} */
 /*Para centrar un elemento*/
 .seccion_categoria-b h4{
     color:#5b1257;
@@ -728,7 +560,7 @@ border-radius: 1rem;
 /**********************FIN ESTILO B******/
 
 /*cartel amarillo absoluto al contenedor padre*/
-.estilo-b .img_contenedor .promo{
+/* .estilo-b .img_contenedor .promo{
 position: absolute;
 bottom:50%;
 left: 50%;
@@ -738,7 +570,7 @@ background-color: yellow;
 padding: 5px;
 text-align: center;
 border-radius: 1rem;
-}
+} */
 
 .parrafo{
     padding-top: 1rem;
@@ -805,8 +637,6 @@ border-radius: 1rem;
     animation-duration: 4s;
     animation-delay: 3s;
 }
-
-
 /************************** ANIMACION PANTALLAS EN LA ENTRADA */
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -831,6 +661,7 @@ border-radius: 1rem;
     }
 }
 
+/****************************************/
 /* ----------------------------------------------
  * animation slide-in-elliptic-top-fwd
  * ----------------------------------------
@@ -947,8 +778,9 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 
     h1{
         margin-top: 6rem;
+        text-align: center;
+        justify-content: center;
         font-size: medium;
-        text-align:center;
         width: 100%;
         height: auto;
     }
@@ -1067,11 +899,6 @@ h6{
     display: flex;
     flex-direction: column;
     width: 80%;
-}
-.grilla_tintoreria {
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
 
 .seccion_categoria-b{
