@@ -18,16 +18,23 @@ body{
     
 }
 .container{
-    /* background: radial-gradient(rgb(188, 186, 188), rgb(142, 115, 134), rgb(153, 71, 122)); */
-    margin-top: 5rem;
-    width: 350px;
+    width: 70%;
+    height: auto;
+    font-weight: bold; 
+}
+.container-form{
+    background: radial-gradient(rgb(188, 186, 188), rgb(142, 115, 134), rgb(153, 71, 122));
     height: auto;
     padding: 1rem;
     border-radius: 20px;
     border: 1px solid black;
     color: #5b1257;
     font-weight: bold;
-    
+    margin:0 auto;
+    width: 50%;
+}
+.centrar-form{
+    margin-top:5rem;
 }
 
 .navbar-nav a{
@@ -157,81 +164,12 @@ h6{
     margin-left: 20rem;
 }
 
-/**/
-/***Contenedores ****/
-.div_contain_form{
-    background-color:  #e2e0e5ea;
-    border: 0.15rem solid black;
-    color: #5b1257;
-    width: 0 auto;
-    height: auto;
-    padding: 1rem;
-    display: flex;
-}
-
-.contain{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    margin: 0rem auto;
-    padding: 1rem;
-    width: 60%; 
-    background-color: transparent;
-    color: white;
-    justify-content: space-around;
-}
-
-.contain p{
-    text-align: center;
-}
-
-.contain_formulario{
-    background: rgb(241,236,241);
-    background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
-    border-radius: 2rem;
-    color: #5b1257;
-    width: 21rem;
-    height: auto;
-    margin:auto;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.contain_formulario >div{
-    text-align: left;
-    text-indent: 1.5rem;
-}
-
-textarea{
-    margin-left: 1.5rem;
-    text-align: left;
-    text-indent: 1.5rem;
-}
-
-/* Formularios Contacto y Consultas*/
-.contain_formulario .contacto{
-    color: #5b1257;
-    font-family: 'Roboto', sans-serif;
-    font-size: 600;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    width: fit-content;
-    margin: 0;
-    
-}
-
-/**/
-/**/
-
-/**/
 /*Botones */
 
 .btn-ok{
     padding: 0.5rem;
     width: 8rem;
-    background-color:#5b1257;
+    background-color:#5b12577b;
     border-radius: 20px;
     border: none;
     color:white;
@@ -262,6 +200,11 @@ border-color: none;
 .btn-secondary{
     display: flex;
     justify-content: center;
+    background-color: #a958a4;
+}
+
+.btn-secondary:hover{
+    background-color: #a00996;
 }
 
 .btn-mail{
@@ -288,6 +231,7 @@ border-color: none;
     background-color: transparent;
     border-bottom: 1px solid #60044f;
 }
+
 
 .form-control:hover ,.form-select:hover{
     border:none;
@@ -489,7 +433,8 @@ border-color: none;
     cursor: default;
     transition: all 400ms ease;
     width: 30%;
-    height: 300px;
+    height: auto;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -850,10 +795,29 @@ h2{
     padding: 0;
    
 }
-/*  Para el registro y para el promocion, */
+/*  Para el registro y para el pla*/
 .container{
     margin-top: 6rem;
-    width: 80%; 
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: #5b1257;
+    font-weight: bold;
+    
+}
+
+.container-form{
+    /* background: radial-gradient(rgb(188, 186, 188), rgb(142, 115, 134), rgb(153, 71, 122));
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: #5b1257;
+    font-weight: bold;*/
+    margin:0 auto; 
+    width: 100%;
 }
 
 .grilla_index {
@@ -863,10 +827,13 @@ h2{
 }
 
 .card{
-    width: 80%;
-    /* padding-left: 20%; */
+    width: 90%;
+    padding-left: 20%;
 }
-
+.row{
+    width: 12px;
+    margin-left: 80px;
+}
 .contacto{
     padding: 0.1rem;
 }
