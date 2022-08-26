@@ -9,10 +9,9 @@
 
 body{
     background: rgb(78,33,88);
-    /* background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%); */
-        background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgba(248,244,248,1) 100%);
+    background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgb(241, 196, 241) 100%);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 .navbar{
     height: 63px;
@@ -25,17 +24,24 @@ body{
     width: fit-content;
     margin: 0;
     padding: 1rem;
-
 }
-
 
 .item-elegido{
     color: white;
     transform: scale(1.1);
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
     text-decoration: none;
-
 }
+
+/* .img-fondo{
+    background-image: url(../images/iconos/img-fondo.jpg);
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    
+} */
 
 .banner{
     position: fixed;
@@ -53,8 +59,11 @@ border-radius: 20px;
 /* Solo para el logo */
 .img_logo{
     display: flex;
-    width: 30%;
+    width: 24%;
+    margin-left: 5rem;
 }
+
+
 
 .bg-pink{
     background-color: rgb(78,33,88);
@@ -62,10 +71,8 @@ border-radius: 20px;
 }
 
 .max-altura{
-    margin-top: 3rem;
-    width: 50%;
+    width: 25%;
     height: auto;
-    border: 1.5px solid black;
 
 }
 
@@ -80,11 +87,10 @@ border-radius: 20px;
 /* estilos de titulos h1---h6*/
 
 h1{
-    margin-top: 5.5rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align:center;
     width: 100%;
     height: auto;
@@ -119,7 +125,9 @@ h5{
 }
 
 h6{
-    color:white;
+    padding: 0.5rem;
+    color:whitesmoke;
+    font-size: 12px;
 }
 
 .tituloh2{
@@ -137,19 +145,6 @@ h6{
     margin-left: 20rem;
 }
 
-/**/
-
-/* Estilo de Form - fieldset - Legend - */
-legend{
-    /* background-color:  rgba(113, 24, 118, 0.84);  */
-    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 20px;  
-    padding: 1rem;
-}
 /**/
 /***Contenedores ****/
 .div_contain_form{
@@ -221,8 +216,20 @@ textarea{
 /**/
 /*Botones */
 
-.btn{
-    background-color: rgb(169, 88, 164);
+.btn-ok{
+    padding: 0.2rem;
+    width: 8rem;
+    background-color: rgb(193, 29, 182);
+    color:black;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-ok:hover{
+    background-color: #d3259c;
+    border-color: none;
+    color:white;
+    }
 }
 
 .btn-primary{
@@ -232,12 +239,11 @@ textarea{
 }
 
 .btn-primary:hover{
-background-color: #25D366;
+background-color: #d3259c;
 border-color: none;
 }
 
 .btn-secondary{
-    background-color: green;
     display: flex;
     justify-content: center;
 }
@@ -248,7 +254,7 @@ border-color: none;
     padding-left: 15rem;
     
 }
-.link-service{
+/* .link-service{
     text-decoration: none;
     color:greenyellow;
 }
@@ -257,6 +263,22 @@ border-color: none;
     text-decoration: none;
     color:green;
 
+} */
+
+.form-control ,.form-select{
+
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+.form-control:hover ,.form-select:hover{
+    border:none;
+    opacity: 0.5;
+    border-bottom: 1.5px solid greenyellow;
+}
+.text-form{
+    color:black; 
 }
 
 .botones{
@@ -407,13 +429,16 @@ border-color: none;
 
 /******* GRID INDEX */
 .grilla_index{
+    margin-top: 5rem;
     width: auto;
     height: auto;
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-        "ropa   olor    eco";
+        "ropa   ...     ...."
+        "....   olor    ..."
+        "....   ....    eco";
     justify-content: space-around;
 
 }
@@ -435,14 +460,17 @@ border-color: none;
 }
 .ropa{
     grid-area: ropa;
+    background-image: url(../images/iconos/ico_tintoreria.png);
 }
 
 .olor{
     grid-area: olor;
+    background-image: url(../images/iconos/ico_tintoreria.png);
 }
 
 .eco{
     grid-area: eco;
+    background-image: url(../images/iconos/ico_tintoreria.png);
 }
 
 .centrar{
@@ -450,7 +478,13 @@ border-color: none;
     text-align: center;
     justify-content: center;
 }
-
+.parrafo{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+    color:white;
+}
 .card{
     justify-content: space-around;
     background-color: white;
@@ -476,19 +510,22 @@ border-color: none;
 .card-text{
     font-size: medium;
     font-weight:bold;
+    text-decoration: none;
+    color: white;
+
+}
+.card-text:hover{
+    color: black;
 
 }
 
+.card-carrito{
+    background-color: white;
+    border: 2px solid #f6f4f5;
+    border-radius: 55px;
+}
 
 /******************ESTILO B ****************/
-
-.seccion_categoria-b{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-}
 
 .estilo-b{
     margin-top: 1rem;
@@ -497,80 +534,22 @@ border-color: none;
     height: 200px;
     border-radius: 50%;
 }
-/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
-/* .estilo-b .img_contenedor{
-    height: 280px;
-    position: relative; */
-    /* border-radius: 22rem; */
+.small{
+    width: 50%;
+    height: auto;
+   
 }
-/* .estilo-b a{
-    text-decoration: none;
-} */
-/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
-/* .estilo-b .img_contenedor img{  
-    width: 100%;
-    border-radius: 1rem;
-    position: absolute;
-    min-height: 250px;
-} */
 
 .estilo-b a:hover{
     color: #f47c20;
 }
 
-/*cartel amarillo absoluto al contenedor padre*/
-/* .estilo-b .img_contenedor .promo{
-position: absolute;
-bottom:50%;
-left: 50%;
-font-size: 12px;
-font-style:italic ;
-background-color: yellow;
-padding: 5px;
-text-align: center;
-border-radius: 1rem;
-} */
-/********************/
-/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
-
-/* .estilo-b .add-cart{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
-    padding: 0.3rem;
-    border: 0.1rem #5b1257 solid;
-    border-radius: 1rem;
-    justify-content: center;
-    text-align: center;
-    justify-content: center;
-}
-.estilo-b .add-cart:hover{
-    color: black;
-    border: 0.1rem #5b1257 solid;
-} */
 /*Para centrar un elemento*/
 .seccion_categoria-b h4{
     color:#5b1257;
     width: fit-content;
     margin:0 auto;
 }
-
-
-/**********************FIN ESTILO B******/
-
-/*cartel amarillo absoluto al contenedor padre*/
-/* .estilo-b .img_contenedor .promo{
-position: absolute;
-bottom:50%;
-left: 50%;
-font-size: 12px;
-font-style:italic ;
-background-color: yellow;
-padding: 5px;
-text-align: center;
-border-radius: 1rem;
-} */
 
 .parrafo{
     padding-top: 1rem;
@@ -579,10 +558,10 @@ border-radius: 1rem;
 }
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja{
+    /* background-color: gray; */
+    background-image: url(../images/iconos/logo-burbuja.png);
     border-radius: 50%;
-    background-color: gray;
-    opacity: .3;
-
+    opacity: .2;
     position: absolute;
     bottom: -150;
 
@@ -596,44 +575,44 @@ border-radius: 1rem;
     animation-delay: 3s;
 }
 .burbuja:nth-child(2){
-    width: 100px;
-    height: 100px;
-    left:35%;
+    width: 30px;
+    height: 30px;
+    left:15%;
     animation-duration: 3s;
     animation-delay: 5s;
 }
 .burbuja:nth-child(3){
     width: 20px;
     height: 20px;
-    left:15%;
+    left:25%;
     animation-duration: 1.5s;
     animation-delay: 7s;
 }
 .burbuja:nth-child(4){
     width: 70px;
     height: 70px;
-    left:65%;
+    left:35%;
     animation-duration: 6s;
     animation-delay: 2s;
 }
 .burbuja:nth-child(5){
     width: 50px;
     height: 50px;
-    left:90%;
+    left:45%;
     animation-duration: 6s;
     animation-delay: 3s;
 }
 .burbuja:nth-child(6){
-    width: 20px;
-    height: 20px;
-    left:50%;
+    width: 40px;
+    height: 40px;
+    left:60%;
     animation-duration: 4s;
     animation-delay: 5s;
 }
 .burbuja:nth-child(7){
-    width: 20px;
-    height: 20px;
-    left:50%;
+    width: 60px;
+    height: 60px;
+    left:70%;
     animation-duration: 4s;
     animation-delay: 3s;
 }
@@ -885,10 +864,7 @@ h2{
     
 }
 
-h6{
-    font-size: small;
-    color: whitesmoke;
-}
+
 .grilla_index >div img{
     padding: 0;
    
@@ -938,7 +914,6 @@ h6{
     padding-left: 1.3rem;
 }
 .btn-secondary{
-    background-color: #a958a4;
     border-color: #5b1257;
     justify-content: center;
     margin-bottom: 2rem;
