@@ -13,80 +13,82 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-pink">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../images/iconos/logo_largo.png" alt="Logo 5asec" class="img_logo"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <!-- <a class="nav-link text-white" href="../index.html">INICIO</a> -->
-              <a class="nav-link text-white" href="tintoreria.html">SERVICIOS</a>
-              <a class="nav-link text-white" href="planchado.html">PLANCHADO</a>
-              <a class="nav-link text-white" href="promociones.html">CASA</a>
-              <a class="nav-link text-white"  href="tips.html">TIPS</a>
-              <a class="nav-link active text-info item-elegido" aria-current="page" href="#">REGISTRO</a>
-              <a class="nav-link text-white" href="contacto.html">CONTACTO</a>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg bg-pink navbar-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../images/iconos/logo_largo.png" alt="Logo 5asec" class="img_logo"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="../index.html">Home</a>
+          <a class="nav-link text-white" href="./tintoreria.html">SERVICIOS</a>
+          <a class="nav-link text-white" href="./planchado.html">PLANCHADO</a>
+          <a class="nav-link text-white" href="./promociones.html">PROMOCIONES</a>
+          <a class="nav-link text-white"  href="./tips.html">TIPS</a>
+          <a class="nav-link active text-info" aria-current="page" href="#">REGISTRO</a>
+          <a class="nav-link text-white" href="./contacto.html">CONTACTO</a>
         </div>
-  </nav>  
-  <section class="container img-fondo">
-    <div class="row">
-      <article class="col-md-6 mt-3" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-        <h3>Completa tus datos</h3>
-        <form class="row g-3">
-          <div class="col-12">
-            <label for="inputAddress" class="form-label text-white">Nombre y Apellido</label>
-            <input type="text" required class="form-control" id="inputAddress" placeholder="Ingrese su nombre y apellido...">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label text-white">Direccion</label>
-            <input type="text-form" class="form-control" id="inputAddress2" placeholder="Ingrese su direccion...">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label text-white">Cuidad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label text-white">Provincia</label>
-            <select id="inputState" class="form-select">
-              <option selected>Seleccione...</option>
-              <option>Buenos Aires</option>
-              <option>CABA</option>
-              <option>MENDOZA</option>
-              <option>JUJUY</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label text-white">C.Postal</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label text-white">Email</label>
-            <input type="email" required class="form-control" id="inputEmail4" placeholder="xx@xxxx.com">
-          </div>
-          <div class="btn-secondary mt-5">
-            <button type="submit" class="btn-ok ms-5">Enviar</button>
-            <button type="reset" class="btn-ok ms-5">Cancelar</button>
-          </div>
-        </form>
-      </article>
-    <div>
-  </div>
-  <!-- anomacion fondo burbujas -->
-  <div class="burbujas">
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
+      </div>
+    </div>
+  </nav>
+  <main>
+  <section class="container">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="idnombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="idnombre" required placeholder="Nombre">
+      </div>
+      <div class="col-md-6">
+        <label for="idapellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="idapellido" placeholder="Apellido">
+      </div>
+      <div class="col-12">
+        <label for="idmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="idmail" placeholder="Email" required>
+      </div>
+      <div class="col-12">
+        <label for="id-direccion" class="form-label">Domicilio</label>
+        <input type="text" class="form-control" id="id-direccion" placeholder="Domicilio">
+      </div>
+      <div class="col-md-12">
+        <label for="idciudad" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="idciudad" placeholder="Ciudad">
+      </div>
+      <div class="col-md-8">
+        <label for="idpcia" class="form-label">Provincia</label>
+        <select id="idpcia" class="form-select">
+          <option selected>Seleccione</option>
+          <option>Buenos Aires</option>
+          <option>CABA</option>
+          <option>Neuquen</option>
+          <option>Jujuy</option>
+          <option>Entre Rios</option>
+          <option>Mendoza</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="idcp" class="form-label">C.Postal</label>
+        <input type="text" class="form-control" id="idcp" placeholder="CP">
+      </div>
+       <div class="col-12 centrar">
+        <button type="submit" class="btn-ok">Enviar</button>
+        <button type="reset" class="btn-ok">Limpiar</button>
+      </div>
+    </form>
+
+<!--anomacion fondo burbujas -->
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
     </div>
   </section>
+</main>
   <footer class="footer_formularios_fijo">
     <span>Copyright© 2022 - Yanina Charas</span>
     <a class="btn-mail" href="mailto:ycharas@gmail.com">Contactame aqui</a>

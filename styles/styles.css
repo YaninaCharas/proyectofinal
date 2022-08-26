@@ -17,6 +17,18 @@ body{
     height: 63px;
     
 }
+.container{
+    /* background: radial-gradient(rgb(188, 186, 188), rgb(142, 115, 134), rgb(153, 71, 122)); */
+    margin-top: 5rem;
+    width: 350px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: #5b1257;
+    font-weight: bold;
+    
+}
 
 .navbar-nav a{
     margin-left: 3rem;
@@ -63,16 +75,14 @@ border-radius: 20px;
     margin-left: 5rem;
 }
 
-
-
 .bg-pink{
     background-color: rgb(78,33,88);
     border-bottom: 2px solid black;
 }
 
 .max-altura{
-    background-color: transparent;
-    width: 65%;
+    margin-top: 5rem;
+    width: 35%;
     height: auto;
 
 }
@@ -88,6 +98,7 @@ border-radius: 20px;
 /* estilos de titulos h1---h6*/
 
 h1{
+    margin-top: 5rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -218,12 +229,15 @@ textarea{
 /*Botones */
 
 .btn-ok{
-    padding: 0.2rem;
+    padding: 0.5rem;
     width: 8rem;
-    background-color: rgb(193, 29, 182);
-    color:black;
+    background-color:#5b1257;
     border-radius: 20px;
     border: none;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
 }
 
 .btn-ok:hover{
@@ -231,9 +245,10 @@ textarea{
     border-color: none;
     color:white;
     }
-}
+
 
 .btn-primary{
+    color:#5b1257;
     margin-top: 0;
     padding: 0.2rem;
     border:none;
@@ -267,17 +282,20 @@ border-color: none;
 } */
 
 .form-control ,.form-select{
-
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border:none;
     background-color: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #60044f;
 }
 
 .form-control:hover ,.form-select:hover{
     border:none;
     opacity: 0.5;
-    border-bottom: 1.5px solid greenyellow;
+    border-bottom: 1.8px solid #60044f;
+    background-color: transparent;
 }
+
 .text-form{
     color:black; 
 }
@@ -388,31 +406,6 @@ border-color: none;
     padding-left: 0.2rem;
     display: flex;
 }
-
-/**/
-
-/*Videos*/
-.seccion_videos{
-    margin:0 auto;
-    padding: 1rem;
-}
-/**/
-
-/* PROPIEDADES de las imagenes de PROMOCION*/
-/* .back_imagen{
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: whitesmoke;
-    border: 2px solid black;
-    border-radius: 20px;
-    height: 230px;
-    width: 300px;
-    text-align: center;
-} */
-/* 
-.info_contenedor{
-    padding-top: 0.5rem;
-} */
 
 /*GRID SERVICES*/
 .grilla_service{
@@ -837,38 +830,31 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
 
 }
-.centrar{
-    background-color:red;
+h1{
+    margin-top: 5rem;
 }
-*****CENTRAR EL CONTAIN*******/  
-/* .seccion.contain{
-    height: 250px;
-    width: 250px;
-    margin:0;
-    padding: 0;
-}   */
-    /*Videos*/
-.seccion_videos{
-    width: 100%;
-    margin:0 auto;
-}
-.div_contain_form .div_principal{
-    color: black;
-    font-size: xx-small;
-}  
 
+.h6{
+    font-size: 6px;
+}
+.parrafo{
+    font-size: 10px;
+}
 
 h2{
     font-size: medium;
     
 }
 
-
 .grilla_index >div img{
     padding: 0;
    
 }
-
+/*  Para el registro y para el promocion, */
+.container{
+    margin-top: 6rem;
+    width: 80%; 
+}
 
 .grilla_index {
     display: flex;
@@ -876,16 +862,9 @@ h2{
     width: 80%;
 }
 
-/* .seccion_categoria-b{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    padding-left: 3rem;
-} */
-
 .card{
-    width: 90%;
+    width: 80%;
+    /* padding-left: 20%; */
 }
 
 .contacto{
@@ -934,7 +913,9 @@ h2{
 }
 
 .max-altura{
-    width: 60%;
+    /* text-align: center;
+    justify-content: center; */
+    width: 40%;
     height: auto;
 
 }
