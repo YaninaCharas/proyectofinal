@@ -12,7 +12,7 @@ body{
     background: rgb(78,33,88);
     background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgb(241, 196, 241) 100%);
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .navbar{
     height: 63px;
@@ -32,7 +32,7 @@ body{
     color: #5b1257;
     font-weight: bold;
     margin:0 auto;
-    width: 10%;
+    /* width: 10%; */
 }
 
 main{
@@ -423,10 +423,34 @@ border-color: none;
 
 }
 
-.card-carrito{
-    background-color: white;
-    border: 2px solid #f6f4f5;
+.card2{
+    justify-content: space-around;
+    background-color: transparent;
     border-radius: 55px;
+    /* shadow*/
+    box-shadow: 8px 1px 10px rgba(0,0,0,0.3);
+    cursor: default;
+    transition: all 400ms ease;
+    width: 30%;
+    height: auto;
+    padding-bottom: 0.2rem;
+}
+
+/* .card2:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+} */
+
+.card2-text{
+    font-size: medium;
+    font-weight:bold;
+    text-decoration: none;
+    color: white;
+
+}
+.card2-text:hover{
+    color: black;
+
 }
 
 /******************ESTILO B ****************/
@@ -649,6 +673,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 }
 .container-form{
     width: 25%;
+    /* max-width: 350px; */
 } 
 }
 /*********  MEDIA QUERY  DESKTOP ******/
@@ -703,7 +728,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 @media screen and (max-width: 610px) {
  
     .container-form{
-        width: 30%;
+        width: 50%;
     } 
 
     .btn_ico{
@@ -732,12 +757,16 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
   
 }
 /*********  MEDIA QUERY  DESKTOP ******/
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 481px) {
   
     .btn_ico{
-        width: 50%;
+        width: 70%;
         padding-left: 2rem;
     }
+    .container-form{
+        width: 70%;
+        height: auto;
+    }   
 }
 
 /*********MEDIA QUERY - Mobile *******/
@@ -786,20 +815,22 @@ h2{
     /* border: 1px solid black; */
     color: #5b1257;
     font-weight: bold;
+    min-height: 450px;
     
 }
 
 .container-form{
-    width: 50%;
+    width: 70%;
+    height: auto;
+}
+
+.centrar-form{
+    min-height: 500px;
 }
 
 .card{
     width: 80%;
 }
-
-/* .contacto{
-    padding: 0.1rem;
-} */
 
 .img_mapa{
     width: 15rem;
@@ -813,6 +844,28 @@ h2{
     width: 35%;
     padding-left: 2rem;
 }
+.btn-mail{
+    padding-left: 5rem;
+    
+}
+/*Boton redes*/
+.bi-facebook{
+    font-size: 15px;
+    padding-left: 0.2rem;
+
+}
+
+.bi-instagram{
+    font-size: 15px;
+    padding-left: 0.2rem;
+
+}
+
+ .bi-whatsapp{
+    font-size: 15px;
+    padding-left: 0.5rem;
+ }
+
 .ico{
     color:rgb(162, 159, 159);
 }
@@ -830,15 +883,17 @@ h2{
 
 }
 
-.footer_formularios_fijo{
-    position:relative;
+.footer_box{
+    margin-top: 2rem;
 }
 
-/* .titulo_direccion{
-    position:fixed;
-    top:0rem;
-    left:10rem;
-} */
+.footer_formularios_fijo{
+    font-size: xx-small;
+    position:relative;
+    margin-top: 2rem;
+    bottom: 0;
+}
+
 .contain_formulario{
     margin-top: 0rem;
 }
