@@ -17,7 +17,7 @@ body{
 .navbar{
     height: 63px;
     
-}
+}`
 .container{
     width: 70%;
     height: auto;
@@ -117,8 +117,7 @@ h1{
     margin-top: 5rem;
     color: white;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align:center;
     width: 100%;
     height: auto;
@@ -134,7 +133,7 @@ h3{
     text-align: center;
     color:white;
     font-family: 'Roboto', sans-serif;
-    font-size: 400;
+    font-size: 2rem;
     margin-left: 20px;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
@@ -146,7 +145,7 @@ h4{
     margin:0;
     font-size: large;
     font-weight: bold;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 h5{
@@ -352,42 +351,8 @@ border-color: none;
     display: flex;
 }
 
-/*GRID SERVICES*/
-.grilla_service{
-    margin-top: 1rem;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "dry   iron    wash    dely";
-    justify-content: space-around;
-
-}
-
-/******* GRID INDEX */
-.grilla_index{
+.top-5rem{
     margin-top: 5rem;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "ropa   ...     ...."
-        "....   olor    ..."
-        "....   ....    eco";
-    justify-content: space-around;
-
-}
-
-.grilla_index >div img{
-    padding: 0;  
-}
-
-.top-6rem{
-    margin-top: 6rem;
 }
 
 .ico{
@@ -426,8 +391,7 @@ border-color: none;
 }
 .card{
     justify-content: space-around;
-    background-color: white;
-    border: 2px solid #f6f4f5;
+    background-color: transparent;
     border-radius: 55px;
     /* shadow*/
     box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
@@ -786,6 +750,16 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
 
 }
+.collapse.navbar-collapse {
+    background-color:#5b12572e;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler{
+    margin-top:-35px;
+}
+
 h1{
     margin-top: 5rem;
 }
@@ -801,15 +775,6 @@ h2{
 .parrafo{
     font-size: 10px;
 }
-/* .grilla_index {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-.grilla_index >div img{
-    padding: 0;
-   
-} */
 
 /*  Para el registro y para el pla*/
 .container{
@@ -818,7 +783,7 @@ h2{
     height: auto;
     padding: 1rem;
     border-radius: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: #5b1257;
     font-weight: bold;
     
