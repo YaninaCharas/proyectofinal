@@ -81,6 +81,20 @@ main{
     transform:scale(1.90)
 }
 
+.big-tip{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 18rem;
+}
+.big-tip:hover{
+    transform:scale(1.90)
+}
+
+
+
 .item-elegido{
     color: white;
     transform: scale(1.1);
@@ -90,8 +104,9 @@ main{
 
 .img-fondo{
     margin:0;
-    background-image: url(../images/local-fondo.jpg);
+    /* background-image: url(../images/local-fondo.jpg); */
     /* opacity: 0.2; */
+    background-image: url(../images/fondo\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,12 +159,13 @@ h3{
 
 h4{
     color: #110110;
-    margin:0;
+    margin:0.8rem;
+    padding: 0.5 rem;
     font-size: large;
     font-weight: bold;
-    padding-bottom: 1.5rem;
     text-align: center;
 }
+
 .h4-left{
     color: #110110;
     margin:0;
@@ -476,12 +492,6 @@ border-color: none;
 }
 /******************Para procesos****************/
 
-.estilo-a{
-    border-radius: 20px;
-    width: 120%;
-    height: auto;
-    box-shadow: 10px 10px 5px 0px rgba(49, 48, 48, 0.75);
-}
 
 .registrate{
     padding:3rem;
@@ -507,6 +517,13 @@ border-color: none;
 
 /******************Para Imagenes ****************/
 
+.estilo-a{
+    border-radius: 20px;
+    width: 120%;
+    height: auto;
+    box-shadow: 10px 10px 5px 0px rgba(49, 48, 48, 0.75);
+}
+
 .estilo-b{
     margin-top: 1rem;
     width: 100;
@@ -515,7 +532,7 @@ border-color: none;
 }
 .estilo-c{
     border-radius: 20px;
-    width: 50%;
+    width: 80%;
     height: auto;
     box-shadow: 10px 10px 5px 0px rgba(49, 48, 48, 0.75);
 }
@@ -969,6 +986,15 @@ h6{
     height: auto;
 
 }
+.container-contact , .container-mapa{
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.img_mapa{
+    width: 90%;
+}
+
 
 
 }
