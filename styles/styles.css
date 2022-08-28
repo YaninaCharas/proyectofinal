@@ -15,7 +15,7 @@ body{
     /* width: 100%;
     height: auto; */
     position:relative;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
     min-height: 100vh;
 }
 .navbar{
@@ -153,7 +153,6 @@ h1{
     text-align:center;
     width: 100%;
     height: auto;
-    text-shadow: 3px 3px 1px rgba(57, 48, 55, 0.75);
 }
 
 h2{
@@ -360,8 +359,6 @@ border-color: none;
 .footer_box{
     color: white;
     padding: 0.5rem;
-    /* margin-top: 1rem; */
-    bottom:0rem;
     background-color: rgb(78,33,88);
     position: absolute ;
     bottom: 0;
@@ -374,19 +371,6 @@ border-color: none;
 
 .footer_box a{
     color:white;
-
-}
-
-.footer_formularios_fijo{
-    color: white;
-    padding: 0.5rem;
-    padding-top: 0.5rem;
-    height: 50px;
-    width: 100%;
-    bottom:11.5rem;
-    position:fixed;
-    background-color: rgb(78,33,88);
-    border-top: 2px solid black;
 
 }
 
@@ -467,8 +451,6 @@ border-color: none;
 /*********************************************/
 .contacto{
     color:white;
-    /* color:#5b1257; */
-    border: 3px dashed red;
     padding-top:2.5rem;
     position: fixed;
     top:1.98rem;
@@ -525,13 +507,12 @@ border-color: none;
     animation: rotate 1.3s linear infinite;
 }
 .contacto a{
+    color:white;
     text-decoration: none;
 }
 
 /****************** ANIMACION CONTACTO **********************************/
 .contacto2{
-    color:white;
-    border: 3px dashed red;
     padding-top:2.5rem;
     position: fixed;
     top:9.98rem;
@@ -587,6 +568,7 @@ border-color: none;
     animation: rotate 1.3s linear infinite;
 }
 .contacto2 a{
+    color:white;
     text-decoration: none;
 }
 
@@ -844,7 +826,6 @@ h6{
         font-size: medium;
         width: 100%;
         height: auto;
-        text-shadow: none;
     }
 
     h5{
@@ -1097,13 +1078,6 @@ padding-top: 2rem;
 .footer_box{
     margin-top: 2rem;
     font-size: xx-small;
-}
-
-.footer_formularios_fijo{
-    font-size: xx-small;
-    position:relative;
-    margin-top: 2rem;
-    bottom: 0;
 }
 
 .contain_formulario{
