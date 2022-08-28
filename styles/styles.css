@@ -19,6 +19,16 @@ body{
     height: 63px;
     
 }
+.text-color{
+    border:none;
+    color:white;
+}
+
+.text-color:hover{
+    border:none;
+    color:rgba(255, 255, 255, 0.408);
+}
+
 main{
     margin:0;
     width: 100%;
@@ -916,8 +926,8 @@ border-color: none;
 }
 
 h1{
-    margin-top: 5rem;
-    padding: 0;
+    /* margin-top: 5rem; */
+    padding-top: 2rem;
 }
 
 h2{
@@ -934,6 +944,11 @@ h6{
     font-size: 0.8rem;
     padding: 0;
 }
+
+.centrar-h2{
+padding-top: 2rem;
+}
+
 .parrafo{
     font-size: 10px;
 }
@@ -1045,7 +1060,9 @@ h6{
     margin-top: 0rem;
 }
 
+
 .max-altura{
+    margin-top:8rem;
     width: 40%;
     height: auto;
 
@@ -1063,11 +1080,18 @@ h6{
 }
 
 .navbar{
-    height: 100px;
-    
+    height: 100px;  
 }
-
-
+.text-color{
+    border:none;
+    font-weight: bold;
+    color:black;
+}
+.text-color:hover{
+    border:none;
+    font-weight: bold;
+    color:rgba(7, 7, 7, 0.814);
+}
 }
 
 @media screen and (min-width: 210) and (max-width: 310px) {
