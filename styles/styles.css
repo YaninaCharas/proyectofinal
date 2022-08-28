@@ -12,8 +12,11 @@
 body{
     background: rgb(78,33,88);
     background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgb(241, 196, 241) 100%);
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    position:relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 .navbar{
     height: 63px;
@@ -29,20 +32,16 @@ body{
     color:rgba(255, 255, 255, 0.408);
 }
 
-main{
-    margin:0;
-    width: 100%;
-    height: 100%;  
-}
 .container{
+    margin-top: 5rem;
     width: 70%;
     height: auto;
     font-weight: bold; 
-    background-color: rgba(255, 255, 255, 0.445);
+    background-color: rgba(255, 255, 255, 0.692);
     border-radius: 20px;
 }
 .container-form{
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(255, 255, 255, 0.692);
     height: auto;
     padding: 1rem;
     border-radius: 20px;
@@ -53,7 +52,7 @@ main{
     /* width: 10%; */
 }
 .container-contact , .container-mapa{
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(255, 255, 255, 0.692);
     height: auto;
     padding: 0.5rem;
     border-radius: 20px;
@@ -115,14 +114,13 @@ main{
 }
 
 .img-fondo{
-    margin:0;
-    /* background-image: url(../images/local-fondo.jpg); */
-    /* opacity: 0.2; */
+    margin:0 auto;
     background-image: url(../images/fondo\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
+    width: 100%;
+    height: 50%;
     
 }
 
@@ -362,11 +360,12 @@ border-color: none;
 .footer_box{
     color: white;
     padding: 0.5rem;
-    margin-top: 1rem;
-    height: 50px;
-    width: 100%;
+    /* margin-top: 1rem; */
     bottom:0rem;
     background-color: rgb(78,33,88);
+    position: absolute ;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer_box span{
@@ -529,22 +528,20 @@ border-color: none;
     text-decoration: none;
 }
 
-/******************Para procesos****************/
-
-
-.registrate{
+/****************** ANIMACION CONTACTO **********************************/
+.contacto2{
+    color:white;
+    border: 3px dashed red;
     padding-top:2.5rem;
-    border: 3px dashed #5b1257;
     position: fixed;
-    top:2rem;
-    right: 1rem;
+    top:9.98rem;
+    right: 3.75rem;
     border-radius: 50%;
     font-weight: bold;
     font-size: small;
-    width: 100px;
-    height: 100px;
+    width: 97px;
+    height: 97px;
     margin:20px;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
     cursor: pointer;
     box-shadow: 10px 10px 5px 0px rgba(49, 48, 48, 0.75);
     transition-property: all;
@@ -553,16 +550,43 @@ border-color: none;
     transition-delay: 0s;
     text-align: center;
 }
-.registrate:hover{
-    /* transform:scale(1.50); */
-    background: #25D366;
-    width: 120px;
-    height: 120px;
-    font-size: medium;
-    animation: rotate 1.5s linear infinite;
+.lol2{
+    width: 98px;
+    height: 98px;
+    background: linear-gradient(#f27b0b, #e313df, #ff00e0);
+    position: absolute;
+    padding-top:0rem;
+    position: fixed;
+    top:11.2rem;
+    right: 4.9rem;
+    border-radius: 50%;
+
 }
-.registrate a{
-    color:#5b1257;
+.circle2{
+    width: 15px;
+    height: 15px;
+    background: #89037c;
+    border-radius: 50%;
+    position: fixed;
+    top:13.8rem;
+    right: 7.5rem;
+    overflow: hidden;
+    margin: auto;
+    -webkit-animation: circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+}
+
+.contacto2:hover{
+    /* background: #25D366; */
+    background-color: #ff2e05;
+    width: 100px;
+    height: 100px;
+    top:9.8rem;
+    right: 3.5rem;
+    font-size: medium;
+    animation: rotate 1.3s linear infinite;
+}
+.contacto2 a{
     text-decoration: none;
 }
 
@@ -600,9 +624,9 @@ border-color: none;
     padding: 0;
     margin: 0;
     font-weight: bold;
-    color:white;
-    padding-top: 0.5rem;
-    font-size: x-small;
+    color:black;
+    padding-top: 0.2rem;
+    font-size: small;
     letter-spacing: 2px;
 }
 /****** ANIMACION FONDO BURBUJAS */
@@ -739,11 +763,15 @@ border-color: none;
 
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 1024px) {
-    .header_box{        
-        width: 100%;
-        height: auto;
-        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%);
-
+    .text-color{
+        border:none;
+        font-weight: bold;
+        color:black;
+    }
+    .text-color:hover{
+        border:none;
+        font-weight: bold;
+        color:rgba(7, 7, 7, 0.814);
     }
     .card2, .estilo-b{
         width: 100%;
@@ -795,13 +823,20 @@ border-color: none;
     width: 25%;
     /* max-width: 350px; */
 } 
+h6{
+    display: none;
+}
+.card{
+    padding: 0;
+    width: 95%;
+    margin:0 auto;
+}
 }
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 900px) {
-    .card2, .estilo-b{
+    .card2{
         width: 100%;
     }
-
     h1{
         margin-top: 6rem;
         text-align: center;
@@ -821,9 +856,6 @@ border-color: none;
     .container-form{
         width: 25%;
     } 
-    .card{
-        width: 8.5rem;
-    }
     h6{
         font-size: small;
         display: none;
@@ -833,12 +865,36 @@ border-color: none;
         margin: 0;
         font-size: small;
     }
-    .registrate{
-        font-size: small;
-        padding:1rem;
-        bottom:0.5rem;
-        right: 0.5rem;
+    .card{
+        padding: 0;
+        width: 80%;
+        margin:0 auto;
     }
+    .big{
+        width: 14rem;
+        margin-left: 0;
+    }
+    .big:hover{
+        transform:scale(1.20)
+    }
+    .contacto{
+        top:0.98rem;
+        right: -0.50rem;
+    }
+    .lol{
+        top:2.2rem;
+        right: 0.7rem;
+    }
+    .circle{
+        top:4.8rem;
+        right: 3.2rem;
+    }
+    
+    .contacto:hover{
+        top:0.98rem;
+        right: -0.5rem;
+    }
+    
 }
 
 /*********  MEDIA QUERY  DESKTOP ******/
@@ -847,24 +903,29 @@ border-color: none;
         width: 100%;
     }
 
+    .card{
+        padding: 0;
+        width: 80%;
+        margin:0 auto;
+    }
+
     
     .container-form{
         width: 25%;
     }
-    /* .card{
-        width: 6rem;
-        background-color: red;
-    } */
+    .big-tip{
+        width: 12rem;
+        margin-left: 0;
+    }
+    .big-tip:hover{
+        transform:scale(1.20)
+    }
 }
 /*********  MEDIA QUERY  DESKTOP Surface Duo******/
 @media screen and (max-width: 610px) {
     .card2{
         width: 100%;
     }
-    /* .card{
-        width: 6rem;
-        background-color: red;
-    } */
     .container-form{
         width: 50%;
     } 
@@ -903,15 +964,8 @@ border-color: none;
 }
 
 /*********MEDIA QUERY - Mobile *******/
-@media screen and (min-width: 320px) and (max-width: 480px) {
-.header_box{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    background: rgb(78,33,88);
-    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
-
-}
+/* @media screen and (min-width: 320px) and (max-width: 480px) { */
+@media screen and (max-width: 480px) {
 .card2{
     width: 100%;
 }
@@ -950,13 +1004,13 @@ padding-top: 2rem;
 }
 
 .parrafo{
-    font-size: 10px;
-}
-.registrate{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color:black;
+    padding-top: 0.2rem;
     font-size: small;
-    padding:1rem;
-    bottom:0.5rem;
-    right: 0.5rem;
+    letter-spacing: 2px;
 }
 
 .big{
@@ -978,12 +1032,9 @@ padding-top: 2rem;
     height: auto;
     padding: 1rem;
     border-radius: 20px;
-    /* border: 1px solid black; */
     color: #5b1257;
     font-weight: bold;
-    min-height: 450px;
-    background-color: rgba(255, 255, 255, 0.445);
-    
+    min-height: 450px; 
 }
 .estilo-a{
     width: 100%;
@@ -1000,19 +1051,18 @@ padding-top: 2rem;
 }
 
 .card{
-    width: 80%;
+    padding:0;
+    width: 55%;
+    margin:0 auto;
+    font-size: small;
 }
 
-.img_mapa{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
+/*Boton redes*/
 .btn-mail{
     padding-left: 2rem;
     
 }
-/*Boton redes*/
+
 .bi-facebook{
     font-size: 15px;
     padding-left: 0.2rem;
@@ -1068,12 +1118,13 @@ padding-top: 2rem;
 
 }
 .container-contact , .container-mapa{
-    background-color: rgba(255, 255, 255, 0.795);
     width: 90%;
     margin-bottom: 1rem;
 }
 .img_mapa{
     width: 90%;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .card2{
     width: 100%;
@@ -1092,16 +1143,77 @@ padding-top: 2rem;
     font-weight: bold;
     color:rgba(7, 7, 7, 0.814);
 }
+/*********************************************/
+.contacto{
+    top:0.98rem;
+    right: 1.75rem;
+}
+.lol{
+    top:2.2rem;
+    right: 2.9rem;
+}
+.circle{
+    top:4.8rem;
+    right: 5.5rem;
 }
 
-@media screen and (min-width: 210) and (max-width: 310px) {
+.contacto:hover{
+    top:0.98rem;
+    right: 1.75rem;
+}
+.contacto a{
+    text-decoration: none;
+}
 
+/****************** ANIMACION CONTACTO **********************************/
+.contacto2{
+    top:5.98rem;
+    right: 0.75rem;
+}
+.lol2{
+    top:7.2rem;
+    right: 1.9rem;
+}
+.circle2{
+    top:9.8rem;
+    right: 4.5rem;
+    overflow: hidden;
+}
+
+.contacto2:hover{
+    top:5.98rem;
+    right: 0.75rem;
+}
+.contacto2 a{
+    text-decoration: none;
+}
+
+/******************************************/
+}
+
+/* @media screen and (min-width: 210) and (max-width: 310px) { */
+@media screen and (max-width: 310px) {
+
+    h3{
+        margin-top: 3rem;
+    }
     .card2{
         width: 100%;
     }
     
+
+    .big{
+        margin-left: -5rem;
+        width: 22rem;
+        height: auto;
+        padding: 0;
+      }
+      .big-tip{
+        padding-top: 2rem;
+        margin-left: -2rem;
+        width: 16rem;
+      }
     .container{
-        background-color: rgba(255, 255, 255, 0.445);
         width: 100;
         height: auto;
     }
@@ -1135,5 +1247,42 @@ padding-top: 2rem;
         font-size: 5px;
         padding-left: 0.2rem;
      }
-    
+ /************ ANIMACION CONTACTO *********************************/
+.contacto{
+    top:0.98rem;
+    right: -0.50rem;
+}
+.lol{
+    top:2.2rem;
+    right: 0.7rem;
+}
+.circle{
+    top:4.8rem;
+    right: 3.2rem;
+}
+
+.contacto:hover{
+    top:0.98rem;
+    right: -0.50rem;
+}
+.contacto2{
+    top:8.98rem;
+    right: -1rem;
+}
+.lol2{
+    top:10.2rem;
+    right: 0.2rem;
+}
+.circle2{
+    top:12.8rem;
+    right: 2.9rem;
+    overflow: hidden;
+}
+
+.contacto2:hover{
+    top:8.98rem;
+    right: -1rem;
+}
+/****************** ANIMACION CONTACTO **********************************/
+   
 }
