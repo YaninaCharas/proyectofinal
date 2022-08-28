@@ -28,11 +28,11 @@ main{
     width: 70%;
     height: auto;
     font-weight: bold; 
-    background-color: rgba(255, 255, 255, 0.312);
+    background-color: rgba(255, 255, 255, 0.445);
     border-radius: 20px;
 }
 .container-form{
-    background-color: rgba(255, 255, 255, 0.588);
+    background-color: rgba(255, 255, 255, 0.685);
     height: auto;
     padding: 1rem;
     border-radius: 20px;
@@ -43,7 +43,7 @@ main{
     /* width: 10%; */
 }
 .container-contact , .container-mapa{
-    background-color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(255, 255, 255, 0.685);
     height: auto;
     padding: 0.5rem;
     border-radius: 20px;
@@ -193,22 +193,12 @@ h6{
     padding-top: 0.5rem;
 }
 
-/* .spanh6{
-    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 20px;  
-    padding: .5rem;
-    margin-left: 20rem;
-} */
-
 /*Botones */
 
 .btn-ok{
     padding: 0.5rem;
     width: 8rem;
-    background-color:#5b12577b;
+    background-color:#a5069db2;
     border-radius: 20px;
     border: none;
     color:white;
@@ -220,7 +210,7 @@ h6{
 .btn-ok:hover{
     background-color: #d3259c;
     border-color: none;
-    color:white;
+    color:black;
     }
 
 
@@ -384,45 +374,16 @@ border-color: none;
     padding-top: 0.5rem;
     height: 50px;
     width: 100%;
-    bottom:0rem;
+    bottom:11.5rem;
     position:fixed;
     background-color: rgb(78,33,88);
     border-top: 2px solid black;
 
 }
 
-/**/
-
-/*Iconos */
-/* .home_ico{
-    max-width: 28px;
-    padding-left: 0.2rem;
-    display: flex;
-} */
-
 .top-5rem{
     margin-top: 5rem;
 }
-/* 
-.ico{
-    border: 0.1px solid transparent;
-    color: rgb(3, 48, 3);
-    font-weight: bold;    
-}
-.ropa{
-    grid-area: ropa;
-    background-image: url(../images/iconos/ico_tintoreria.png);
-}
-
-.olor{
-    grid-area: olor;
-    background-image: url(../images/iconos/ico_tintoreria.png);
-}
-
-.eco{
-    grid-area: eco;
-    background-image: url(../images/iconos/ico_tintoreria.png);
-} */
 
 .centrar{
     font-size: 10px;
@@ -438,13 +399,13 @@ border-color: none;
 
 .card{
     justify-content: space-around;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.685);
     border-radius: 55px;
     /* shadow*/
     box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
-    width: 30%;
+    width: 12rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -458,10 +419,10 @@ border-color: none;
 }
 
 .card-text{
-    font-size: medium;
+    font-size: small;
     font-weight:bold;
     text-decoration: none;
-    color: white;
+    color:#110110;;
 
 }
 .card-text:hover{
@@ -471,7 +432,7 @@ border-color: none;
 
 .card2{
     justify-content: space-around;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.685);
     border-radius: 55px;
     /* shadow*/
     box-shadow: 8px 1px 10px rgba(0,0,0,0.3);
@@ -480,6 +441,7 @@ border-color: none;
     width: 30%;
     height: auto;
     padding-bottom: 0.2rem;
+    width: 18rem;
 }
 
 .card2-text{
@@ -688,37 +650,27 @@ border-color: none;
         background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%);
 
     }
+    .card2, .estilo-b{
+        width: 100%;
+    }
+    h4{
+        font-size: small;
+    }
+
     iframe {
         height:auto;
     }
-    .grilla_index {
-        width: auto;
+    .card{
+        width: 45%;
     }
-    .btn_ico{
-        width: 60%;
-        padding-left: 2rem;
-    }
-.tituloh2 {
-    margin-top: 0;
-}
 
-.card{
-    width: 45%;
-}
-
-legend{
-    padding: 0.5rem;
-}
 .contain_formulario{
     background: rgb(241,236,241);
-background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
+    background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
     margin-top: 2.5rem;
     height: 50%;
 }
 
-.contain_formulario legend{
-    text-align: center;
-}
 
 .contain_formulario .contacto{
     width: 40%;
@@ -751,12 +703,8 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 }
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 900px) {
-    .grilla_index {
-        width: 25%;
-    }
-    .btn_ico{
-        width: 60%;
-        padding-left: 2rem;
+    .card2, .estilo-b{
+        width: 100%;
     }
 
     h1{
@@ -766,6 +714,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         font-size: medium;
         width: 100%;
         height: auto;
+        text-shadow: none;
     }
 
     h5{
@@ -774,72 +723,88 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         font-size: small;
     }
 
-    .home_ico{
-        max-width: 18px;
-        padding-left: 0.1rem;
-    }
     .container-form{
         width: 25%;
     } 
+    .card{
+        width: 8.5rem;
+    }
+    h6{
+        font-size: small;
+        display: none;
+    }
+    .card-text{
+        padding-top: 0.5rem;
+        margin: 0;
+        font-size: small;
+    }
+    .registrate{
+        font-size: small;
+        padding:1rem;
+        bottom:0.5rem;
+        right: 0.5rem;
+    }
 }
 
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 780px) {
-    .grilla_index {
-        width: auto;
-    }
-    .btn_ico{
-        width: 80%;
+    .card2{
+        width: 100%;
     }
 
+    
+    .container-form{
+        width: 25%;
+    }
+    /* .card{
+        width: 6rem;
+        background-color: red;
+    } */
 }
-
-.container-form{
-    width: 25%;
-}
-/*********  MEDIA QUERY  DESKTOP ******/
+/*********  MEDIA QUERY  DESKTOP Surface Duo******/
 @media screen and (max-width: 610px) {
- 
+    .card2{
+        width: 100%;
+    }
+    /* .card{
+        width: 6rem;
+        background-color: red;
+    } */
     .container-form{
         width: 50%;
     } 
-
-    .btn_ico{
-        width: 80%;
+    .btn-mail{
+        padding-left: 2rem;
+        
     }
-
-    .seccion.contain{
-        height: 280px;
-        width: 280px;
-        margin:0;
-        padding: 0;
-    }  
-    .seccion.contain{
-        height: 280px;
-        width: 280px;
-        margin:0;
-        padding: 0;
-    }  
+    /*Boton redes*/
+    .bi-facebook{
+        font-size: 15px;
+        padding-left: 0.2rem;
+    
+    }
+    
+    .bi-instagram{
+        font-size: 15px;
+        padding-left: 0.2rem;
+    
+    }
+    
+     .bi-whatsapp{
+        font-size: 15px;
+        padding-left: 0.2rem;
+     }
     
     
-        /*Videos*/
-    .seccion_videos{
-        width: 100%;
-        margin:0 auto;
-    }
-  
 }
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 481px) {
   
-    .btn_ico{
-        width: 70%;
-        padding-left: 2rem;
-    }
     .container-form{
         width: 70%;
         height: auto;
     }   
+    
 }
 
 /*********MEDIA QUERY - Mobile *******/
@@ -851,6 +816,9 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     background: rgb(78,33,88);
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
 
+}
+.card2{
+    width: 100%;
 }
 .collapse.navbar-collapse {
     background-color:#5b12572e;
@@ -869,6 +837,12 @@ h1{
 
 h2{
     font-size: medium; 
+}
+
+h3{
+    color:#5b1257;
+    font-weight: bold;
+    ;
 }
 
 h6{
@@ -908,7 +882,12 @@ h6{
     color: #5b1257;
     font-weight: bold;
     min-height: 450px;
+    background-color: rgba(255, 255, 255, 0.445);
     
+}
+.estilo-a{
+    width: 100%;
+    height: auto;
 }
 
 .container-form{
@@ -930,7 +909,7 @@ h6{
 }
 
 .btn-mail{
-    padding-left: 5rem;
+    padding-left: 2rem;
     
 }
 /*Boton redes*/
@@ -948,12 +927,9 @@ h6{
 
  .bi-whatsapp{
     font-size: 15px;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
  }
 
-.ico{
-    color:rgb(162, 159, 159);
-}
 .botones{
     width: 100px;
 }  
@@ -997,7 +973,58 @@ h6{
 .img_mapa{
     width: 90%;
 }
+.card2{
+    width: 100%;
+}
+
+.navbar{
+    height: 100px;
+    
+}
 
 
+}
 
+@media screen and (min-width: 210) and (max-width: 310px) {
+
+    .card2{
+        width: 100%;
+    }
+    
+    .container{
+        background-color: rgba(255, 255, 255, 0.445);
+        width: 100;
+        height: auto;
+    }
+
+    .estilo-a{
+        width: 50%;
+        box-shadow: none;
+    }
+    .footer_box span{
+        font-size: 2px;
+        margin-left: 0;
+    }
+    .btn-mail{
+        padding-left: 0.5rem;
+        
+    }
+    /*Boton redes*/
+    .bi-facebook{
+        font-size: 5px;
+        padding-left: 0.2rem;
+    
+    }
+    
+    .bi-instagram{
+        font-size: 5px;
+        padding-left: 0.2rem;
+    
+    }
+    
+     .bi-whatsapp{
+        font-size: 5px;
+        padding-left: 0.2rem;
+     }
+    
 }
