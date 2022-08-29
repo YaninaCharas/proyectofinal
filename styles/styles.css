@@ -7,6 +7,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+*.navbar-nav a:last-child{
+    margin-right: 1rem;
+}
+*.footer_box :nth-child(2){
+    margin-left: 15rem;
+}
+
 main{
     width: 100%;
     height: auto;
@@ -60,7 +67,7 @@ body{
     /* width: 10%; */
 }
 .container-contact , .container-mapa{
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(255, 255, 255, 0.881);
     height: auto;
     padding: 0.5rem;
     border-radius: 20px;
@@ -198,13 +205,16 @@ h4{
 }
 
 h5{
-    color:#110110;
-    padding-left: 1rem;
+    text-align: center;
+    color:rgb(111, 107, 107);
+    font-weight: bold;
+    font-size: 14px;
 }
 
 h6{
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
     color:#110110;
+    font-weight: bold;
 }
 
 /*Botones */
@@ -253,8 +263,6 @@ border-color: none;
 .btn-mail{
     text-decoration: none;
     color:white;
-    padding-left: 15rem;
-    
 }
 
 .form-control, .form-select{
@@ -386,7 +394,6 @@ border-color: none;
 }
 
 .centrar{
-    font-size: 10px;
     text-align: center;
     justify-content: center;
 }
@@ -419,7 +426,8 @@ border-color: none;
 }
 
 .card-text{
-    font-size: x-small;
+    padding-top: 0.5rem;
+    font-size: 14px;
     font-weight:bold;
     text-decoration: none;
     color:#110110;;
@@ -660,10 +668,21 @@ border-color: none;
       opacity: 1;
     }
   }
-  
+/*********  MEDIA QUERY  1180 ******/  
+@media screen and (max-width: 1180px) {
+    .big-tip{
+        width: 16rem;
+    }
+}
 
-/*********  MEDIA QUERY  DESKTOP ******/
+/*********  MEDIA QUERY  1024 ******/
 @media screen and (max-width: 1024px) {
+    *.navbar-nav a:last-child{
+        margin-right: 0;
+    }
+    *.footer_box :nth-child(2){
+        margin-left: 8rem;
+    }
     .text-color{
         border:none;
         font-weight: bold;
@@ -719,9 +738,16 @@ border-color: none;
         width: 60%;
         height: auto;
     }
+    .big-tip{
+        width: 12rem;
+    }
+    .big-tip:hover{
+        transform:scale(1.20)
+    }
 }
-/*********  MEDIA QUERY  DESKTOP ******/
+/*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
+
     .card2{
         width: 100%;
     }
@@ -770,11 +796,7 @@ border-color: none;
         transform:scale(1.20)
     }
         /*Boton redes*/
-        .btn-mail{
-            padding-left: 8rem;
-    
-        }
-    
+   
         .bi-facebook{
             font-size: 15px;
             padding-left: 0.5rem;
@@ -795,10 +817,16 @@ border-color: none;
             width: 60%;
             height: auto;
         }
-}
+        .big-tip{
+            width: 100%;
+        }
 
-/*********  MEDIA QUERY  DESKTOP ******/
+    }
+/*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
+    *.footer_box :nth-child(2){
+        margin-left: 3rem;
+    }
     .card2{
         width: 100%;
     }
@@ -813,15 +841,13 @@ border-color: none;
     .container-form{
         width: 25%;
     }
+
     .big-tip{
-        width: 12rem;
-        margin-left: 0;
+        width: 100%;
     }
-    .big-tip:hover{
-        transform:scale(1.20)
-    }
+
 }
-/*********  MEDIA QUERY  DESKTOP Surface Duo******/
+/*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
     .card2{
         width: 100%;
@@ -829,10 +855,7 @@ border-color: none;
     .container-form{
         width: 50%;
     } 
-    .btn-mail{
-        padding-left: 6rem;
-        
-    }
+    
     /*Boton redes*/
     .bi-facebook{
         font-size: 15px;
@@ -851,23 +874,21 @@ border-color: none;
         padding-left: 0.2rem;
      }
     .footer_box{
-        font-size: 9px;
+        font-size: 8px;
     }
- 
+
     
 }
-/*********  MEDIA QUERY  DESKTOP ******/
+/*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 481px) {
-  
+    *.footer_box :nth-child(2){
+        margin-left: 6rem;
+    }
     .container-form{
         width: 70%;
         height: auto;
-    }  
+    } 
 
-}
-
-/*********MEDIA QUERY - Mobile *******/
-@media screen and (max-width: 480px) {
     .card2{
         width: 100%;
     }
@@ -933,7 +954,6 @@ border-color: none;
         transform:scale(1.5)
     }
 
-/*  Para el registro y para el pla*/
     .container{
         margin-top: 6rem;
         width: 80%;
@@ -972,10 +992,6 @@ border-color: none;
     }
 
     /*Boton redes*/
-    .btn-mail{
-        padding-left: 2rem;
-
-    }
 
     .bi-facebook{
         font-size: 15px;
@@ -1006,9 +1022,6 @@ border-color: none;
         margin-bottom: 2rem;
         margin-left: 20%;
     }
-
-
-    
     .btn-contacto{
         width: 7rem;
         background-color:#a5069db2;
@@ -1028,11 +1041,6 @@ border-color: none;
         right: 0.5rem;
        font-size: x-small;
     }    
-    .footer_box{
-        margin-top: 2rem;
-        font-size: x-small;
-    }
-
     .max-altura{
         margin-top:8rem;
         width: 40%;
@@ -1068,7 +1076,7 @@ border-color: none;
 
 }
 
-/*****************MOBILE SMALL*/
+/*****************MOBILE310- SMALL ONE*/
 @media screen and (max-width: 310px) {
     h3{
         margin-top: 3rem;
@@ -1098,13 +1106,9 @@ border-color: none;
         box-shadow: none;
     }
     .footer_box{
-        font-size: 6px;
-        margin-left: 0;
+        font-size: 5px;
     }
-    .btn-mail{
-        padding-left: 0.5rem;
-        
-    }
+
     /*Boton redes*/
     .bi-facebook{
         font-size: 5px;
