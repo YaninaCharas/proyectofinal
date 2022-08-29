@@ -458,7 +458,7 @@ border-color: none;
 /*********************************************/
 
 .btn-contacto{
-    width: 8rem;
+    width: 7rem;
     background-color:#a5069db2;
     border-radius: 20px;
     border: none;
@@ -467,7 +467,7 @@ border-color: none;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-decoration: none;
-    margin-top:5rem;
+    margin-top:-2rem;
     position: fixed;
     top:1.98rem;
     right: 3.75rem;
@@ -492,7 +492,9 @@ border-color: none;
     color:white;
     text-decoration: none;
 }
-
+.btn-contacto.index{
+    margin-top:3rem;
+}
 .estilo-a{
     border-radius: 20px;
     width: 100%;
@@ -599,7 +601,7 @@ border-color: none;
 /*****************  ANIMACION BURBUJAS ********************************/
 @keyframes contacto-animado{
     100%{
-        width: 25%;
+        width: 20%;
     }
 }
 
@@ -1008,17 +1010,17 @@ border-color: none;
 
     
     .btn-contacto{
-        width: 8rem;
+        width: 7rem;
         background-color:#a5069db2;
         letter-spacing: 0;
-        /* margin-top:4rem; */
+        margin-top:4rem;
         position: fixed;
         top:-2rem;
         right: 2.5rem;
        font-size: x-small;
     }
     .btn-contacto.index{
-        width: 8rem;
+        width: 7rem;
         background-color:#a5069db2;
         letter-spacing: 0;
         top:5rem;
