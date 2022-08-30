@@ -820,7 +820,9 @@ border-color: none;
         .big-tip{
             width: 100%;
         }
-
+        .form-check, .form-floating {
+            font-size: x-small;
+        }
     }
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
@@ -935,11 +937,12 @@ border-color: none;
     .parrafo{
         padding: 0;
         margin: 0;
-        font-weight: bold;
+        font-weight:600 ;
         color:black;
-        padding-top: 0.2rem;
-        font-size: small;
+        padding-top: 0.1rem;
+        font-size: smaller;
         letter-spacing: 2px;
+        bottom: 5rem;
     }
 
     .big{
@@ -1073,7 +1076,9 @@ border-color: none;
         font-weight: bold;
         color:rgba(7, 7, 7, 0.814);
     }
-
+    .form-check, .form-floating {
+        font-size: x-small;
+    }
 }
 
 /*****************MOBILE310- SMALL ONE*/
