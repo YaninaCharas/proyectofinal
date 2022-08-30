@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+// @import url("./_colores.scss");
+
+//Variables de Colores//
+
+$color-principal:rgba(78,33,88,1);
+$blanco: white;
+$negro: black;
+$negro-sombra:rgba(0,0,0,0.2);
+$negro-suave:rgba(7, 7, 7, 0.814);
+$gris:rgb(111, 107, 107);
+$oscuro:#110110;
+$naranja:#f47c20;
+$chicle:#d3259c;
+$violeta:#a5069db2;
+$violeta5asec:#5b1257;
+$color-nav:rgb(78,33,88);
+$color-fondo-fuerte: rgba(255, 255, 255, 0.881);
+$color-fondo-formulario: rgba(255, 255, 255, 0.692);
+$item-elegido:linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
+$color-fb: #425199;
+$color-wp:#25D366;
 
 *{
     margin: 0;
@@ -13,7 +34,6 @@
 *.footer_box :nth-child(2){
     margin-left: 15rem;
 }
-/*****/
 main{
     width: 100%;
     height: auto;
@@ -21,7 +41,7 @@ main{
 
 /*********/
 body{
-    background: rgb(78,33,88);
+    background: $color-nav;
     background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgb(241, 196, 241) 100%);
     position:relative;
     min-height: 100vh;
@@ -40,16 +60,16 @@ body{
 
 .text-color{
     border:none;
-    color:white;
+    color:$blanco;
 }
 
 .text-color:hover{
     border:none;
-    color:rgba(255, 255, 255, 0.408);
+    color:$gris;
 }
 
 .container{
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: $color-fondo-formulario;
     height: auto;
     font-weight: bold; 
     border-radius: 20px;
@@ -61,28 +81,26 @@ body{
     height: auto;
 }
 .container-form{
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: $color-fondo-formulario;
     height: auto;
     font-weight: bold;
     padding: 1rem;
     border-radius: 20px;
     border: 1px solid black;
-    color: #5b1257;
+    color: $violeta5asec;
     margin:0 auto;
 }
 .container-contact , .container-mapa{
-    background-color: rgba(255, 255, 255, 0.881);
+    background-color: $color-fondo-fuerte;
     height: auto;
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 20px;
     border: 1px solid black;
-    color: #5b1257;
+    color: $violeta5asec;
     margin:0 auto;
     width: 100%;
 }
-/**********************/
-
 .img_mapa{
     width: 100%;
     height: auto;
@@ -121,15 +139,15 @@ body{
 }
 
 .item-elegido{
-    color: white;
+    color: $blanco;
     transform: scale(1.1);
-    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
+    background: $item-elegido;
     text-decoration: none;
 }
 
 .img-fondo{
     margin:0 auto;
-    background-image: url(../images/fondo\ 2.png);
+    background-image: url(../images/fondo2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -137,7 +155,6 @@ body{
     height: 50%;
     
 }
-
 /* Solo para el logo */
 .img_logo{
     display: flex;
@@ -146,7 +163,7 @@ body{
 }
 
 .bg-pink{
-    background-color: rgb(78,33,88);
+    background-color: $color-nav;
     border-bottom: 2px solid black;
 }
 
@@ -161,7 +178,7 @@ body{
 
 h1{
     margin-top: 5rem;
-    color:#5b1257;
+    color:$violeta5asec;
     font-weight: bold;
     font-size: 2.5rem;
     text-align:center;
@@ -170,20 +187,20 @@ h1{
 }
 
 h2{
-    color: white;
+    color: $blanco;
     font-size: 2rem;
 }
 
 h3{
     text-align: center;
-    color:rgb(111, 107, 107);
+    color:$gris;
     font-weight: bold;
     font-size: 1rem;
     padding-top: 0.8rem;
 }
 
 h4{
-    color: #110110;
+    color: $oscuro;
     margin:0.8rem;
     padding: 0.5 rem;
     font-size: large;
@@ -192,7 +209,7 @@ h4{
 }
 
 .h4-left{
-    color: #110110;
+    color: $oscuro;
     margin:0;
     font-size: medium;
     padding: 0.5rem;
@@ -203,14 +220,14 @@ h4{
 
 h5{
     text-align: center;
-    color:rgb(111, 107, 107);
+    color:$gris;
     font-weight: bold;
     font-size: 14px;
 }
 
 h6{
     padding-top: 0.5rem;
-    color:#110110;
+    color:$oscuro;
     font-weight: bold;
 }
 
@@ -219,45 +236,45 @@ h6{
 .btn-ok{
     padding: 0.5rem;
     width: 8rem;
-    background-color:#a5069db2;
+    background-color:$violeta;
     border-radius: 20px;
     border: none;
-    color:white;
+    color:$blanco;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-decoration: none;
 }
 
 .btn-ok:hover{
-    background-color: #d3259c;
+    background-color: $chicle;
     border-color: none;
-    color:black;
+    color:$negro;
     }
 
 
 .btn-primary{
-    color:#5b1257;
+    color: $violeta5asec;
     margin-top: 0;
     padding: 0.2rem;
     border:none;
 }
 
 .btn-primary:hover{
-background-color: #d3259c;
+background-color: $chicle;
 border-color: none;
 }
 
 .btn-mail{
     text-decoration: none;
-    color:white;
+    color:$blanco;
 }
 
 .form-control, .form-select{
     font-size: medium;
     border:none;
     background-color: transparent;
-    border-bottom: 1px solid #60044f;
-    color: #5b1257;
+    border-bottom: 1px solid $chicle;
+    color: $violeta5asec;
     text-align: left;
 }
 
@@ -265,7 +282,7 @@ border-color: none;
 .form-control:hover ,.form-select:hover{
     border:none;
     opacity: 0.5;
-    border-bottom: 1.8px solid #60044f;
+    border-bottom: 1.8px solid $chicle;
     background-color: transparent;
 }
 
@@ -274,21 +291,21 @@ border-color: none;
     padding: 0.2rem;
     font-size: medium;
     background-color: transparent;
-    color: #5b1257;
+    color: $violeta5asec;
     text-align: left;
     width: 100%;
     height: 65px;
-    border: 1px solid #60044f;
+    border: 1px solid $chicle;
 }
 
 .text-form{
-    color:black; 
+    color:$negro; 
 }
 
 .form-check, .form-floating {
     text-align: left;
     font-size: small;
-    color: #5b1257;
+    color: $violeta5asec;
 }
 
    
@@ -296,48 +313,47 @@ border-color: none;
 .bi-facebook{
     font-size: 25px;
     text-decoration: none;
-    color:rgb(167, 158, 158);
+    color:$gris;
     padding-left: 1rem;
 
 }
 .bi-facebook:hover{
     text-decoration: none;
-    color:#425199;
+    color:$color-fb;
 
 }
 
 .bi-instagram{
     font-size: 25px;
     text-decoration: none;
-    color:rgb(167, 158, 158);
+    color:$gris;
     padding-left: 1rem;
 
 }
 .bi-instagram:hover{
     text-decoration: none;
-    color:#e44a0d;
+    color:$naranja;
 
 }
  .bi-whatsapp{
     font-size: 25px;
     text-decoration: none;
-    color:rgb(167, 158, 158);
+    color:$gris;
     padding-left: 1rem;
 
  }
 
  .bi-whatsapp:hover{
     text-decoration: none;
-    color: #25D366;
+    color: $color-wp;
 
  }
 /**/
-
 /*footer*/
 .footer_box{
-    color: white;
+    color: $blanco;
     padding: 0.5rem;
-    background-color: rgb(78,33,88);
+    background-color: $color-nav;
     position: absolute ;
     bottom: 0;
     width: 100%;
@@ -348,7 +364,7 @@ border-color: none;
 }
 
 .footer_box a{
-    color:white;
+    color:$blanco;
 
 }
 
@@ -369,10 +385,9 @@ border-color: none;
 
 .card{
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: $gris;
     border-radius: 20px;
-    /* shadow*/
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
     width: 12rem;
@@ -384,8 +399,8 @@ border-color: none;
 }
 
 .card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0.4);
-    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+    // box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); 
 }
 
 .card-text{
@@ -393,20 +408,19 @@ border-color: none;
     font-size: 14px;
     font-weight:bold;
     text-decoration: none;
-    color:#110110;;
+    color:$oscuro;
 
 }
 .card-text:hover{
-    color: black;
+    color: $negro;
 
 }
 
 .card2{
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: $gris;
     border-radius: 55px;
-    /* shadow*/
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.3);
+    box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
     width: 30%;
@@ -419,21 +433,20 @@ border-color: none;
     font-size: medium;
     font-weight:bold;
     text-decoration: none;
-    color: white;
+    color: $blanco;
 
 }
 .card2-text:hover{
     color: black;
 
 }
-/*********************************************/
 
 .btn-contacto{
     width: 7rem;
-    background-color:#a5069db2;
+    background-color:$violeta;
     border-radius: 20px;
     border: none;
-    color:white;
+    color:$blanco;
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -445,7 +458,7 @@ border-color: none;
     padding:1rem;
     font-size: small;
     cursor: pointer;
-    box-shadow: 5px 5px 3px 0px rgba(49, 48, 48, 0.75);
+    box-shadow: 5px 5px 3px 0px $negro-sombra;
     animation-name: contacto-animado;
     animation-duration: 2s;
     animation-delay: 0;
@@ -455,12 +468,12 @@ border-color: none;
  }
 
 .btn-contacto:hover{
-    background-color: #d3259c;
+    background-color: $chicle;
     border-color: none;
 }
 
 .btn-contacto a{
-    color:white;
+    color:$blanco;
     text-decoration: none;
 }
 .btn-contacto.index{
@@ -484,7 +497,7 @@ border-color: none;
     border-radius: 20px;
     width: 80%;
     height: auto;
-    box-shadow: 10px 10px 5px 0px rgba(49, 48, 48, 0.75);
+    box-shadow: 10px 10px 5px 0px $negro-sombra;
 }
 .small{
     width: 50%;
@@ -493,13 +506,13 @@ border-color: none;
 }
 
 .estilo-b a:hover{
-    color: #f47c20;
+    color: $naranja;
 }
 .parrafo{
     padding: 0;
     margin: 0;
     font-weight: bold;
-    color:black;
+    color:$negro;
     padding-top: 0.2rem;
     font-size: small;
     letter-spacing: 2px;
@@ -571,13 +584,7 @@ border-color: none;
         opacity: .8;
     }
 }
-
-/****************************************/
-/* ----------------------------------------------
- * animation slide-in-elliptic-top-fwd
- * ----------------------------------------
- */
- @-webkit-keyframes slide-in-elliptic-top-fwd {
+@-webkit-keyframes slide-in-elliptic-top-fwd {
     0% {
       -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
               transform: translateY(-600px) rotateX(-30deg) scale(0);
@@ -627,12 +634,12 @@ border-color: none;
     .text-color{
         border:none;
         font-weight: bold;
-        color:black;
+        color:$negro;
     }
     .text-color:hover{
         border:none;
         font-weight: bold;
-        color:rgba(7, 7, 7, 0.814);
+        color:$oscuro;
     }
     .card2, .estilo-b{
         width: 100%;
@@ -686,6 +693,7 @@ border-color: none;
         transform:scale(1.20)
     }
 }
+
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
 
@@ -854,7 +862,7 @@ border-color: none;
     }
 
     h3{
-        color:#5b1257;
+        color:$violeta5asec;
         font-weight: bold;
         ;
     }
@@ -879,7 +887,7 @@ border-color: none;
         padding: 0;
         margin: 0;
         font-weight:600 ;
-        color:black;
+        color:$negro;
         padding-top: 0.1rem;
         font-size: smaller;
         letter-spacing: 2px;
@@ -904,7 +912,7 @@ border-color: none;
         height: auto;
         padding: 1rem;
         border-radius: 20px;
-        color: #5b1257;
+        color: $violeta5asec;
         font-weight: bold;
         min-height: 450px; 
     }
@@ -961,14 +969,14 @@ border-color: none;
         padding-left: 1.3rem;
     }
     .btn-secondary{
-        border-color: #5b1257;
+        border-color: $violeta5asec;
         justify-content: center;
         margin-bottom: 2rem;
         margin-left: 20%;
     }
     .btn-contacto{
         width: 7rem;
-        background-color:#a5069db2;
+        background-color:$violeta;
         letter-spacing: 0;
         margin-top:4rem;
         position: fixed;
@@ -978,7 +986,7 @@ border-color: none;
     }
     .btn-contacto.index{
         width: 7rem;
-        background-color:#a5069db2;
+        background-color:$violeta;
         letter-spacing: 0;
         top:5rem;
         position: fixed;
@@ -1010,12 +1018,12 @@ border-color: none;
     .text-color{
         border:none;
         font-weight: bold;
-        color:black;
+        color:$negro;
     }
     .text-color:hover{
         border:none;
         font-weight: bold;
-        color:rgba(7, 7, 7, 0.814);
+        color:$negro-suave;
     }
     .form-check, .form-floating {
         font-size: x-small;
