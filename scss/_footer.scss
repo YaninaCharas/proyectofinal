@@ -1,0 +1,55 @@
+.footer_box{
+    color: $blanco;
+    padding: 0.5rem;
+    background-color: $color-nav;
+    position: absolute ;
+    bottom: 0;
+    width: 100%;
+    span{
+        margin-left: 2rem;
+    }
+
+    a{
+        color:$blanco;
+    }
+
+    .btn-mail{
+        text-decoration: none;
+        color:$blanco;
+    }
+    
+    .bi-facebook{
+        font-size: 25px;
+        text-decoration: none;
+        color:$gris;
+        padding-left: 1rem;
+        
+        &:hover{
+            text-decoration: none;
+            color:$color-fb;
+        }
+    }   
+    .bi-instagram{
+        font-size: 25px;
+        text-decoration: none;
+        color:$gris;
+        padding-left: 1rem;
+    
+        &:hover{
+            text-decoration: none;
+            color:$naranja;
+        }
+    }
+    .bi-whatsapp{
+        font-size: 25px;
+        text-decoration: none;
+        color:$gris;
+        padding-left: 1rem;
+    
+        &:hover{
+            text-decoration: none;
+            color: $color-wp;
+        }
+    }
+
+}

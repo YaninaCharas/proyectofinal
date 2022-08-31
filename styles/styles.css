@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif; }
+  *.navbar-nav a:last-child {
+    margin-right: 1rem; }
+  *.footer_box :nth-child(2) {
+    margin-left: 15rem; }
 
 body {
   background-image: url(../images/fondo2.png);
@@ -65,8 +71,72 @@ main {
         padding: 0; }
       main .container .big:hover {
         transform: scale(1.5); }
-  main .fila {
-    width: 56rem; }
+
+.bi-facebook {
+  font-size: 25px;
+  text-decoration: none;
+  color: #6f6b6b;
+  padding-left: 1rem; }
+  .bi-facebook:hover {
+    text-decoration: none;
+    color: #425199; }
+
+.bi-instagram {
+  font-size: 25px;
+  text-decoration: none;
+  color: #6f6b6b;
+  padding-left: 1rem; }
+  .bi-instagram:hover {
+    text-decoration: none;
+    color: #f47c20; }
+
+.bi-whatsapp {
+  font-size: 25px;
+  text-decoration: none;
+  color: #6f6b6b;
+  padding-left: 1rem; }
+  .bi-whatsapp:hover {
+    text-decoration: none;
+    color: #25D366; }
+
+.footer_box {
+  color: white;
+  padding: 0.5rem;
+  background-color: #4e2158;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer_box span {
+    margin-left: 2rem; }
+  .footer_box a {
+    color: white; }
+  .footer_box .btn-mail {
+    text-decoration: none;
+    color: white; }
+  .footer_box .bi-facebook {
+    font-size: 25px;
+    text-decoration: none;
+    color: #6f6b6b;
+    padding-left: 1rem; }
+    .footer_box .bi-facebook:hover {
+      text-decoration: none;
+      color: #425199; }
+  .footer_box .bi-instagram {
+    font-size: 25px;
+    text-decoration: none;
+    color: #6f6b6b;
+    padding-left: 1rem; }
+    .footer_box .bi-instagram:hover {
+      text-decoration: none;
+      color: #f47c20; }
+  .footer_box .bi-whatsapp {
+    font-size: 25px;
+    text-decoration: none;
+    color: #6f6b6b;
+    padding-left: 1rem; }
+    .footer_box .bi-whatsapp:hover {
+      text-decoration: none;
+      color: #25D366; }
 
 .text-color {
   border: none;
@@ -188,10 +258,6 @@ h6 {
   background-color: #d3259c;
   border-color: none; }
 
-.btn-mail {
-  text-decoration: none;
-  color: white; }
-
 .form-control, .form-select {
   font-size: medium;
   border: none;
@@ -224,53 +290,6 @@ h6 {
   text-align: left;
   font-size: small;
   color: #5b1257; }
-
-/*Boton redes*/
-.bi-facebook {
-  font-size: 25px;
-  text-decoration: none;
-  color: #6f6b6b;
-  padding-left: 1rem; }
-
-.bi-facebook:hover {
-  text-decoration: none;
-  color: #425199; }
-
-.bi-instagram {
-  font-size: 25px;
-  text-decoration: none;
-  color: #6f6b6b;
-  padding-left: 1rem; }
-
-.bi-instagram:hover {
-  text-decoration: none;
-  color: #f47c20; }
-
-.bi-whatsapp {
-  font-size: 25px;
-  text-decoration: none;
-  color: #6f6b6b;
-  padding-left: 1rem; }
-
-.bi-whatsapp:hover {
-  text-decoration: none;
-  color: #25D366; }
-
-/**/
-/*footer*/
-.footer_box {
-  color: white;
-  padding: 0.5rem;
-  background-color: #4e2158;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-.footer_box span {
-  margin-left: 22px; }
-
-.footer_box a {
-  color: white; }
 
 .top-5rem {
   margin-top: 5rem; }
@@ -480,6 +499,13 @@ h6 {
     transform-origin: 50% 1400px;
     opacity: 1; } }
 
+/*********  MEDIA QUERY  1280 ******/
+@media screen and (max-width: 1280px) {
+  .card2, .estilo-b {
+    width: 95%; }
+  .navbar-transparent {
+    background-color: transparent; } }
+
 /*********  MEDIA QUERY  1180 ******/
 @media screen and (max-width: 1180px) {
   .big-tip {
@@ -493,14 +519,11 @@ h6 {
     margin-left: 8rem; }
   .text-color {
     border: none;
-    font-weight: bold;
-    color: black; }
+    font-weight: bold; }
   .text-color:hover {
     border: none;
     font-weight: bold;
     color: #110110; }
-  .card2, .estilo-b {
-    width: 100%; }
   h4 {
     font-size: small; }
   iframe {
@@ -536,7 +559,7 @@ h6 {
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
-  .card2 {
+  .card2, .estilo-b {
     width: 100%; }
   .estilo-b {
     width: 60%; }
@@ -590,8 +613,6 @@ h6 {
 @media screen and (max-width: 780px) {
   *.footer_box :nth-child(2) {
     margin-left: 3rem; }
-  .card2 {
-    width: 100%; }
   .card {
     padding: 0;
     width: 80%;
@@ -601,8 +622,6 @@ h6 {
 
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
-  .card2 {
-    width: 100%; }
   /*Boton redes*/
   .bi-facebook {
     font-size: 15px;
@@ -620,10 +639,8 @@ h6 {
 @media screen and (max-width: 481px) {
   *.footer_box :nth-child(2) {
     margin-left: 6rem; }
-  .card2 {
-    width: 100%; }
   .collapse.navbar-collapse {
-    background-color: #5b12572e;
+    background-color: #a5069db2;
     padding: 0;
     margin: 0; }
   .navbar-toggler {
@@ -732,8 +749,6 @@ h6 {
     width: 90%;
     padding-top: 0;
     padding-bottom: 0; }
-  .card2 {
-    width: 100%; }
   .navbar {
     height: 100px; }
   .text-color {
@@ -751,8 +766,6 @@ h6 {
 @media screen and (max-width: 310px) {
   h3 {
     margin-top: 3rem; }
-  .card2 {
-    width: 100%; }
   .big {
     margin-left: -5rem;
     width: 22rem;

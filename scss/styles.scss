@@ -1,7 +1,8 @@
 @import "./variables";
-@import "./reset";
+@import "./settings";
 @import "./body";
 @import "./main";
+@import "./footer";
 
 .text-color{
     border:none;
@@ -147,10 +148,7 @@ background-color: $chicle;
 border-color: none;
 }
 
-.btn-mail{
-    text-decoration: none;
-    color:$blanco;
-}
+
 
 .form-control, .form-select{
     font-size: medium;
@@ -192,64 +190,6 @@ border-color: none;
 }
 
    
-/*Boton redes*/
-.bi-facebook{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-
-}
-.bi-facebook:hover{
-    text-decoration: none;
-    color:$color-fb;
-
-}
-
-.bi-instagram{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-
-}
-.bi-instagram:hover{
-    text-decoration: none;
-    color:$naranja;
-
-}
- .bi-whatsapp{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-
- }
-
- .bi-whatsapp:hover{
-    text-decoration: none;
-    color: $color-wp;
-
- }
-/**/
-/*footer*/
-.footer_box{
-    color: $blanco;
-    padding: 0.5rem;
-    background-color: $color-nav;
-    position: absolute ;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer_box span{
-    margin-left: 22px;
-}
-
-.footer_box a{
-    color:$blanco;
-
-}
 
 .top-5rem{
     margin-top: 5rem;
@@ -489,6 +429,15 @@ border-color: none;
       opacity: 1;
     }
   }
+/*********  MEDIA QUERY  1280 ******/  
+@media screen and (max-width: 1280px) {
+    .card2, .estilo-b{
+        width: 95%;
+    }
+    .navbar-transparent{
+        background-color: transparent;
+    }
+}
 /*********  MEDIA QUERY  1180 ******/  
 @media screen and (max-width: 1180px) {
     .big-tip{
@@ -504,19 +453,17 @@ border-color: none;
     *.footer_box :nth-child(2){
         margin-left: 8rem;
     }
+    
     .text-color{
         border:none;
         font-weight: bold;
-        color:$negro;
     }
     .text-color:hover{
         border:none;
         font-weight: bold;
         color:$oscuro;
     }
-    .card2, .estilo-b{
-        width: 100%;
-    }
+
     h4{
         font-size: small;
     }
@@ -567,7 +514,7 @@ border-color: none;
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
 
-    .card2{
+    .card2, .estilo-b{
         width: 100%;
     }
 
@@ -645,9 +592,6 @@ border-color: none;
     *.footer_box :nth-child(2){
         margin-left: 3rem;
     }
-    .card2{
-        width: 100%;
-    }
 
     .card{
         padding: 0;
@@ -662,10 +606,7 @@ border-color: none;
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
-    .card2{
-        width: 100%;
-    }
-    
+
     /*Boton redes*/
     .bi-facebook{
         font-size: 15px;
@@ -695,11 +636,8 @@ border-color: none;
         margin-left: 6rem;
     }
 
-    .card2{
-        width: 100%;
-    }
     .collapse.navbar-collapse {
-        background-color:#5b12572e;
+        background-color:$violeta;
         padding: 0;
         margin: 0;
     }
@@ -858,9 +796,6 @@ border-color: none;
         padding-top: 0;
         padding-bottom: 0;
     }
-    .card2{
-        width: 100%;
-    }
 
     .navbar{
         height: 100px;  
@@ -884,9 +819,6 @@ border-color: none;
 @media screen and (max-width: 310px) {
     h3{
         margin-top: 3rem;
-    }
-    .card2{
-        width: 100%;
     }
    
     .big{
