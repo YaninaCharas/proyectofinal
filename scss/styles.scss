@@ -14,7 +14,9 @@
     border:none;
     color:$gris;
 }
-
+.row{
+    margin-bottom: 2rem;
+}
 
 .container.proceso{
     width: 40%;
@@ -95,7 +97,7 @@ h5{
     text-align: center;
     color:$gris;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 h6{
@@ -103,9 +105,6 @@ h6{
     color:$oscuro;
     font-weight: bold;
 }
-
-
-
 
 .form-control, .form-select{
     font-size: medium;
@@ -248,6 +247,48 @@ h6{
     font-size: small;
     letter-spacing: 2px;
 }
+
+
+// .btn-mail{
+//         text-decoration: none;
+//         color:$blanco;
+//     }
+    
+// .bi-facebook{
+//         font-size: 25px;
+//         text-decoration: none;
+//         color:$gris;
+//         padding-left: 1rem;
+        
+//         &:hover{
+//             text-decoration: none;
+//             color:$color-fb;
+//         }
+//     }   
+// .bi-instagram{
+//         font-size: 25px;
+//         text-decoration: none;
+//         color:$gris;
+//         padding-left: 1rem;
+    
+//         &:hover{
+//             text-decoration: none;
+//             color:$naranja;
+//         }
+//     }
+// .bi-whatsapp{
+//         font-size: 25px;
+//         text-decoration: none;
+//         color:$gris;
+//         padding-left: 1rem;
+    
+//         &:hover{
+//             text-decoration: none;
+//             color: $color-wp;
+//         }
+// }
+
+
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja{
     /* background-color: gray; */
@@ -371,7 +412,10 @@ h6{
     *.footer_box :nth-child(2){
         margin-left: 8rem;
     }
-    
+    .footer_box{
+        position: relative;
+    }
+
     .text-color{
         border:none;
         font-weight: bold;
@@ -431,7 +475,9 @@ h6{
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
-
+    .footer_box{
+        position: relative ;
+    }
     .card2, .estilo-b{
         width: 100%;
     }

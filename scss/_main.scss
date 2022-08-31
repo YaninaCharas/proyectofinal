@@ -53,36 +53,3 @@ main{
     }   
 }
 
-.bi-facebook{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-    
-    &:hover{
-        text-decoration: none;
-        color:$color-fb;
-    }
-}   
-.bi-instagram{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-
-    &:hover{
-        text-decoration: none;
-        color:$naranja;
-    }
-}
-.bi-whatsapp{
-    font-size: 25px;
-    text-decoration: none;
-    color:$gris;
-    padding-left: 1rem;
-
-    &:hover{
-        text-decoration: none;
-        color: $color-wp;
-    }
-}

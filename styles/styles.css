@@ -132,6 +132,25 @@ main {
       main .container .big:hover {
         transform: scale(1.5); }
 
+/*footer*/
+.footer_box {
+  color: white;
+  padding: 0.5rem;
+  background-color: #4e2158;
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+
+.footer_box span {
+  margin-left: 22px; }
+
+.footer_box a {
+  color: white; }
+
+.btn-mail {
+  text-decoration: none;
+  color: white; }
+
 .bi-facebook {
   font-size: 25px;
   text-decoration: none;
@@ -159,45 +178,6 @@ main {
     text-decoration: none;
     color: #25D366; }
 
-.footer_box {
-  color: white;
-  padding: 0.5rem;
-  background-color: #4e2158;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-  .footer_box span {
-    margin-left: 2rem; }
-  .footer_box a {
-    color: white; }
-  .footer_box .btn-mail {
-    text-decoration: none;
-    color: white; }
-  .footer_box .bi-facebook {
-    font-size: 25px;
-    text-decoration: none;
-    color: #6f6b6b;
-    padding-left: 1rem; }
-    .footer_box .bi-facebook:hover {
-      text-decoration: none;
-      color: #425199; }
-  .footer_box .bi-instagram {
-    font-size: 25px;
-    text-decoration: none;
-    color: #6f6b6b;
-    padding-left: 1rem; }
-    .footer_box .bi-instagram:hover {
-      text-decoration: none;
-      color: #f47c20; }
-  .footer_box .bi-whatsapp {
-    font-size: 25px;
-    text-decoration: none;
-    color: #6f6b6b;
-    padding-left: 1rem; }
-    .footer_box .bi-whatsapp:hover {
-      text-decoration: none;
-      color: #25D366; }
-
 .text-color {
   border: none;
   color: white; }
@@ -205,6 +185,9 @@ main {
 .text-color:hover {
   border: none;
   color: #6f6b6b; }
+
+.row {
+  margin-bottom: 2rem; }
 
 .container.proceso {
   width: 40%;
@@ -275,7 +258,7 @@ h5 {
   text-align: center;
   color: #6f6b6b;
   font-weight: bold;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 h6 {
   padding-top: 0.5rem;
@@ -505,6 +488,8 @@ h6 {
     margin-right: 0; }
   *.footer_box :nth-child(2) {
     margin-left: 8rem; }
+  .footer_box {
+    position: relative; }
   .text-color {
     border: none;
     font-weight: bold; }
@@ -547,6 +532,8 @@ h6 {
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
+  .footer_box {
+    position: relative; }
   .card2, .estilo-b {
     width: 100%; }
   .estilo-b {
