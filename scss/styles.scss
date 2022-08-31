@@ -24,7 +24,7 @@
 }
 
 .container-contact , .container-mapa{
-    background-color: $color-fondo-fuerte;
+    background-color: $color-fondo-formulario;
     height: auto;
     font-weight: bold;
     padding: 0.5rem;
@@ -45,6 +45,25 @@
     margin-top:5rem;
 }
 
+.navbar{
+    height: 63px; 
+}
+  
+.navbar-nav a{
+    margin-left: 3rem;
+    transition: all 1ms ease;
+    width: fit-content;
+    margin: 0;
+    padding: 1rem;
+    background-color: $violeta-sombra;
+}
+.item-elegido{
+    color: $blanco;
+    transform: scale(1.1);
+    background: $item-elegido;
+    text-decoration: none;
+}
+         
 
 
 .big-tip{
@@ -60,59 +79,67 @@
 }
 
 /* estilos de titulos h1---h6*/
+h1{
+    margin-top: 5rem;
+    color:$violeta5asec;
+    font-weight: bold;
+    font-size: map-get($map: $mapa, $key:M);
+    text-align:center;
+    width: 100%;
+    height: auto;
+}
 
 h2{
     color: $blanco;
-    font-size: 2rem;
+    font-size: map-get($map: $mapa, $key:SM);
 }
 
 h3{
-    text-align: center;
     color:$gris;
     font-weight: bold;
-    font-size: 1rem;
+    text-align: center;
+    font-size: map-get($map: $mapa, $key:S);
     padding-top: 0.8rem;
 }
 
 h4{
     color: $oscuro;
-    margin:0.8rem;
-    padding: 0.5 rem;
-    font-size: large;
     font-weight: bold;
     text-align: center;
+    font-size: map-get($map: $mapa, $key:S);
 }
 
 .h4-left{
     color: $oscuro;
-    margin:0;
-    font-size: medium;
-    padding: 0.5rem;
-    padding-bottom: 1rem;
     font-weight: bold;
-    text-align: left;       
+    text-align: left;  
+    margin:0;
+    font-size: map-get($map: $mapa, $key:S);
+    padding: map-get($map: $mapa, $key:XS);
+    padding-bottom: map-get($map: $mapa, $key:XS);
+     
 }
 
 h5{
-    text-align: center;
     color:$gris;
     font-weight: bold;
-    font-size: 1rem;
+    text-align: center;
+    font-size: map-get($map: $mapa, $key:S);
 }
 
 h6{
-    padding-top: 0.5rem;
     color:$oscuro;
     font-weight: bold;
+    padding-top:map-get($map: $mapa, $key:XS);;
 }
 
 .form-control, .form-select{
+    color: $violeta5asec;
+    text-align: left;
     font-size: medium;
     border:none;
     background-color: transparent;
     border-bottom: 1px solid $chicle;
-    color: $violeta5asec;
-    text-align: left;
 }
 
 
@@ -145,8 +172,6 @@ h6{
     color: $violeta5asec;
 }
 
-   
-
 .top-5rem{
     margin-top: 5rem;
 }
@@ -160,7 +185,7 @@ h6{
 
 .card{
     justify-content: space-around;
-    background-color: $color-fondo-fuerte;
+    background-color: $color-fondo-formulario;
     border-radius: 20px;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
@@ -174,7 +199,7 @@ h6{
 }
 
 .card:hover{
-    // box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    box-shadow: 5px 5px 20px $negro-sombra;
     transform: translateY(-3%); 
 }
 
@@ -193,7 +218,7 @@ h6{
 
 .card2{
     justify-content: space-around;
-    background-color: $color-fondo-fuerte;
+    background-color: $color-fondo-formulario;
     border-radius: 55px;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
@@ -201,7 +226,7 @@ h6{
     width: 30%;
     height: auto;
     padding-bottom: 0.2rem;
-    width: 18rem;
+    width: 16rem;
 }
 
 .card2-text{
@@ -212,10 +237,9 @@ h6{
 
 }
 .card2-text:hover{
-    color: black;
+    color: $negro;
 
 }
-
 
 .estilo-b{
     margin-top: 1rem;
@@ -244,49 +268,10 @@ h6{
     font-weight: bold;
     color:$negro;
     padding-top: 0.2rem;
-    font-size: small;
+    font-size: map-get($map: $mapa , $key: S);
     letter-spacing: 2px;
 }
 
-
-// .btn-mail{
-//         text-decoration: none;
-//         color:$blanco;
-//     }
-    
-// .bi-facebook{
-//         font-size: 25px;
-//         text-decoration: none;
-//         color:$gris;
-//         padding-left: 1rem;
-        
-//         &:hover{
-//             text-decoration: none;
-//             color:$color-fb;
-//         }
-//     }   
-// .bi-instagram{
-//         font-size: 25px;
-//         text-decoration: none;
-//         color:$gris;
-//         padding-left: 1rem;
-    
-//         &:hover{
-//             text-decoration: none;
-//             color:$naranja;
-//         }
-//     }
-// .bi-whatsapp{
-//         font-size: 25px;
-//         text-decoration: none;
-//         color:$gris;
-//         padding-left: 1rem;
-    
-//         &:hover{
-//             text-decoration: none;
-//             color: $color-wp;
-//         }
-// }
 
 
 /****** ANIMACION FONDO BURBUJAS */
@@ -393,9 +378,6 @@ h6{
     .card2, .estilo-b{
         width: 95%;
     }
-    .navbar-transparent{
-        background-color: transparent;
-    }
 }
 /*********  MEDIA QUERY  1180 ******/  
 @media screen and (max-width: 1180px) {
@@ -415,7 +397,9 @@ h6{
     .footer_box{
         position: relative;
     }
-
+    .centrar-h2{
+        font-size: 1.5rem;
+    }
     .text-color{
         border:none;
         font-weight: bold;
@@ -478,21 +462,15 @@ h6{
     .footer_box{
         position: relative ;
     }
-    .card2, .estilo-b{
+    .card2,.card, .estilo-b{
         width: 100%;
     }
 
-    .estilo-b{
-        width: 60%;
-    }
-    h1{
-        margin-top: 6rem;
-        text-align: center;
-        justify-content: center;
-        font-size: medium;
-        width: 100%;
-        height: auto;
-    }
+    // h1{
+    //     margin-top: 6rem;
+    //     justify-content: center;
+    //     font-size: 1.5rem;
+    // }
 
     h5{
         width: 48px;
@@ -592,7 +570,6 @@ h6{
         font-size: 8px;
     }
 
-    
 }
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 481px) {
@@ -601,7 +578,7 @@ h6{
     }
 
     .collapse.navbar-collapse {
-        background-color:$violeta;
+        background-color: $violeta-sombra;
         padding: 0;
         margin: 0;
     }
@@ -610,9 +587,10 @@ h6{
         margin-top:-35px;
     }
 
-    h1{
-        padding-top: 2rem;
-    }
+    // h1{
+    //     padding-top: 2rem;
+    //     font-size: 1rem;
+    // }
 
     h2{
         font-size: medium; 
@@ -646,7 +624,7 @@ h6{
         font-weight:600 ;
         color:$negro;
         padding-top: 0.1rem;
-        font-size: smaller;
+        font-size: map-get($map: $mapa , $key: XS);
         letter-spacing: 2px;
         bottom: 5rem;
     }
@@ -720,15 +698,15 @@ h6{
     .boton-centrado{
         padding-left: 1.3rem;
     }
-    .btn-secondary{
-        border-color: $violeta5asec;
-        justify-content: center;
-        margin-bottom: 2rem;
-        margin-left: 20%;
-    }
+    // .btn-secondary{
+    //     border-color: $violeta5asec;
+    //     justify-content: center;
+    //     margin-bottom: 2rem;
+    //     margin-left: 20%;
+    // }
     .btn-contacto{
         width: 7rem;
-        background-color:$violeta;
+        background-color:$violeta5asec;
         letter-spacing: 0;
         margin-top:4rem;
         position: fixed;
@@ -738,7 +716,7 @@ h6{
     }
     .btn-contacto.index{
         width: 7rem;
-        background-color:$violeta;
+        background-color:$violeta5asec;
         letter-spacing: 0;
         top:5rem;
         position: fixed;
@@ -746,7 +724,7 @@ h6{
        font-size: x-small;
     }    
     .max-altura{
-        margin-top:8rem;
+        padding-top:2rem;
         width: 40%;
         height: auto;
 
@@ -772,7 +750,7 @@ h6{
     .text-color:hover{
         border:none;
         font-weight: bold;
-        color:$negro-suave;
+        color:$negro-sombra;
     }
     .form-check, .form-floating {
         font-size: x-small;
@@ -829,5 +807,7 @@ h6{
      .form-check, .form-floating {
         font-size: 8px;
     }
-     
+    .centrar{
+        margin-top:20rem;
+    }
 }

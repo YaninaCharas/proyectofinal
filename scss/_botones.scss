@@ -1,7 +1,7 @@
 .btn-ok{
     padding: 0.5rem;
     width: 8rem;
-    background-color:$violeta;
+    background-color:$violeta5asec;
     border-radius: 20px;
     border: none;
     color:$blanco;
@@ -14,45 +14,45 @@
     background-color: $chicle;
     border-color: none;
     color:$negro;
-    }
+}
 
-    .btn-contacto{
-        width: 7rem;
-        background-color:$violeta;
-        border-radius: 20px;
-        border: none;
-        color:$blanco;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 0.1rem;
-        text-decoration: none;
-        margin-top:-2rem;
-        position: fixed;
-        top:1.98rem;
-        right: 3.75rem;
-        padding:1rem;
-        font-size: small;
-        cursor: pointer;
-        box-shadow: 5px 5px 3px 0px $negro-sombra;
-        animation-name: contacto-animado;
-        animation-duration: 2s;
-        animation-delay: 0;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-     }
+.btn-contacto{
+    width: 7rem;
+    background-color:$violeta5asec;
+    border-radius: 20px;
+    border: none;
+    color:$blanco;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin-top:-2rem;
+    position: fixed;
+    top:1.98rem;
+    right: 3.75rem;
+    padding:1rem;
+    font-size: small;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px 0px $negro-sombra;
+    animation-name: contacto-animado;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
     
-    .btn-contacto:hover{
-        background-color: $chicle;
-        border-color: none;
-    }
+.btn-contacto:hover{
+    background-color: $chicle;
+    border-color: none;
+}
     
-    .btn-contacto a{
-        color:$blanco;
-        text-decoration: none;
-    }
-    .btn-contacto.index{
-        margin-top:3rem;
-    }
+.btn-contacto a{
+    color:$blanco;
+    text-decoration: none;
+}
+.btn-contacto.index{
+    margin-top:3rem;
+}
     
     
