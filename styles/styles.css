@@ -10,6 +10,8 @@
     margin-right: 1rem; }
   *.footer_box :nth-child(2) {
     margin-left: 15rem; }
+  *.footer_formularios_fijo :nth-child(2) {
+    margin-left: 15rem; }
 
 .btn-ok {
   padding: 0.5rem;
@@ -111,7 +113,6 @@ main {
       main .container .big:hover {
         transform: scale(1.5); }
 
-/*footer*/
 .footer_box {
   color: white;
   margin-top: 2rem;
@@ -121,11 +122,19 @@ main {
   bottom: 0;
   width: 100%; }
 
-.footer_box span {
+.footer_box span, .footer_formularios_fijo span {
   margin-left: 22px; }
 
-.footer_box a {
+.footer_box a, .footer_formularios_fijo a {
   color: white; }
+
+.footer_formularios_fijo {
+  color: white;
+  padding: 0.5rem;
+  background-color: #4e2158;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
 
 .btn-mail {
   text-decoration: none;
@@ -299,7 +308,7 @@ h6 {
 
 .form-check, .form-floating {
   text-align: left;
-  font-size: small;
+  font-size: 1rem;
   color: #5b1257; }
 
 .top-5rem {
@@ -489,7 +498,7 @@ h6 {
 @media screen and (max-width: 1024px) {
   *.navbar-nav a:last-child {
     margin-right: 0; }
-  *.footer_box :nth-child(2) {
+  *.footer_box :nth-child(2), .footer_formularios_fijo :nth-child(2) {
     margin-left: 8rem; }
   .footer_box {
     position: relative; }
@@ -582,7 +591,7 @@ h6 {
 
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
-  *.footer_box :nth-child(2) {
+  *.footer_box :nth-child(2), .footer_formularios_fijo :nth-child(2) {
     margin-left: 3rem; }
   .card {
     padding: 0;
@@ -603,13 +612,15 @@ h6 {
   .bi-whatsapp {
     font-size: 15px;
     padding-left: 0.2rem; }
-  .footer_box {
+  .footer_box, .footer_formularios_fijo {
     font-size: 8px; } }
 
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 481px) {
-  *.footer_box :nth-child(2) {
+  *.footer_box :nth-child(2), .footer_formularios_fijo :nth-child(2) {
     margin-left: 6rem; }
+  .navbar-nav a {
+    background-color: transparent; }
   .collapse.navbar-collapse {
     background-color: #5b12572e;
     padding: 0;
@@ -745,7 +756,7 @@ h6 {
   .estilo-a {
     width: 50%;
     box-shadow: none; }
-  .footer_box {
+  .footer_box, .footer_formularios_fijo {
     font-size: 5px; }
   /*Boton redes*/
   .bi-facebook {
@@ -760,4 +771,6 @@ h6 {
   .form-check, .form-floating {
     font-size: 8px; }
   .centrar {
-    margin-top: 20rem; } }
+    margin-top: 20rem; }
+  .footer_formularios_fijo {
+    position: relative; } }
