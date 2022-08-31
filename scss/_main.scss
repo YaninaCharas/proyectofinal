@@ -1,0 +1,52 @@
+
+main{
+    width: 100%;
+    height: auto;
+   
+
+    .max-altura{
+        margin-top: 5rem;
+        width: 30%;
+        height: auto;
+    }
+
+    .centrar{
+        text-align: center;
+        justify-content: center;
+    }
+    .container{
+        background-color: $color-fondo-formulario;
+        font-weight: bold; 
+        border-radius: 20px;
+        margin-top: 5rem;
+        width: 65%;
+        height: auto;
+
+        .big{
+            width: 100%;
+            height: auto;
+            transition: 0.5s;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 0;
+
+            .estilo-a{
+                border-radius: 20px;
+                width: 70%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+            &:hover{
+                    transform:scale(1.50)
+                }
+        }       
+    }
+    
+    .fila{
+        width: 56rem;
+
+    
+        }
+}
+

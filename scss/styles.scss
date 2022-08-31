@@ -1,62 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
-// @import url("./_colores.scss");
-
-//Variables de Colores//
-
-$color-principal:rgba(78,33,88,1);
-$blanco: white;
-$negro: black;
-$negro-sombra:rgba(0,0,0,0.2);
-$negro-suave:rgba(7, 7, 7, 0.814);
-$gris:rgb(111, 107, 107);
-$oscuro:#110110;
-$naranja:#f47c20;
-$chicle:#d3259c;
-$violeta:#a5069db2;
-$violeta5asec:#5b1257;
-$color-nav:rgb(78,33,88);
-$color-fondo-fuerte: rgba(255, 255, 255, 0.881);
-$color-fondo-formulario: rgba(255, 255, 255, 0.692);
-$item-elegido:linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
-$color-fb: #425199;
-$color-wp:#25D366;
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-*.navbar-nav a:last-child{
-    margin-right: 1rem;
-}
-*.footer_box :nth-child(2){
-    margin-left: 15rem;
-}
-main{
-    width: 100%;
-    height: auto;
-}
-
-/*********/
-body{
-    background: $color-nav;
-    background: linear-gradient(90deg, rgb(122, 46, 139) 0%, rgb(122, 46, 139) 16%, rgb(241, 196, 241) 100%);
-    position:relative;
-    min-height: 100vh;
-}
-.navbar{
-    height: 63px;  
-}
-
-.navbar-nav a{
-    margin-left: 3rem;
-    transition: all 1ms ease;
-    width: fit-content;
-    margin: 0;
-    padding: 1rem;
-}
+@import "./variables";
+@import "./reset";
+@import "./body";
+@import "./main";
 
 .text-color{
     border:none;
@@ -68,28 +13,12 @@ body{
     color:$gris;
 }
 
-.container{
-    background-color: $color-fondo-formulario;
-    height: auto;
-    font-weight: bold; 
-    border-radius: 20px;
-    margin-top: 5rem;
-    width: 70%;
-}
+
 .container.proceso{
     width: 40%;
     height: auto;
 }
-.container-form{
-    background-color: $color-fondo-formulario;
-    height: auto;
-    font-weight: bold;
-    padding: 1rem;
-    border-radius: 20px;
-    border: 1px solid black;
-    color: $violeta5asec;
-    margin:0 auto;
-}
+
 .container-contact , .container-mapa{
     background-color: $color-fondo-fuerte;
     height: auto;
@@ -112,19 +41,7 @@ body{
     margin-top:5rem;
 }
 
-.big{
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-left: -5rem;
-    padding: 0;
-    width: 22rem;
-}
-.big:hover{
-    transform:scale(1.90)
-}
+
 
 .big-tip{
     width: 100%;
@@ -138,41 +55,7 @@ body{
     transform:scale(1.90)
 }
 
-.item-elegido{
-    color: $blanco;
-    transform: scale(1.1);
-    background: $item-elegido;
-    text-decoration: none;
-}
 
-.img-fondo{
-    margin:0 auto;
-    background-image: url(../images/fondo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50%;
-    
-}
-/* Solo para el logo */
-.img_logo{
-    display: flex;
-    width: 20%;
-    margin-left: 5rem;
-}
-
-.bg-pink{
-    background-color: $color-nav;
-    border-bottom: 2px solid black;
-}
-
-.max-altura{
-    margin-top: 5rem;
-    width: 35%;
-    height: auto;
-
-}
 
 /* estilos de titulos h1---h6*/
 
@@ -372,10 +255,6 @@ border-color: none;
     margin-top: 5rem;
 }
 
-.centrar{
-    text-align: center;
-    justify-content: center;
-}
 
 .centrar-h2{
     text-align: center;
@@ -385,7 +264,7 @@ border-color: none;
 
 .card{
     justify-content: space-around;
-    background-color: $gris;
+    background-color: $color-fondo-fuerte;
     border-radius: 20px;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
@@ -418,7 +297,7 @@ border-color: none;
 
 .card2{
     justify-content: space-around;
-    background-color: $gris;
+    background-color: $color-fondo-fuerte;
     border-radius: 55px;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
@@ -479,13 +358,7 @@ border-color: none;
 .btn-contacto.index{
     margin-top:3rem;
 }
-.estilo-a{
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    padding-bottom: 0.5rem;
-}
+
 
 .estilo-b{
     margin-top: 1rem;
@@ -662,9 +535,6 @@ border-color: none;
         width: 5%;
     }
 
-    .container-form{
-        width: 25%;
-    } 
     h6{
         padding-top: 0.2rem;
         padding: 0;
@@ -719,9 +589,6 @@ border-color: none;
         font-size: small;
     }
 
-    .container-form{
-        width: 25%;
-    } 
     h6{
         padding-top: 0.2rem;
         padding: 0;
@@ -788,11 +655,6 @@ border-color: none;
         margin:0 auto;
     }
 
-    
-    .container-form{
-        width: 25%;
-    }
-
     .big-tip{
         width: 100%;
     }
@@ -803,9 +665,6 @@ border-color: none;
     .card2{
         width: 100%;
     }
-    .container-form{
-        width: 50%;
-    } 
     
     /*Boton redes*/
     .bi-facebook{
@@ -835,10 +694,6 @@ border-color: none;
     *.footer_box :nth-child(2){
         margin-left: 6rem;
     }
-    .container-form{
-        width: 70%;
-        height: auto;
-    } 
 
     .card2{
         width: 100%;
@@ -924,11 +779,6 @@ border-color: none;
 
     .estilo-a{
         width: 100%;
-        height: auto;
-    }
-
-    .container-form{
-        width: 70%;
         height: auto;
     }
 

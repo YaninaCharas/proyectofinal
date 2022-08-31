@@ -7,4 +7,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
+
+    &.navbar-nav a:last-child{
+    margin-right: 1rem;
+    }
+
+    &.footer_box :nth-child(2){
+    margin-left: 15rem;
+}
 }
