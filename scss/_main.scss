@@ -1,7 +1,13 @@
 main{
+    background-image: url(../images/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: auto;
-   
+    min-height: 100vh;
+
+
     .max-altura{
         margin-top: 5rem;
         width: 30%;
@@ -11,6 +17,13 @@ main{
     .centrar{
         text-align: center;
         justify-content: center;
+    }
+        
+    .centrar-404{
+        text-align: center;
+        justify-content: center;
+        width: 50%;
+        height: auto;
     }
     .container{
         background-color: $color-fondo-formulario;
@@ -40,5 +53,6 @@ main{
                 }
         }       
     }   
+
 }
 

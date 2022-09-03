@@ -1,29 +1,18 @@
 .footer_box{
     color: $blanco;
-    margin-top: 2rem;
     padding: 0.5rem;
     background-color: $color-nav;
-    position: relative ;
     bottom: 0;
     width: 100%;
 }
 
-.footer_box span, .footer_formularios_fijo span{
+.footer_box span{
     margin-left: 22px;
 }
 
-.footer_box a, .footer_formularios_fijo a{
+.footer_box a{
     color:white;
 
-}
-
-.footer_formularios_fijo{
-    color: $blanco;
-    padding: 0.5rem;
-    background-color: $color-nav;
-    position: fixed ;
-    bottom: 0;
-    width: 100%;
 }
 
 .btn-mail{
