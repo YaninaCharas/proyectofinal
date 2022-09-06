@@ -32,14 +32,6 @@
     width: 100%;
     height: auto;
 }
-.img_mapa{
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: map-get($map: $mapa, $key:XS) 0 ;
-    width: map-get($map: $mapa, $key:L)*6;
-}
-
 .navbar{
     height: 63px; 
 }
@@ -415,11 +407,6 @@ h6{
         height:auto;
     }
 
-        .img_mapa{
-            width: map-get($map: $mapa, $key:L)*6;
-            padding-top: map-get($map: $mapa, $key:XS);
-            padding-bottom: map-get($map: $mapa, $key:XS);
-    } 
     .btn_wp{
         width: 5%;
     }
@@ -713,11 +700,6 @@ h6{
     .container-contact , .container-mapa{
         width: 90%;
         margin-bottom: 1rem;
-    }
-    .img_mapa{
-        width: 90%;
-        padding-top: 0;
-        padding-bottom: 0;
     }
 
     .navbar{
