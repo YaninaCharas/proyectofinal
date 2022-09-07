@@ -19,7 +19,6 @@
     margin-right: 0;
 }
 
-
 .container-contact , .container-mapa{
     background-color: $color-fondo-formulario;
     height: auto;
@@ -52,8 +51,6 @@
     text-decoration: none;
 }
          
-
-
 .big-tip{
     width: 100%;
     height: auto;
@@ -551,6 +548,7 @@ h6{
     *.footer_box :nth-child(2) {
         margin-left: 6rem;
     }
+
     .navbar-nav a{
         background-color: transparent;
     }

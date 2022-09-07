@@ -92,6 +92,7 @@ main {
   main .centrar-404 {
     text-align: center;
     justify-content: center;
+    border-radius: 2rem;
     width: 50%;
     height: auto; }
   main .container {
@@ -183,13 +184,6 @@ main {
   margin: 0 auto;
   width: 100%;
   height: auto; }
-
-.img_mapa {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0.5rem 0;
-  width: 15rem; }
 
 .navbar {
   height: 63px; }
@@ -505,10 +499,6 @@ h6 {
   iframe {
     width: 80%;
     height: auto; }
-  .img_mapa {
-    width: 15rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
   .btn_wp {
     width: 5%; }
   h6 {
@@ -700,10 +690,6 @@ h6 {
   .container-contact, .container-mapa {
     width: 90%;
     margin-bottom: 1rem; }
-  .img_mapa {
-    width: 90%;
-    padding-top: 0;
-    padding-bottom: 0; }
   .navbar {
     height: 100px; }
   .text-color {
