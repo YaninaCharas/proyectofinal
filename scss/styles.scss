@@ -6,14 +6,20 @@
 @import "./main";
 @import "./footer";
 
+
+.max-altura{
+    margin-top: 5rem;
+    width: 35%;
+    height: auto;
+}
 .text-color{
     border:none;
     color:$blanco;
-}
 
-.text-color:hover{
+    &:hover{
     border:none;
     color:$gris;
+    }
 }
 .row{
     margin-right: 0;
@@ -58,9 +64,10 @@
     border-radius: 20px;
     cursor: pointer;
     width: 18rem;
-}
-.big-tip:hover{
+    
+    &:hover{
     transform:scale(1.90)
+    }
 }
 
 /* estilos de titulos h1---h6*/
@@ -174,11 +181,11 @@ h6{
     margin-top: map-get($map: $mapa, $key:L)*2;
 }
 
-
 .centrar-h2{
     text-align: center;
     justify-content: center;
     padding: 2rem;
+    font-size: map-get($map: $mapa, $key:L)+1;
 }
 
 .card{
@@ -194,11 +201,11 @@ h6{
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 0.2rem;
-}
 
-.card:hover{
-    box-shadow: 5px 5px 20px $negro-sombra;
-    transform: translateY(-3%); 
+    &:hover{
+        box-shadow: 5px 5px 20px $negro-sombra;
+        transform: translateY(-3%); 
+    }
 }
 
 .card-text{
@@ -208,9 +215,9 @@ h6{
     text-decoration: none;
     color:$oscuro;
 
-}
-.card-text:hover{
-    color: $negro;
+    &:hover{
+        color: $negro;
+    }
 
 }
 
@@ -233,9 +240,9 @@ h6{
     text-decoration: none;
     color: $blanco;
 
-}
-.card2-text:hover{
-    color: $negro;
+    &:hover{
+        color: $negro;
+    }
 
 }
 
@@ -446,11 +453,12 @@ h6{
     .text-color{
         border:none;
         font-weight: bold;
-    }
-    .text-color:hover{
-        border:none;
-        font-weight: bold;
-        color:$oscuro;
+
+        &:hover{
+            border:none;
+            font-weight: bold;
+            color:$oscuro;
+        }
     }
 
     h4{
@@ -486,9 +494,10 @@ h6{
 
     .big-tip{
         width: map-get($map: $mapa, $key:M)*6;
-    }
-    .big-tip:hover{
-        transform:scale(1.20)
+    
+        &:hover{
+            transform:scale(1.20)
+        }
     }
 }
 
@@ -529,9 +538,10 @@ h6{
     .big{
         width: map-get($map: $mapa, $key:M)*6+2;
         margin-left: 0;
-    }
-    .big:hover{
-        transform:scale(1.20)
+        
+        &:hover{
+            transform:scale(1.20)
+        }
     }
         /*Boton redes*/
    
@@ -614,6 +624,11 @@ h6{
         margin-left: 6rem;
     }
 
+    .navbar-toggler{
+        background-color: $violeta-sombra;
+        border:none;
+        margin-top: -2.5rem;
+    }
     h2{
         font-size: medium; 
     }
@@ -636,6 +651,7 @@ h6{
 
     .centrar-h2{
         padding-top: map-get($map: $mapa, $key:SM)*3;
+        font-size: map-get($map: $mapa, $key:SM)*2;
     }
 
     .centrar-h4{
@@ -660,9 +676,10 @@ h6{
         border-radius: 20px;
         cursor: pointer;
         width: 15rem;
-    }
-    .big:hover{
-        transform:scale(1.5)
+    
+        &:hover{
+            transform:scale(1.5)
+        }
     }
 
     .container{
@@ -683,8 +700,6 @@ h6{
             transform:scale(1.70)
         }
     }
-
-
 
     .centrar-form{
         min-height: 500px;
@@ -743,10 +758,8 @@ h6{
        font-size: x-small;
     }    
     .max-altura{
-        padding-top:2rem;
-        width: 40%;
-        height: auto;
-
+        padding-top: map-get($map: $mapa , $key: L);
+        width: 65%;
     }
     .container-contact , .container-mapa{
         width: 90%;

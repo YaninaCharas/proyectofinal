@@ -82,10 +82,6 @@ main {
   width: 100%;
   height: auto;
   min-height: 100vh; }
-  main .max-altura {
-    margin-top: 5rem;
-    width: 30%;
-    height: auto; }
   main .centrar {
     text-align: center;
     justify-content: center; }
@@ -162,13 +158,17 @@ main {
     text-decoration: none;
     color: #25D366; }
 
+.max-altura {
+  margin-top: 5rem;
+  width: 35%;
+  height: auto; }
+
 .text-color {
   border: none;
   color: white; }
-
-.text-color:hover {
-  border: none;
-  color: #6f6b6b; }
+  .text-color:hover {
+    border: none;
+    color: #6f6b6b; }
 
 .row {
   margin-right: 0; }
@@ -209,9 +209,8 @@ main {
   border-radius: 20px;
   cursor: pointer;
   width: 18rem; }
-
-.big-tip:hover {
-  transform: scale(1.9); }
+  .big-tip:hover {
+    transform: scale(1.9); }
 
 /* estilos de titulos h1---h6*/
 h1 {
@@ -310,7 +309,8 @@ h6 {
 .centrar-h2 {
   text-align: center;
   justify-content: center;
-  padding: 2rem; }
+  padding: 2rem;
+  font-size: 3.5rem; }
 
 .card {
   justify-content: space-around;
@@ -325,10 +325,9 @@ h6 {
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 0.2rem; }
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3%); }
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%); }
 
 .card-text {
   padding-top: 0.5rem;
@@ -336,9 +335,8 @@ h6 {
   font-weight: bold;
   text-decoration: none;
   color: #110110; }
-
-.card-text:hover {
-  color: black; }
+  .card-text:hover {
+    color: black; }
 
 .card2 {
   justify-content: space-around;
@@ -357,9 +355,8 @@ h6 {
   font-weight: bold;
   text-decoration: none;
   color: white; }
-
-.card2-text:hover {
-  color: black; }
+  .card2-text:hover {
+    color: black; }
 
 .estilo-b {
   margin-top: 0.5rem;
@@ -539,10 +536,10 @@ h6 {
   .text-color {
     border: none;
     font-weight: bold; }
-  .text-color:hover {
-    border: none;
-    font-weight: bold;
-    color: #110110; }
+    .text-color:hover {
+      border: none;
+      font-weight: bold;
+      color: #110110; }
   h4 {
     font-size: small; }
   iframe {
@@ -566,8 +563,8 @@ h6 {
     font-weight: none; }
   .big-tip {
     width: 12rem; }
-  .big-tip:hover {
-    transform: scale(1.2); } }
+    .big-tip:hover {
+      transform: scale(1.2); } }
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
@@ -596,8 +593,8 @@ h6 {
   .big {
     width: 14rem;
     margin-left: 0; }
-  .big:hover {
-    transform: scale(1.2); }
+    .big:hover {
+      transform: scale(1.2); }
   /*Boton redes*/
   .bi-facebook {
     font-size: 15px;
@@ -645,6 +642,10 @@ h6 {
 @media screen and (max-width: 481px) {
   *.footer_box :nth-child(2) {
     margin-left: 6rem; }
+  .navbar-toggler {
+    background-color: #5b12572e;
+    border: none;
+    margin-top: -2.5rem; }
   h2 {
     font-size: medium; }
   h3 {
@@ -657,7 +658,8 @@ h6 {
     width: 80%;
     margin-bottom: 2rem; }
   .centrar-h2 {
-    padding-top: 4.5rem; }
+    padding-top: 4.5rem;
+    font-size: 3rem; }
   .centrar-h4 {
     padding-top: 0.5rem; }
   .parrafo {
@@ -676,8 +678,8 @@ h6 {
     border-radius: 20px;
     cursor: pointer;
     width: 15rem; }
-  .big:hover {
-    transform: scale(1.5); }
+    .big:hover {
+      transform: scale(1.5); }
   .container {
     margin-top: 6rem;
     width: 80%;
@@ -730,9 +732,8 @@ h6 {
     right: 0.5rem;
     font-size: x-small; }
   .max-altura {
-    padding-top: 2rem;
-    width: 40%;
-    height: auto; }
+    padding-top: 2.5rem;
+    width: 65%; }
   .container-contact, .container-mapa {
     width: 90%;
     margin-bottom: 1rem; }
