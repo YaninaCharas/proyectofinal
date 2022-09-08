@@ -678,7 +678,13 @@ h6{
     .estilo-a{
         width: 100%;
         height: auto;
+    
+        &:hover{
+            transform:scale(1.70)
+        }
     }
+
+
 
     .centrar-form{
         min-height: 500px;
