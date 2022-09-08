@@ -198,7 +198,7 @@ main {
 
 .item-elegido {
   color: white;
-  transform: scale(1.1);
+  transform: scale(1);
   background: linear-gradient(90deg, #4e2158 0%, #863681 50%, #4e2158 100%);
   text-decoration: none; }
 
@@ -216,6 +216,7 @@ main {
 /* estilos de titulos h1---h6*/
 h1 {
   margin-top: 3.5rem;
+  background-color: transparent;
   color: #5b1257;
   font-weight: bold;
   font-size: 2rem;
@@ -522,6 +523,8 @@ h6 {
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
+  .text-color {
+    color: black; }
   .footer_box {
     position: relative; }
   .card2, .card, .estilo-b {
@@ -575,6 +578,8 @@ h6 {
 
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
+  .item-elegido {
+    color: #5b1257; }
   /*Boton redes*/
   .bi-facebook {
     font-size: 15px;
@@ -592,14 +597,6 @@ h6 {
 @media screen and (max-width: 481px) {
   *.footer_box :nth-child(2) {
     margin-left: 6rem; }
-  .navbar-nav a {
-    background-color: transparent; }
-  .collapse.navbar-collapse {
-    background-color: #5b12572e;
-    padding: 0;
-    margin: 0; }
-  .navbar-toggler {
-    margin-top: -35px; }
   h2 {
     font-size: medium; }
   h3 {
@@ -692,10 +689,6 @@ h6 {
     margin-bottom: 1rem; }
   .navbar {
     height: 100px; }
-  .text-color {
-    border: none;
-    font-weight: bold;
-    color: black; }
   .text-color:hover {
     border: none;
     font-weight: bold;

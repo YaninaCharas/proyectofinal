@@ -46,7 +46,7 @@
 }
 .item-elegido{
     color: $blanco;
-    transform: scale(1.1);
+    transform: scale(1);
     background: $item-elegido;
     text-decoration: none;
 }
@@ -66,6 +66,7 @@
 /* estilos de titulos h1---h6*/
 h1{
     margin-top: map-get($map: $mapa, $key:L)+1;
+    background-color: transparent;
     color:$violeta5asec;
     font-weight: bold;
     font-size: map-get($map: $mapa, $key:M);
@@ -73,6 +74,7 @@ h1{
     width: 100%;
     height: auto;
 }
+
 
 h2{
     color: $blanco;
@@ -437,6 +439,10 @@ h6{
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
+    .text-color{
+        color:$negro;
+    }
+
     .footer_box{
         position: relative ;
     }
@@ -521,6 +527,10 @@ h6{
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
 
+    .item-elegido{
+        color: $violeta5asec;
+    }
+
     /*Boton redes*/
     .bi-facebook{
         font-size: 15px;
@@ -549,23 +559,20 @@ h6{
         margin-left: 6rem;
     }
 
-    .navbar-nav a{
-        background-color: transparent;
-    }
-    .collapse.navbar-collapse {
-        background-color: $violeta-sombra;
-        padding: 0;
-        margin: 0;
-    }
+    // .navbar-nav a{
+    //     background-color: transparent;
 
-    .navbar-toggler{
-        margin-top:-35px;
-    }
-
-    // h1{
-    //     padding-top: 2rem;
-    //     font-size: 1rem;
     // }
+    // .collapse.navbar-collapse {
+    //     background-color: $violeta-sombra;
+    //     padding: 0;
+    //     margin: 0;
+    // }
+
+    // .navbar-toggler{
+    //     margin-top:-35px;
+    // }
+
 
     h2{
         font-size: medium; 
@@ -704,11 +711,7 @@ h6{
     .navbar{
         height: 100px;  
     }
-    .text-color{
-        border:none;
-        font-weight: bold;
-        color:$negro;
-    }
+
     .text-color:hover{
         border:none;
         font-weight: bold;

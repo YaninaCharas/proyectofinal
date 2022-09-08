@@ -112,6 +112,7 @@ main .centrar {
 main .centrar-404 {
   text-align: center;
   justify-content: center;
+  border-radius: 2rem;
   width: 50%;
   height: auto;
 }
@@ -223,14 +224,6 @@ main .container .big:hover {
   height: auto;
 }
 
-.img_mapa {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0.5rem 0;
-  width: 15rem;
-}
-
 .navbar {
   height: 63px;
 }
@@ -248,7 +241,7 @@ main .container .big:hover {
 
 .item-elegido {
   color: white;
-  transform: scale(1.1);
+  transform: scale(1);
   background: linear-gradient(90deg, rgb(78, 33, 88) 0%, rgb(134, 54, 129) 50%, rgb(78, 33, 88) 100%);
   text-decoration: none;
 }
@@ -269,6 +262,7 @@ main .container .big:hover {
 /* estilos de titulos h1---h6*/
 h1 {
   margin-top: 3.5rem;
+  background-color: transparent;
   color: #5b1257;
   font-weight: bold;
   font-size: 2rem;
@@ -625,11 +619,6 @@ h6 {
     width: 80%;
     height: auto;
   }
-  .img_mapa {
-    width: 15rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
   .btn_wp {
     width: 5%;
   }
@@ -659,6 +648,9 @@ h6 {
 }
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
+  .text-color {
+    color: black;
+  }
   .footer_box {
     position: relative;
   }
@@ -728,6 +720,9 @@ h6 {
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
+  .item-elegido {
+    color: #5b1257;
+  }
   /*Boton redes*/
   .bi-facebook {
     font-size: 15px;
@@ -749,17 +744,6 @@ h6 {
 @media screen and (max-width: 481px) {
   *.footer_box :nth-child(2) {
     margin-left: 6rem;
-  }
-  .navbar-nav a {
-    background-color: transparent;
-  }
-  .collapse.navbar-collapse {
-    background-color: rgba(91, 18, 87, 0.1803921569);
-    padding: 0;
-    margin: 0;
-  }
-  .navbar-toggler {
-    margin-top: -35px;
   }
   h2 {
     font-size: medium;
@@ -873,18 +857,8 @@ h6 {
     width: 90%;
     margin-bottom: 1rem;
   }
-  .img_mapa {
-    width: 90%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .navbar {
     height: 100px;
-  }
-  .text-color {
-    border: none;
-    font-weight: bold;
-    color: black;
   }
   .text-color:hover {
     border: none;
