@@ -614,21 +614,6 @@ h6{
         margin-left: 6rem;
     }
 
-    // .navbar-nav a{
-    //     background-color: transparent;
-
-    // }
-    // .collapse.navbar-collapse {
-    //     background-color: $violeta-sombra;
-    //     padding: 0;
-    //     margin: 0;
-    // }
-
-    // .navbar-toggler{
-    //     margin-top:-35px;
-    // }
-
-
     h2{
         font-size: medium; 
     }
@@ -650,8 +635,7 @@ h6{
     }
 
     .centrar-h2{
-        padding-top: 4.5rem;
-        color: $blanco;
+        padding-top: map-get($map: $mapa, $key:SM)*3;
     }
 
     .centrar-h4{
@@ -761,10 +745,6 @@ h6{
     .container-contact , .container-mapa{
         width: 90%;
         margin-bottom: 1rem;
-    }
-
-    .navbar{
-        height: 100px;  
     }
 
     .text-color:hover{

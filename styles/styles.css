@@ -657,8 +657,7 @@ h6 {
     width: 80%;
     margin-bottom: 2rem; }
   .centrar-h2 {
-    padding-top: 4.5rem;
-    color: white; }
+    padding-top: 4.5rem; }
   .centrar-h4 {
     padding-top: 0.5rem; }
   .parrafo {
@@ -735,8 +734,6 @@ h6 {
   .container-contact, .container-mapa {
     width: 90%;
     margin-bottom: 1rem; }
-  .navbar {
-    height: 100px; }
   .text-color:hover {
     border: none;
     font-weight: bold;
