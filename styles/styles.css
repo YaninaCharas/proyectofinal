@@ -26,7 +26,7 @@
   text-decoration: none; }
 
 .btn-ok:hover {
-  background-color: #d3259c;
+  background-color: #f47c20;
   border-color: none;
   color: black; }
 
@@ -55,7 +55,7 @@
   animation-direction: alternate; }
 
 .btn-contacto:hover {
-  background-color: #d3259c;
+  background-color: #f47c20;
   border-color: none; }
 
 .btn-contacto a {
@@ -287,13 +287,13 @@ h6 {
   font-size: medium;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #d3259c;
+  border-bottom: 1px solid #f47c20;
   height: 40px; }
 
 .form-control:hover, .form-select:hover {
   border: none;
   opacity: 0.5;
-  border-bottom: 1.8px solid #d3259c;
+  border-bottom: 1.8px solid #f47c20;
   background-color: transparent; }
 
 .form-textarea {
@@ -305,7 +305,7 @@ h6 {
   text-align: left;
   width: 100%;
   height: 40px;
-  border: 1px solid #d3259c; }
+  border: 1px solid #f47c20; }
 
 .text-form {
   color: black; }
@@ -647,20 +647,32 @@ h6 {
     font-size: 15px;
     padding-left: 0.2rem; }
   .footer_box {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .row {
+    margin-left: 0; }
+  .container-proceso {
+    width: 80%; }
+  .container-proceso img {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem; }
+    .container-proceso img:hover {
+      transition: 0.5s;
+      transform: scale(1.2); } }
 
-/*********MEDIA QUERY - 481 *******/
-@media screen and (max-width: 485px) {
-  *.footer_box :nth-child(2) {
-    margin-left: 6rem; } }
-
-@media screen and (max-width: 485px) and (max-width: 490px) {
+/*****************************/
+@media screen and (max-width: 490px) {
   .navbar-toggler {
     background-color: #5b12572e;
     border: none;
-    margin-top: -5rem; } }
+    margin-top: 0rem; } }
 
-@media screen and (max-width: 485px) {
+/*********MEDIA QUERY - 481 *******/
+@media screen and (max-width: 484px) {
+  *.footer_box :nth-child(2) {
+    margin-left: 6rem; }
+  .navbar-toggler {
+    margin-top: -5rem; }
   h2 {
     font-size: medium; }
   h3 {
