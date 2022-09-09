@@ -268,7 +268,7 @@ h6{
     font-size: map-get($map: $mapa, $key:S);
     font-weight:bold;
     text-decoration: none;
-    color:$oscuro;
+    color:$violeta5asec;
     margin-bottom: map-get($map: $mapa, $key:XS);
 
     &:hover{
@@ -737,15 +737,15 @@ h6{
     .navbar-toggler{
             margin-top: -5rem;
     }
-
+    h1{
+        font-size: map-get($map: $mapa , $key: SM);
+    }
     h2{
         font-size: medium; 
     }
 
     h3{
-        color:$violeta5asec;
         font-weight: bold;
-        ;
     }
 
     h6{
@@ -773,14 +773,11 @@ h6{
     }
 
     .parrafo{
-        padding: 0;
-        margin: 0;
         font-weight: 900;
         color:$oscuro;
-        padding-top: 0.1rem;
-        font-size: map-get($map: $mapa , $key: XS);
+        padding-top: map-get($map: $mapa , $key: S);
+        font-size: map-get($map: $mapa , $key: S);
         letter-spacing: 2px;
-        bottom: 5rem;
     }
 
     .container{

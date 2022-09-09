@@ -26,7 +26,7 @@
   text-decoration: none; }
 
 .btn-ok:hover {
-  background-color: #f47c20;
+  background-color: #ed6c06;
   border-color: none;
   color: black; }
 
@@ -55,7 +55,7 @@
   animation-direction: alternate; }
 
 .btn-contacto:hover {
-  background-color: #f47c20;
+  background-color: #ed6c06;
   border-color: none; }
 
 .btn-contacto a {
@@ -123,7 +123,7 @@ main {
   padding-left: 1rem; }
   .bi-instagram:hover {
     text-decoration: none;
-    color: #f47c20; }
+    color: #ed6c06; }
 
 .bi-whatsapp {
   font-size: 25px;
@@ -246,7 +246,7 @@ h1 {
   text-align: center;
   width: 100%;
   height: auto;
-  color: #f47c20; }
+  color: #ed6c06; }
 
 .text-pop-up-top {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -294,13 +294,13 @@ h6 {
   font-size: medium;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #f47c20;
+  border-bottom: 1px solid #ed6c06;
   height: 40px; }
 
 .form-control:hover, .form-select:hover {
   border: none;
   opacity: 0.5;
-  border-bottom: 1.8px solid #f47c20;
+  border-bottom: 1.8px solid #ed6c06;
   background-color: transparent; }
 
 .form-textarea {
@@ -312,7 +312,7 @@ h6 {
   text-align: left;
   width: 100%;
   height: 40px;
-  border: 1px solid #f47c20; }
+  border: 1px solid #ed6c06; }
 
 .text-form {
   color: black; }
@@ -358,7 +358,7 @@ h6 {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  color: #2a0728;
+  color: #5b1257;
   margin-bottom: 0.5rem; }
   .card-text:hover {
     color: #2a0728; }
@@ -400,7 +400,7 @@ h6 {
   height: auto; }
 
 .estilo-b a:hover {
-  color: #f47c20; }
+  color: #ed6c06; }
 
 .parrafo {
   padding: 0;
@@ -711,10 +711,11 @@ h6 {
     margin-left: 6rem; }
   .navbar-toggler {
     margin-top: -5rem; }
+  h1 {
+    font-size: 1.5rem; }
   h2 {
     font-size: medium; }
   h3 {
-    color: #5b1257;
     font-weight: bold; }
   h6 {
     font-size: 0.8rem;
@@ -730,14 +731,11 @@ h6 {
       width: 100%;
       height: 350px; }
   .parrafo {
-    padding: 0;
-    margin: 0;
     font-weight: 900;
     color: #2a0728;
-    padding-top: 0.1rem;
-    font-size: 0.5rem;
-    letter-spacing: 2px;
-    bottom: 5rem; }
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px; }
   .container {
     margin-top: 6rem;
     width: 100%;
