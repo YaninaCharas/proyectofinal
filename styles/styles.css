@@ -62,38 +62,6 @@
   color: white;
   text-decoration: none; }
 
-.btn-contacto-index {
-  width: 8rem;
-  background-color: #5b1257;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  position: fixed;
-  top: -10rem;
-  right: -8rem;
-  padding: 1rem;
-  font-size: small;
-  cursor: pointer;
-  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
-  animation-name: contacto-animado;
-  animation-duration: 2s;
-  animation-delay: 0;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
-
-.btn-contacto-index:hover {
-  background-color: #f47c20;
-  border-color: none; }
-
-.btn-contacto-index a {
-  color: white;
-  text-decoration: none; }
-
 body .bg-pink {
   background-color: #4e2158;
   border-bottom: 2px solid black; }
@@ -772,7 +740,7 @@ h6 {
     bottom: 5rem; }
   .container {
     margin-top: 6rem;
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 0.5rem;
     border-radius: 20px;
@@ -782,7 +750,7 @@ h6 {
     min-height: 500px; }
   .card {
     padding: 0;
-    width: 55%;
+    width: 100%;
     margin: 0 auto;
     font-size: small; }
   /*Boton redes*/
@@ -799,23 +767,6 @@ h6 {
     width: 100px; }
   .boton-centrado {
     padding-left: 1.3rem; }
-  .btn-contacto {
-    width: 7rem;
-    background-color: #5b1257;
-    letter-spacing: 0;
-    margin-top: 4rem;
-    position: fixed;
-    top: -2rem;
-    right: 2.5rem;
-    font-size: x-small; }
-  .btn-contacto.index {
-    width: 8rem;
-    background-color: #5b1257;
-    letter-spacing: 0;
-    top: -10rem;
-    position: fixed;
-    right: -5rem;
-    font-size: x-small; }
   .max-altura {
     padding-top: 2.5rem;
     width: 65%; }
