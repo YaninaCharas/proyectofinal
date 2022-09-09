@@ -41,7 +41,7 @@
   letter-spacing: 0.1rem;
   text-decoration: none;
   position: fixed;
-  top: 1.98rem;
+  top: 4.98rem;
   right: 3.75rem;
   padding: 1rem;
   font-size: small;
@@ -62,8 +62,37 @@
   color: white;
   text-decoration: none; }
 
-.btn-contacto.index {
-  margin-top: 3rem; }
+.btn-contacto-index {
+  width: 8rem;
+  background-color: #5b1257;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  position: fixed;
+  top: -10rem;
+  right: -8rem;
+  padding: 1rem;
+  font-size: small;
+  cursor: pointer;
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
+  animation-name: contacto-animado;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+.btn-contacto-index:hover {
+  background-color: #f47c20;
+  border-color: none; }
+
+.btn-contacto-index a {
+  color: white;
+  text-decoration: none; }
 
 body .bg-pink {
   background-color: #4e2158;
@@ -85,12 +114,6 @@ main {
   main .centrar {
     text-align: center;
     justify-content: center; }
-  main .centrar-404 {
-    text-align: center;
-    justify-content: center;
-    border-radius: 2rem;
-    width: 50%;
-    height: auto; }
   main .container {
     background-color: rgba(255, 255, 255, 0.497);
     font-weight: bold;
@@ -171,15 +194,37 @@ main {
 
 .container-proceso img {
   width: 150%;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
   .container-proceso img:hover {
     transition: 0.5s;
     transform: scale(1.4); }
 
+.container-tips {
+  background-color: rgba(255, 255, 255, 0.497);
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: #5b1257;
+  margin: 0 auto;
+  width: 68%;
+  height: auto; }
+
+.container-tips img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+  .container-tips img:hover {
+    transition: 0.5s;
+    transform: scale(0.8); }
+
 .container-contact, .container-mapa {
   background-color: rgba(255, 255, 255, 0.852);
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 20px;
   border: 1px solid black;
   color: #5b1257;
@@ -262,13 +307,7 @@ h4 {
   font-size: 1rem; }
 
 .h4-left {
-  color: #2a0728;
-  font-weight: bold;
-  text-align: left;
-  margin: 0;
-  font-size: 1rem;
-  padding: 0.5rem;
-  padding-bottom: 0.5rem; }
+  margin: 1rem; }
 
 h5 {
   color: #6f6b6b;
@@ -404,6 +443,13 @@ h6 {
   font-size: 1rem;
   letter-spacing: 2px; }
 
+.centrar-404 {
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  width: 60%;
+  height: auto; }
+
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja {
   /* background-color: gray; */
@@ -522,7 +568,14 @@ h6 {
   .card2, .estilo-b {
     width: 95%; }
   .container-proceso {
-    width: 40%; } }
+    width: 50%; }
+  .container-proceso img {
+    width: 100%; }
+    .container-proceso img:hover {
+      transition: 0.5s;
+      transform: scale(1.2); }
+  .container-tips {
+    width: 80%; } }
 
 /*********  MEDIA QUERY  1180 ******/
 @media screen and (max-width: 1180px) {
@@ -538,7 +591,7 @@ h6 {
   .footer_box {
     position: relative; }
   .centrar-h2 {
-    font-size: 1.5rem; }
+    font-size: 3rem; }
   .text-color {
     border: none;
     font-weight: bold; }
@@ -630,7 +683,13 @@ h6 {
     width: 80%;
     margin: 0 auto; }
   .big-tip {
-    width: 100%; } }
+    width: 100%; }
+  .centrar-404 {
+    text-align: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 90%;
+    height: auto; } }
 
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
@@ -650,12 +709,12 @@ h6 {
     font-size: 8px; }
   .row {
     margin-left: 0; }
+  .container-tips {
+    width: 80%; }
   .container-proceso {
     width: 80%; }
   .container-proceso img {
-    width: 100%;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem; }
+    width: 100%; }
     .container-proceso img:hover {
       transition: 0.5s;
       transform: scale(1.2); } }
@@ -665,7 +724,18 @@ h6 {
   .navbar-toggler {
     background-color: #5b12572e;
     border: none;
-    margin-top: 0rem; } }
+    margin-top: 0rem; }
+  .container-tips {
+    width: 90%;
+    padding: 1.5rem; }
+  .container-tips img {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    padding: 0; }
+    .container-tips img:hover {
+      transition: 0.5s;
+      transform: scale(1.1); } }
 
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
@@ -685,10 +755,12 @@ h6 {
     width: 80%;
     margin-bottom: 2rem; }
   .centrar-h2 {
-    padding-top: 4.5rem;
-    font-size: 3rem; }
+    padding-top: 4.5rem; }
   .centrar-h4 {
     padding-top: 0.5rem; }
+    .centrar-h4 img {
+      width: 100%;
+      height: 350px; }
   .parrafo {
     padding: 0;
     margin: 0;
@@ -737,12 +809,12 @@ h6 {
     right: 2.5rem;
     font-size: x-small; }
   .btn-contacto.index {
-    width: 7rem;
+    width: 8rem;
     background-color: #5b1257;
     letter-spacing: 0;
-    top: 5rem;
+    top: -10rem;
     position: fixed;
-    right: 0.5rem;
+    right: -5rem;
     font-size: x-small; }
   .max-altura {
     padding-top: 2.5rem;

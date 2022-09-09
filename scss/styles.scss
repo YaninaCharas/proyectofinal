@@ -38,6 +38,8 @@
 .container-proceso img{
     width: 150%;
     border-radius: 20px;
+    margin-top: map-get($map: $mapa, $key:XS);
+    margin-bottom: map-get($map: $mapa, $key:XS);
     &:hover{
         transition: 0.5s;
         transform:scale(1.40)
@@ -45,10 +47,34 @@
 
 }
 
+.container-tips{
+    background-color: $color-fondo-formulario;
+    font-weight: bold;
+    padding: map-get($map: $mapa, $key:XS);
+    border-radius: 20px;
+    border: 1px solid $negro;
+    color: $violeta5asec;
+    margin:0 auto;
+    width: 68%;
+    height: auto;
+
+}
+.container-tips img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: map-get($map: $mapa, $key:XS);
+    margin-bottom: map-get($map: $mapa, $key:XS);
+    &:hover{
+        transition: 0.5s;
+        transform:scale(0.8)
+    }
+
+}
+
 .container-contact , .container-mapa{
     background-color: $fondo-formulario-contacto;
     font-weight: bold;
-    padding: map-get($map: $mapa, $key:XS);
+    padding: map-get($map: $mapa, $key:S);
     border-radius: 20px;
     border: 1px solid $negro;
     color: $violeta5asec;
@@ -145,13 +171,7 @@ h4{
 }
 
 .h4-left{
-    color: $oscuro;
-    font-weight: bold;
-    text-align: left;  
-    margin:0;
-    font-size: map-get($map: $mapa, $key:S);
-    padding: map-get($map: $mapa, $key:XS);
-    padding-bottom: map-get($map: $mapa, $key:XS);
+    margin: 1rem;
      
 }
 
@@ -177,7 +197,6 @@ h6{
     border-bottom: 1px solid $naranja;
     height: 40px;
 }
-
 
 .form-control:hover ,.form-select:hover{
     border:none;
@@ -314,6 +333,13 @@ h6{
     letter-spacing: 2px;
 }
 
+.centrar-404{
+    text-align: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 60%;
+    height: auto;
+}
 
 
 /****** ANIMACION FONDO BURBUJAS */
@@ -451,7 +477,17 @@ h6{
         width: 95%;
     }
     .container-proceso{
-        width: 40%;
+        width: 50%;
+    }
+    .container-proceso img{
+        width: 100%;
+        &:hover{
+            transition: 0.5s;
+            transform:scale(1.20)
+        }
+    }
+    .container-tips{
+        width: 80%;
     }
 }
 /*********  MEDIA QUERY  1180 ******/  
@@ -473,7 +509,7 @@ h6{
         position: relative;
     }
     .centrar-h2{
-        font-size: map-get($map: $mapa, $key:SM);
+        font-size: map-get($map: $mapa, $key:SM)*2;
     }
     .text-color{
         border:none;
@@ -616,6 +652,13 @@ h6{
     .big-tip{
         width: 100%;
     }
+    .centrar-404{
+        text-align: center;
+        justify-content: center;
+        border-radius: 2rem;
+        width: 90%;
+        height: auto;
+    }
 
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
@@ -648,13 +691,14 @@ h6{
     .row{
         margin-left: 0;
     }
+    .container-tips{
+        width: 80%;
+    }
     .container-proceso{
         width: 80%;
     }
     .container-proceso img{
         width: 100%;
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
         &:hover{
             transition: 0.5s;
             transform:scale(1.20)
@@ -668,6 +712,21 @@ h6{
         border:none;
         margin-top: 0rem;
     }
+    .container-tips{
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .container-tips img{
+        width: 100%;
+        margin-bottom:1rem;
+        margin-top: -1rem;
+        padding: 0;
+        &:hover{
+            transition: 0.5s;
+            transform:scale(1.10)
+        }
+    }
+
 }
 
 /*********MEDIA QUERY - 481 *******/
@@ -701,11 +760,16 @@ h6{
 
     .centrar-h2{
         padding-top: map-get($map: $mapa, $key:SM)*3;
-        font-size: map-get($map: $mapa, $key:SM)*2;
     }
 
     .centrar-h4{
         padding-top: 0.5rem;
+
+        img{
+            width: 100%;
+            height: 350px;
+
+        }
     }
 
     .parrafo{
@@ -777,12 +841,12 @@ h6{
        font-size: x-small;
     }
     .btn-contacto.index{
-        width: 7rem;
+        width: 8rem;
         background-color:$violeta5asec;
         letter-spacing: 0;
-        top:5rem;
+        top:-10rem;
         position: fixed;
-        right: 0.5rem;
+        right: -5rem;
        font-size: x-small;
     }    
     .max-altura{

@@ -27,7 +27,7 @@
     letter-spacing: 0.1rem;
     text-decoration: none;
     position: fixed;
-    top:1.98rem;
+    top:4.98rem;
     right: 3.75rem;
     padding:1rem;
     font-size: small;
@@ -50,8 +50,37 @@
     color:$blanco;
     text-decoration: none;
 }
-.btn-contacto.index{
-    margin-top:3rem;
+.btn-contacto-index{
+    width: 8rem;
+    background-color:$violeta5asec;
+    border-radius: 20px;
+    border: none;
+    color:$blanco;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    position: fixed;
+    top:-10rem;
+    right: -8rem;
+    padding:1rem;
+    font-size: small;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px 0px $negro-sombra;
+    animation-name: contacto-animado;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
     
+.btn-contacto-index:hover{
+    background-color: $naranja;
+    border-color: none;
+}
     
+.btn-contacto-index a{
+    color:$blanco;
+    text-decoration: none;
+}
