@@ -11,8 +11,6 @@
     margin-right: 1rem; }
   *.footer_box :nth-child(2) {
     margin-left: 15rem; }
-  *.footer_formularios_fijo :nth-child(2) {
-    margin-left: 15rem; }
 
 .btn-ok {
   padding: 0.5rem;
@@ -52,7 +50,8 @@
   animation-delay: 0;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-direction: alternate; }
+  animation-direction: alternate;
+  z-index: 100; }
 
 .btn-contacto:hover {
   background-color: #ed6c06;
@@ -110,7 +109,7 @@ main {
 .bi-facebook {
   font-size: 25px;
   text-decoration: none;
-  color: #6f6b6b;
+  color: #4a4949;
   padding-left: 1rem; }
   .bi-facebook:hover {
     text-decoration: none;
@@ -119,7 +118,7 @@ main {
 .bi-instagram {
   font-size: 25px;
   text-decoration: none;
-  color: #6f6b6b;
+  color: #4a4949;
   padding-left: 1rem; }
   .bi-instagram:hover {
     text-decoration: none;
@@ -128,7 +127,7 @@ main {
 .bi-whatsapp {
   font-size: 25px;
   text-decoration: none;
-  color: #6f6b6b;
+  color: #4a4949;
   padding-left: 1rem; }
   .bi-whatsapp:hover {
     text-decoration: none;
@@ -144,29 +143,36 @@ main {
   color: white; }
   .text-color:hover {
     border: none;
-    color: #6f6b6b; }
+    color: #4a4949; }
 
-.row {
-  margin-right: 0; }
+.container-index {
+  background-color: rgba(255, 255, 255, 0.497);
+  margin-top: 6rem;
+  width: 90%;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: #5b1257;
+  font-weight: bold; }
 
 .container-proceso {
   background-color: rgba(255, 255, 255, 0.497);
   font-weight: bold;
-  padding: 0.5rem;
   border-radius: 20px;
   border: 1px solid black;
   color: #5b1257;
   margin: 0 auto;
-  width: 35%;
+  width: 40%;
   height: auto; }
 
 .container-proceso img {
-  width: 150%;
+  background-color: rgba(245, 245, 245, 0.5);
+  width: 95%;
   border-radius: 20px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
   .container-proceso img:hover {
-    transition: 0.5s;
+    transition: 0.8s;
     transform: scale(1.4); }
 
 .container-tips {
@@ -203,13 +209,18 @@ main {
 .navbar {
   height: 63px; }
 
+/*, .navbar-nav .show>.nav-link*/
+.navbar-nav .nav-link.active {
+  color: #adb5bd; }
+
 .navbar-nav a {
   margin-left: 3rem;
   transition: all 1ms ease;
   width: fit-content;
   margin: 0;
   padding: 1rem;
-  background-color: #5b12572e; }
+  background-color: #5b12572e;
+  color: #ed6c06; }
 
 .item-elegido {
   transform: scale(1);
@@ -234,7 +245,8 @@ main {
   cursor: pointer;
   width: 18rem; }
   .big-tip:hover {
-    transform: scale(1.9); }
+    transition: 0.8s;
+    transform: scale(1.5); }
 
 /* estilos de titulos h1---h6*/
 h1 {
@@ -262,7 +274,7 @@ h2 {
   font-weight: bold; }
 
 h3 {
-  color: #6f6b6b;
+  color: #4a4949;
   font-weight: bold;
   text-align: center;
   font-size: 1rem;
@@ -278,7 +290,7 @@ h4 {
   margin: 1rem; }
 
 h5 {
-  color: #6f6b6b;
+  color: #4a4949;
   font-weight: bold;
   text-align: center;
   font-size: 1rem; }
@@ -328,7 +340,8 @@ h6 {
 .centrar-h1 {
   padding: 0;
   margin: 0;
-  padding-top: 0.5rem; }
+  padding-top: 0.5rem;
+  color: #4a4949; }
 
 .centrar-h2 {
   text-align: center;
@@ -339,7 +352,7 @@ h6 {
 .card {
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.497);
-  border-radius: 20px;
+  background-color: transparent;
   box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
@@ -348,7 +361,9 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 0.2rem; }
+  padding-bottom: 0.2rem;
+  border: none;
+  margin-bottom: 1rem; }
   .card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-3%); }
@@ -365,15 +380,15 @@ h6 {
 
 .card2 {
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.497);
-  border-radius: 55px;
   box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
-  width: 30%;
-  height: auto;
   padding-bottom: 0.2rem;
-  width: 16rem; }
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-right: 2px solid black; }
 
 .card2-text {
   font-size: medium;
@@ -387,7 +402,9 @@ h6 {
   margin-top: 0.5rem;
   width: 90%;
   height: 150px;
-  border-radius: 50%; }
+  border-right: 2px solid #ed6c06;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%; }
 
 .estilo-c {
   border-radius: 20px;
@@ -736,14 +753,8 @@ h6 {
     padding-top: 1rem;
     font-size: 1rem;
     letter-spacing: 2px; }
-  .container {
-    margin-top: 6rem;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-    border-radius: 20px;
-    color: #5b1257;
-    font-weight: bold; }
+  .card2, .card, .estilo-b {
+    width: 100%; }
   .centrar-form {
     min-height: 500px; }
   .card {

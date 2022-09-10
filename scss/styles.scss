@@ -20,28 +20,40 @@
     color:$gris;
     }
 }
-.row{
-    margin-right: 0;
+// .row{
+//     margin-right: 0;
+// }
+.container-index{
+    background-color:$color-fondo-formulario;
+    margin-top: 6rem;
+    width: 90%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: $violeta5asec;
+    font-weight: bold;
 }
+
 .container-proceso{
     background-color: $color-fondo-formulario;
     font-weight: bold;
-    padding: map-get($map: $mapa, $key:XS);
+    // padding: map-get($map: $mapa, $key:XS);
     border-radius: 20px;
     border: 1px solid $negro;
     color: $violeta5asec;
     margin:0 auto;
-    width: 35%;
+    width: 40%;
     height: auto;
 
 }
 .container-proceso img{
-    width: 150%;
+    background-color: rgba(245, 245, 245, 0.5);
+    width: 95%;
     border-radius: 20px;
     margin-top: map-get($map: $mapa, $key:XS);
     margin-bottom: map-get($map: $mapa, $key:XS);
     &:hover{
-        transition: 0.5s;
+        transition: 0.8s;
         transform:scale(1.40)
     }
 
@@ -86,7 +98,11 @@
 .navbar{
     height: 63px; 
 }
-  
+
+/*, .navbar-nav .show>.nav-link*/
+.navbar-nav .nav-link.active {
+    color: #adb5bd;
+} 
 .navbar-nav a{
     margin-left: map-get($map: $mapa, $key:S)*3;
     transition: all 1ms ease;
@@ -94,6 +110,7 @@
     margin: 0;
     padding: map-get($map: $mapa, $key:S);
     background-color: $violeta-sombra;
+    color: $naranja;
 }
 .item-elegido{
     transform: scale(1);
@@ -122,7 +139,8 @@
     width: 18rem;
     
     &:hover{
-    transform:scale(1.90)
+    transition: 0.8s;
+    transform:scale(1.50)
     }
 }
 
@@ -234,6 +252,7 @@ h6{
  padding: 0;
  margin: 0;
  padding-top: 0.5rem;
+ color: $gris;
 }
 
 .centrar-h2{
@@ -246,7 +265,8 @@ h6{
 .card{
     justify-content: space-around;
     background-color: $color-fondo-formulario;
-    border-radius: 20px;
+    background-color: transparent;
+    // border-radius: 20px;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
@@ -256,6 +276,11 @@ h6{
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 0.2rem;
+    border:none;
+    // border-top-left-radius: 40%;
+    // border-bottom-right-radius: 40%;
+    // border-right:2px solid black;
+    margin-bottom: 1rem;
 
     &:hover{
         box-shadow: 5px 5px 20px $negro-sombra;
@@ -279,15 +304,16 @@ h6{
 
 .card2{
     justify-content: space-around;
-    background-color: $color-fondo-formulario;
-    border-radius: 55px;
+    // background-color: $color-fondo-formulario;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
-    width: 30%;
-    height: auto;
     padding-bottom: 0.2rem;
-    width: map-get($map: $mapa, $key:L)*6+1;
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-right:2px solid black;
 }
 
 .card2-text{
@@ -306,7 +332,10 @@ h6{
     margin-top: map-get($map: $mapa, $key:XS);;
     width: 90%;
     height: 150px;
-    border-radius: 50%;
+    border-right: 2px solid $naranja;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;  
+   
 }
 .estilo-c{
     border-radius: 20px;
@@ -779,16 +808,10 @@ h6{
         font-size: map-get($map: $mapa , $key: S);
         letter-spacing: 2px;
     }
-
-    .container{
-        margin-top: 6rem;
+    .card2,.card, .estilo-b{
         width: 100%;
-        height: auto;
-        padding: 0.5rem;
-        border-radius: 20px;
-        color: $violeta5asec;
-        font-weight: bold;
     }
+
 
     .centrar-form{
         min-height: 500px;
