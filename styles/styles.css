@@ -145,6 +145,9 @@ main {
     border: none;
     color: #4a4949; }
 
+.row-contact {
+  margin-right: 0; }
+
 .container-index {
   background-color: rgba(255, 255, 255, 0.497);
   margin-top: 6rem;
@@ -166,7 +169,7 @@ main {
   height: auto; }
 
 .container-proceso img {
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(245, 245, 245, 0.54);
   width: 95%;
   border-radius: 20px;
   margin-top: 0.5rem;
