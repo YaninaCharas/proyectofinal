@@ -86,7 +86,7 @@ main {
     font-weight: bold;
     border-radius: 20px;
     margin-top: 5rem;
-    width: 65%;
+    width: 70%;
     height: auto; }
 
 .footer_box {
@@ -144,9 +144,6 @@ main {
   .text-color:hover {
     border: none;
     color: #4a4949; }
-
-.row-contact {
-  margin-right: 0; }
 
 .container-index {
   background-color: rgba(255, 255, 255, 0.497);
@@ -632,7 +629,7 @@ h6 {
     margin-bottom: 0.5rem;
     padding-top: 0.5rem;
     margin: 0;
-    font-size: x-small; }
+    font-size: 1.5rem; }
   .card {
     padding: 0;
     width: 80%;
@@ -664,6 +661,8 @@ h6 {
   .container-contact, .container-mapa {
     width: 80%;
     margin-bottom: 1rem; }
+  .row {
+    --bs-gutter-x: 0; }
   .estilo-b {
     width: 90%; }
   .card {
@@ -741,8 +740,10 @@ h6 {
     font-size: 0.8rem;
     padding: 0; }
   .col-md-4 {
-    width: 80%;
+    width: 95%;
     margin-bottom: 2rem; }
+  .card-text {
+    font-size: 1.5rem; }
   .centrar-h2 {
     padding-top: 4.5rem; }
   .centrar-h4 {
@@ -783,8 +784,8 @@ h6 {
     padding-top: 2.5rem;
     width: 65%; }
   .container-contact, .container-mapa {
-    width: 90%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    width: 90%; }
   .text-color:hover {
     border: none;
     font-weight: bold;
