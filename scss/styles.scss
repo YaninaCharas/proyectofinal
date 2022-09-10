@@ -20,9 +20,6 @@
     color:$gris;
     }
 }
-// .row{
-//     margin-right: 0;
-// }
 .container-index{
     background-color:$color-fondo-formulario;
     margin-top: 6rem;
@@ -37,14 +34,12 @@
 .container-proceso{
     background-color: $color-fondo-formulario;
     font-weight: bold;
-    // padding: map-get($map: $mapa, $key:XS);
     border-radius: 20px;
     border: 1px solid $negro;
     color: $violeta5asec;
     margin:0 auto;
-    width: 40%;
+    width: 35%;
     height: auto;
-
 }
 .container-proceso img{
     background-color: rgba(245, 245, 245, 0.54);
@@ -56,9 +51,10 @@
         transition: 0.8s;
         transform:scale(1.40)
     }
-
 }
-
+.row {
+     --bs-gutter-x: 0;
+}
 .container-tips{
     background-color: $color-fondo-formulario;
     font-weight: bold;
@@ -99,18 +95,25 @@
     height: 63px; 
 }
 
-/*, .navbar-nav .show>.nav-link*/
 .navbar-nav .nav-link.active {
     color: #adb5bd;
 } 
 .navbar-nav a{
     margin-left: map-get($map: $mapa, $key:S)*3;
     transition: all 1ms ease;
-    width: fit-content;
     margin: 0;
     padding: map-get($map: $mapa, $key:S);
-    background-color: $violeta-sombra;
+    background-color: $color-nav;
     color: $naranja;
+    
+}
+
+.navbar-toggler{
+    margin-top:-1rem;
+    border:1px solid $naranja;
+    &:hover{
+        border:2px solid $naranja;
+    }
 }
 .item-elegido{
     transform: scale(1);
@@ -277,11 +280,7 @@ h6{
     justify-content: flex-end;
     padding-bottom: 0.2rem;
     border:none;
-    // border-top-left-radius: 40%;
-    // border-bottom-right-radius: 40%;
-    // border-right:2px solid black;
     margin-bottom: 1rem;
-
     &:hover{
         box-shadow: 5px 5px 20px $negro-sombra;
         transform: translateY(-3%); 
@@ -518,6 +517,7 @@ h6{
     .container-tips{
         width: 80%;
     }
+
 }
 /*********  MEDIA QUERY  1180 ******/  
 @media screen and (max-width: 1180px) {
@@ -560,7 +560,7 @@ h6{
         height:auto;
     }
 
-     .btn_wp{
+    .btn_wp{
         width: 5%;
     }
 
@@ -592,7 +592,11 @@ h6{
 
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
-
+    .navbar-nav {
+        margin-top:-1rem;
+        margin-left: -1rem;
+        width: 30%;
+    }
     .text-color{
         color:$negro;
     }
@@ -741,10 +745,9 @@ h6{
 }
 /*****************************/
 @media screen and (max-width: 490px) {
+
     .navbar-toggler{
-        background-color: $violeta-sombra;
-        border:none;
-        margin-top: 0rem;
+        margin-top: 0rem;     
     }
     .container-tips{
         width: 90%;
