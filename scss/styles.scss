@@ -42,18 +42,16 @@
     height: auto;
 }
 .container-proceso img{
-    background-color: rgba(245, 245, 245, 0.54);
+    background-color: rgba(245, 245, 245, 0.603);
     width: 95%;
     border-radius: 20px;
     margin-top: map-get($map: $mapa, $key:XS);
     margin-bottom: map-get($map: $mapa, $key:XS);
     &:hover{
+        background-color: rgba(245, 245, 245, 0.718);
         transition: 0.8s;
         transform:scale(1.40)
     }
-}
-.row {
-     --bs-gutter-x: 0;
 }
 .container-tips{
     background-color: $color-fondo-formulario;
@@ -65,7 +63,6 @@
     margin:0 auto;
     width: 68%;
     height: auto;
-
 }
 .container-tips img{
     width: 100%;
@@ -78,7 +75,6 @@
     }
 
 }
-
 .container-contact , .container-mapa{
     background-color: $fondo-formulario-contacto;
     font-weight: bold;
@@ -90,11 +86,12 @@
     width: 100%;
     height: auto;
 }
-
+.row {
+    --bs-gutter-x: 0;
+}
 .navbar{
     height: 63px; 
 }
-
 .navbar-nav .nav-link.active {
     color: #adb5bd;
 } 
@@ -107,7 +104,6 @@
     color: $naranja;
     
 }
-
 .navbar-toggler{
     margin-top:-1rem;
     border:1px solid $naranja;
@@ -120,7 +116,6 @@
     background: $item-elegido;
     text-decoration: none;
 }
-     
 .big{
     width: 90%;
     height: auto;
@@ -159,23 +154,15 @@ h1{
     height: auto;
     color: $naranja;
 }
-
-.text-pop-up-top {
-	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 h2{
     color: $blanco;
     font-size: map-get($map: $mapa, $key:SM);
 }
-
 .h2-404{
     color: $violeta5asec;
     font-size: map-get($map: $mapa, $key:SM);
     font-weight: bold;
 }
-
 h3{
     color:$gris;
     font-weight: bold;
@@ -183,32 +170,39 @@ h3{
     font-size: map-get($map: $mapa, $key:S);
     padding-top: 0.8rem;
 }
-
 h4{
     color: $oscuro;
     font-weight: bold;
     text-align: center;
     font-size: map-get($map: $mapa, $key:S);
 }
-
 .h4-left{
     margin: 1rem;
      
 }
-
 h5{
     color:$gris;
     font-weight: bold;
     text-align: center;
     font-size: map-get($map: $mapa, $key:S);
 }
-
 h6{
     color:$oscuro;
     font-weight: bold;
     padding-top:map-get($map: $mapa, $key:XS);;
 }
-
+.centrar-h1{
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+    color: $gris;
+}
+.centrar-h2{
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: map-get($map: $mapa, $key:L)+1;
+} 
 .form-control, .form-select{
     color: $violeta5asec;
     text-align: left;
@@ -218,14 +212,12 @@ h6{
     border-bottom: 1px solid $naranja;
     height: 40px;
 }
-
 .form-control:hover ,.form-select:hover{
     border:none;
     opacity: 0.5;
     border-bottom: 1.8px solid $naranja;
     background-color: transparent;
 }
-
 .form-textarea{
     margin-top: 0.8rem;
     padding: 0.1rem;
@@ -237,40 +229,21 @@ h6{
     height: 40px;
     border: 1px solid $naranja;
 }
-
 .text-form{
     color:$negro; 
 }
-
 .form-check, .form-floating {
     text-align: left;
     font-size: map-get($map: $mapa, $key:SM)/2;
     color: $violeta5asec;
 }
-
 .top-5rem{
     margin-top: map-get($map: $mapa, $key:L)*2;
 }
-.centrar-h1{
- padding: 0;
- margin: 0;
- padding-top: 0.5rem;
- color: $gris;
-}
-
-.centrar-h2{
-    text-align: center;
-    justify-content: center;
-    padding: 2rem;
-    font-size: map-get($map: $mapa, $key:L)+1;
-}
-
 .card{
     justify-content: space-around;
     background-color: $color-fondo-formulario;
     background-color: transparent;
-    // border-radius: 20px;
-    box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
     width: map-get($map: $mapa, $key:L)*4+2;
@@ -281,29 +254,21 @@ h6{
     padding-bottom: 0.2rem;
     border:none;
     margin-bottom: 1rem;
-    &:hover{
-        box-shadow: 5px 5px 20px $negro-sombra;
-        transform: translateY(-3%); 
-    }
 }
-
 .card-text{
     padding-top: map-get($map: $mapa, $key:XS);
     font-size: map-get($map: $mapa, $key:S);
     font-weight:bold;
     text-decoration: none;
     color:$violeta5asec;
+    border:none;
     margin-bottom: map-get($map: $mapa, $key:XS);
-
     &:hover{
         color: $oscuro;
     }
-
 }
-
 .card2{
     justify-content: space-around;
-    // background-color: $color-fondo-formulario;
     box-shadow: 8px 1px 10px $negro-sombra;
     cursor: default;
     transition: all 400ms ease;
@@ -314,7 +279,6 @@ h6{
     border-top-right-radius: 50%;
     border-right:2px solid black;
 }
-
 .card2-text{
     font-size: medium;
     font-weight:bold;
@@ -324,9 +288,7 @@ h6{
     &:hover{
         color: $negro;
     }
-
 }
-
 .estilo-b{
     margin-top: map-get($map: $mapa, $key:XS);;
     width: 90%;
@@ -334,7 +296,6 @@ h6{
     border-right: 2px solid $naranja;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;  
-   
 }
 .estilo-c{
     border-radius: 20px;
@@ -342,12 +303,6 @@ h6{
     height: auto;
     box-shadow: 10px 10px 5px 0px $negro-sombra;
 }
-.small{
-    width: 50%;
-    height: auto;
-   
-}
-
 .estilo-b a:hover{
     color: $naranja;
 }
@@ -360,7 +315,6 @@ h6{
     font-size: map-get($map: $mapa , $key: S);
     letter-spacing: 2px;
 }
-
 .centrar-404{
     text-align: center;
     justify-content: center;
@@ -368,17 +322,13 @@ h6{
     width: 60%;
     height: auto;
 }
-
-
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja{
-    /* background-color: gray; */
     background-image: url(../images/iconos/logo-burbuja.png);
     border-radius: 50%;
     opacity: .2;
     position: absolute;
     bottom: -150;
-
     animation: burbujas 3s linear infinite;
 }
 .burbuja:nth-child(1){
@@ -413,6 +363,11 @@ h6{
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.text-pop-up-top {
+	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 /*****************  ANIMACION BURBUJAS ********************************/
 @keyframes contacto-animado{
@@ -452,32 +407,8 @@ h6{
               transform-origin: 50% 1400px;
       opacity: 1;
     }
-  }
-  @keyframes slide-in-elliptic-top-fwd {
-    0% {
-      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-              transform: translateY(-600px) rotateX(-30deg) scale(0);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) rotateX(0) scale(1);
-              transform: translateY(0) rotateX(0) scale(1);
-      -webkit-transform-origin: 50% 1400px;
-              transform-origin: 50% 1400px;
-      opacity: 1;
-    }
-  }
-/* ----------------------------------------------
- * Generated by Animista on 2022-9-8 8:49:16
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
+}
+/* ----------------------------------------
  * animation text-pop-up-top
  * ----------------------------------------
  */
@@ -494,13 +425,15 @@ h6{
               transform: translateY(-3px);
       -webkit-transform-origin: 10% 10%;
               transform-origin: 10% 10%;
-            //   text-shadow: 0 1px 0 #cccccc6a, 0 2px 0 #cccccc6a, 0 3px 0 #cccccc6a, 0 4px 0 #cccccc6a, 0 5px 0 #cccccc6a, 0 6px 0 #cccccc6a, 0 7px 0 #cccccc6a, 0 8px 0 #cccccc6a, 0 9px 0 #cccccc6a, 0 50px 30px rgba(0, 0, 0, 0.3);
       text-shadow: 0 1px 0 #cccccc6a, 0 2px 0 #cccccc6a, 0 3px 0 #cccccc6a, 0 4px 0 #cccccc6a, 0 5px 0 #cccccc6a, 0 6px 0 #cccccc6a, 0 10px 13px rgba(0, 0, 0, 0.3);
     }
   }
       
 /*********  MEDIA QUERY  1280 ******/  
 @media screen and (max-width: 1280px) {
+    h1{
+        font-size: map-get($map: $mapa , $key: SM);
+    }
     .card2, .estilo-b{
         width: 95%;
     }
@@ -510,14 +443,12 @@ h6{
     .container-proceso img{
         width: 100%;
         &:hover{
-            transition: 0.5s;
-            transform:scale(1.20)
+            transform:scale(1.30)
         }
     }
     .container-tips{
         width: 80%;
     }
-
 }
 /*********  MEDIA QUERY  1180 ******/  
 @media screen and (max-width: 1180px) {
@@ -550,24 +481,17 @@ h6{
             color:$oscuro;
         }
     }
-
     h4{
-        font-size: small;
+        font-size: map-get($map: $mapa, $key:S);
     }
-
-    iframe {
-        width: 80%;
-        height:auto;
-    }
-
-    .btn_wp{
-        width: 5%;
-    }
-
     h6{
         padding-top: 0.2rem;
         padding: 0;
-        font-size: x-small;
+        font-size: map-get($map: $mapa, $key:XS);
+    }
+    iframe {
+        width: 80%;
+        height:auto;
     }
     .card{
         padding: 0;
@@ -577,7 +501,6 @@ h6{
     .card-text{
         margin: 0;
         padding: 0;
-        font-size: x-small;
         font-weight: none;
     }
 
@@ -589,46 +512,41 @@ h6{
         }
     }
 }
-
-/*********  MEDIA QUERY  900 ******/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
     .navbar-nav {
         margin-top:-1rem;
         margin-left: -1rem;
         width: 30%;
     }
-    .text-color{
-        color:$negro;
-    }
-
-    .footer_box{
-        position: relative ;
-    }
-    .card2,.card, .estilo-b{
-        width: 100%;
-    }
-
+}
+/*********  MEDIA QUERY  900 ******/
+@media screen and (max-width: 900px) {
     h5{
         width: 48px;
         padding-left: 0;
         font-size: small;
     }
-
     h6{
         padding-top: 0.2rem;
         padding: 0;
         font-size: x-small;
     }
-    .card-text{
-        margin-bottom: map-get($map: $mapa, $key:XS);
-        padding-top: map-get($map: $mapa, $key:XS);
-        margin: 0;
-        font-size: map-get($map: $mapa, $key:SM);
+    .text-color{
+        color:$negro;
+    }
+    .card2, .estilo-b{
+        width: 100%;
     }
     .card{
         padding: 0;
         width: 80%;
         margin:0 auto;
+    }
+    .card-text{
+        margin-bottom: map-get($map: $mapa, $key:XS);
+        padding-top: map-get($map: $mapa, $key:XS);
+        font-size: map-get($map: $mapa, $key:S);
+        margin: 0;
     }
     .big{
         width: map-get($map: $mapa, $key:M)*6+2;
@@ -638,32 +556,18 @@ h6{
             transform:scale(1.20)
         }
     }
-        /*Boton redes*/
-   
-        .bi-facebook{
-            font-size: 15px;
-            padding-left: 0.5rem;
-    
-        }
-    
-        .bi-instagram{
-            font-size: 15px;
-            padding-left: 0.5rem;
-    
-        }
-    
-        .bi-whatsapp{
-            font-size: 15px;
-            padding-left: 0.5rem;
-        }
-
-        .big-tip{
-            width: 100%;
-        }
-        .form-check, .form-floating {
-            font-size: x-small;
-        }
+    /*Boton redes*/  
+    .bi-facebook, .bi-instagram, .bi-whatsapp {
+        font-size: 15px;
+        padding-left: 0.5rem;
     }
+    .big-tip{
+        width: 100%;
+    }
+    .form-check, .form-floating {
+        font-size: x-small;
+    }
+}
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
     *.footer_box :nth-child(2) {
@@ -676,20 +580,17 @@ h6{
     .row {
         --bs-gutter-x: 0;
     }
-    .estilo-b{
+    .card2, .estilo-b{
         width: 90%;
     }
-
     .card{
         padding: 0;
         width: 80%;
         margin:0 auto;
     }
-
     .big-tip{
         width: 100%;
-    }
-    
+    }  
     .centrar-404{
         text-align: center;
         justify-content: center;
@@ -697,50 +598,30 @@ h6{
         width: 90%;
         height: auto;
     }
-
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
-
     .item-elegido{
         color: $violeta5asec;
     }
-
-    /*Boton redes*/
-    .bi-facebook{
-        font-size: 15px;
-        padding-left: 0.2rem;
-    
-    }
-    
-    .bi-instagram{
-        font-size: 15px;
-        padding-left: 0.2rem;
-    
-    }
-    
-     .bi-whatsapp{
-        font-size: 15px;
-        padding-left: 0.2rem;
-     }
     .footer_box{
         font-size: 8px;
     }
     .row{
         margin-left: 0;
     }
-    .container-tips{
-        width: 80%;
-    }
-    .container-proceso{
+    .container-tips, .container-proceso{
         width: 80%;
     }
     .container-proceso img{
         width: 100%;
         &:hover{
-            transition: 0.5s;
-            transform:scale(1.20)
+            transition: 0.8s;
+            transform:scale(1.30)
         }
+    }
+    .card2,.card, .estilo-b{
+        width: 80%;
     }
 }
 /*****************************/
@@ -763,13 +644,14 @@ h6{
             transform:scale(1.10)
         }
     }
-
 }
-
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
     *.footer_box :nth-child(2) {
         margin-left: 6rem;
+    }
+    .img-logo{
+        margin-left:70rem;
     }
     .navbar-toggler{
             margin-top: -5rem;
@@ -780,27 +662,20 @@ h6{
     h2{
         font-size: medium; 
     }
-
     h3{
         font-weight: bold;
     }
-
     h6{
         font-size: 0.8rem;
         padding: 0;
     }
-
     .col-md-4{
         width: 95%;
         margin-bottom: 2rem;
     }
-    .card-text{
-        font-size: map-get($map: $mapa, $key:S)+0.5;
-    }
     .centrar-h2{
         padding-top: map-get($map: $mapa, $key:SM)*3;
     }
-
     .centrar-h4{
         padding-top: 0.5rem;
 
@@ -809,8 +684,10 @@ h6{
             height: 350px;
 
         }
+    }    
+    .centrar-form{
+        min-height: 500px;
     }
-
     .parrafo{
         font-weight: 900;
         color:$oscuro;
@@ -818,48 +695,21 @@ h6{
         font-size: map-get($map: $mapa , $key: S);
         letter-spacing: 2px;
     }
-    .card2,.card, .estilo-b{
+    .card2, .estilo-b{
         width: 100%;
     }
-
-
-    .centrar-form{
-        min-height: 500px;
-    }
-
     .card{
         padding:0;
         width: 100%;
         margin:0 auto;
         font-size: small;
     }
-
-    /*Boton redes*/
-
-    .bi-facebook{
-        font-size: 15px;
-        padding-left: 0.2rem;
-
-    }
-
-    .bi-instagram{
-        font-size: 15px;
-        padding-left: 0.2rem;
-
-    }
-
-    .bi-whatsapp{
-        font-size: 15px;
-        padding-left: 0.2rem;
-    }
-
     .botones{
         width: 100px;
     }  
     .boton-centrado{
         padding-left: 1.3rem;
     }
-    
     .max-altura{
         padding-top: map-get($map: $mapa , $key: L);
         width: 65%;
@@ -867,9 +717,7 @@ h6{
     .container-contact , .container-mapa{
         margin-bottom: 1rem;
         width: 90%;
-    }
-    
-
+    }   
     .text-color:hover{
         border:none;
         font-weight: bold;
@@ -882,6 +730,10 @@ h6{
 
 /*****************MOBILE310- SMALL ONE*/
 @media screen and (max-width: 310px) {
+    h1{
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
     h3{
         margin-top: 3rem;
     }
@@ -897,39 +749,20 @@ h6{
         margin-left: -2rem;
         width: 13rem;
     }
-
     .footer_box{
         font-size: 5px;
     }
 
     /*Boton redes*/
-    .bi-facebook{
+    .bi-facebook,.bi-instagram, .bi-whatsapp{
         font-size: 5px;
         padding-left: 0.2rem;
     
     }
-    
-    .bi-instagram{
-        font-size: 5px;
-        padding-left: 0.2rem;
-    
-    }
-    
-     .bi-whatsapp{
-        font-size: 5px;
-        padding-left: 0.2rem;
-     }
-     .form-check, .form-floating {
+    .form-check, .form-floating {
         font-size: 8px;
     }
     .centrar{
         margin-top:20rem;
-    }
-
-    h1{
-        padding-top: 2rem;
-        font-size: 1rem;
-    }
-
-     
+    }    
 }
