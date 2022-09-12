@@ -7,11 +7,13 @@ main{
     height: auto;
     min-height: 100vh;
 
-    .centrar{
+    .centrar, .centrar-contacto{
         text-align: center;
         justify-content: center;
     }
-        
+    .centrar-contacto{
+        margin: 0;
+    }    
     .container{
         background-color: $color-fondo-formulario;
         font-weight: bold; 

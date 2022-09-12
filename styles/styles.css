@@ -76,9 +76,11 @@ main {
   width: 100%;
   height: auto;
   min-height: 100vh; }
-  main .centrar {
+  main .centrar, main .centrar-contacto {
     text-align: center;
     justify-content: center; }
+  main .centrar-contacto {
+    margin: 0; }
   main .container {
     background-color: rgba(255, 255, 255, 0.497);
     font-weight: bold;
@@ -190,7 +192,7 @@ main {
   border: 1px solid black;
   color: #5b1257;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   height: auto; }
 
 .navbar {
@@ -258,8 +260,9 @@ h2 {
   font-size: 1.5rem; }
 
 .h2-404 {
-  color: #5b1257;
-  font-size: 1.5rem;
+  margin-top: -2rem;
+  color: #ed6c06;
+  font-size: 2rem;
   font-weight: bold; }
 
 h3 {
