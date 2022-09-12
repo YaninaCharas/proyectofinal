@@ -97,20 +97,21 @@ main {
   width: 100%; }
 
 .footer_box span {
+  color: white;
   margin-left: 22px; }
 
 .footer_box a {
-  color: white; }
+  color: rgba(255, 255, 255, 0.497); }
 
 .btn-mail {
   text-decoration: none;
   color: white; }
 
 .bi-facebook, .bi-instagram, .bi-whatsapp {
-  color: rgba(255, 255, 255, 0.497);
   padding-left: 1rem;
   font-size: 25px;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #5b1257; }
 
 .bi-facebook:hover {
   color: #425199; }
@@ -369,7 +370,7 @@ h6 {
   height: auto;
   border-bottom-left-radius: 50%;
   border-top-right-radius: 50%;
-  border-right: 2px solid black; }
+  border-right: 2px solid #5b1257; }
 
 .card2-text {
   font-size: medium;
@@ -597,7 +598,9 @@ h6 {
     .big:hover {
       transform: scale(1.2); }
   /*Boton redes*/
-  .bi-facebook, .bi-instagram, .bi-whatsapp {
+  .bi-facebook2 {
+    color: rgba(255, 255, 255, 0.497); }
+  .bi-facebook, .bi-instagram, .bi-whatsapp, .bi-facebook2 {
     font-size: 1rem;
     padding-left: 0.5rem; }
   .big-tip {

@@ -272,7 +272,7 @@ h6{
     height: auto;
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
-    border-right:2px solid black;
+    border-right:2px solid $violeta5asec;
 }
 .card2-text{
     font-size: medium;
@@ -550,7 +550,10 @@ h6{
         }
     }
     /*Boton redes*/  
-    .bi-facebook, .bi-instagram, .bi-whatsapp {
+    .bi-facebook2{
+        color:$color-fondo-formulario;
+    }
+    .bi-facebook, .bi-instagram, .bi-whatsapp, .bi-facebook2 {
         font-size: map-get($map: $mapa, $key:S);
         padding-left: 0.5rem;
     }

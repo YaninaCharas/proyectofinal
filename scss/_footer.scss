@@ -7,11 +7,12 @@
 }
 
 .footer_box span{
+    color: $blanco;
     margin-left: 22px;
 }
 
 .footer_box a{
-    color:white;
+    color: $color-fondo-formulario;
 }
 
 .btn-mail{
@@ -19,11 +20,12 @@
     color:$blanco;
 }
 .bi-facebook, .bi-instagram, .bi-whatsapp {
-    color:$color-fondo-formulario;
     padding-left: 1rem;
     font-size: 25px;
     text-decoration: none;
+    color:$violeta5asec;
 }
+
 .bi-facebook{
         &:hover{
             color:$color-fb;
