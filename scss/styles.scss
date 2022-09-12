@@ -100,6 +100,9 @@
     padding: map-get($map: $mapa, $key:S);
     background-color: $color-nav;
     color: $naranja; 
+    &:hover{
+        color:$color-fondo-formulario;
+    }
 }
 .navbar-toggler{
     margin-top:-1rem;
