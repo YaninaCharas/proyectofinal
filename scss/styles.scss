@@ -20,60 +20,50 @@
     color:$gris;
     }
 }
-.container-index{
+.container-index, .container-proceso, .container-tips{
     background-color:$color-fondo-formulario;
+    font-weight: bold;
+    border-radius: 20px;
+    color: $violeta5asec;
+}
+.container-index{
     margin-top: 6rem;
+    padding: map-get($map: $mapa, $key:XS);
     width: 90%;
     height: auto;
-    padding: 0.5rem;
-    border-radius: 20px;
-    color: $violeta5asec;
-    font-weight: bold;
 }
-
 .container-proceso{
-    background-color: $color-fondo-formulario;
-    font-weight: bold;
-    border-radius: 20px;
     border: 1px solid $negro;
-    color: $violeta5asec;
     margin:0 auto;
     width: 40%;
     height: auto;
 }
-.container-proceso img{
-    width: 100%;
-    background-color: rgba(245, 245, 245, 0.603);
-    border-radius: 20px;
-    margin-top: map-get($map: $mapa, $key:XS);
-    margin-bottom: map-get($map: $mapa, $key:XS);
-    &:hover{
-        background-color: rgba(245, 245, 245, 0.718);
-        transition: 0.8s;
-        transform:scale(1.40)
-    }
-}
 .container-tips{
-    background-color: $color-fondo-formulario;
-    font-weight: bold;
     padding: map-get($map: $mapa, $key:XS);
-    border-radius: 20px;
     border: 1px solid $negro;
-    color: $violeta5asec;
     margin:0 auto;
     width: 68%;
     height: auto;
 }
-.container-tips img{
+.container-proceso img, .container-tips img{
     width: 100%;
     border-radius: 20px;
     margin-top: map-get($map: $mapa, $key:XS);
     margin-bottom: map-get($map: $mapa, $key:XS);
+}
+.container-proceso img{
+    background-color: rgba(245, 245, 245, 0.603);
+    &:hover{
+        background-color: rgba(245, 245, 245, 0.805);
+        transition: 0.8s;
+        transform:scale(1.40)
+    }
+}
+.container-tips img{
     &:hover{
         transition: 0.5s;
-        transform:scale(0.8)
+        transform:scale(1.2)
     }
-
 }
 .container-contact , .container-mapa{
     background-color: $fondo-formulario-contacto;
@@ -116,43 +106,19 @@
     background: $item-elegido;
     text-decoration: none;
 }
-.big{
-    width: 90%;
-    height: auto;
-    transition: 0.5s;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 18rem;
-    
-    &:hover{
-    transform:scale(1.10)
-    }
-}
-.big-tip{
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 18rem;
-    
-    &:hover{
-    transition: 0.8s;
-    transform:scale(1.50)
-    }
-}
 
 /* estilos de titulos h1---h6*/
+h1, .h2-404{
+    color: $naranja;
+    font-weight: bold;
+    font-size: map-get($map: $mapa, $key:M);
+}
 h1{
     margin-top: map-get($map: $mapa, $key:L)+1;
     background-color: transparent;
-    color:$violeta5asec;
-    font-weight: bold;
-    font-size: map-get($map: $mapa, $key:M);
     text-align:center;
     width: 100%;
     height: auto;
-    color: $naranja;
 }
 h2{
     color: $blanco;
@@ -160,36 +126,29 @@ h2{
 }
 .h2-404{
     margin-top: -2rem;
-    color: $naranja;
-    font-size: map-get($map: $mapa, $key:M);
-    font-weight: bold;
 }
-h3{
+h3, h5{
     color:$gris;
     font-weight: bold;
     text-align: center;
     font-size: map-get($map: $mapa, $key:S);
+}
+h3{
     padding-top: 0.8rem;
 }
-h4{
+h4, h6{
     color: $violeta5asec;
     font-weight: bold;
+}
+h4{
     text-align: center;
     font-size: map-get($map: $mapa, $key:S);
 }
 .h4-left{
-    margin: 1rem;
-     
+    margin: 1rem;   
 }
-h5{
-    color:$gris;
-    font-weight: bold;
-    text-align: center;
-    font-size: map-get($map: $mapa, $key:S);
-}
+
 h6{
-    color:$violeta5asec;
-    font-weight: bold;
     padding-top:map-get($map: $mapa, $key:XS);;
 }
 .centrar-h1{
@@ -251,15 +210,17 @@ h6{
     margin-bottom: 1rem;
 }
 .card-text{
+    border:none;
     padding-top: map-get($map: $mapa, $key:XS);
     font-size: map-get($map: $mapa, $key:S);
     font-weight:bold;
     text-decoration: none;
     color:$violeta5asec;
-    border:none;
     margin-bottom: map-get($map: $mapa, $key:XS);
     &:hover{
         color: $violeta5asec;
+        transition: 1s;
+        transform:scale(1.2)
     }
 }
 .card2{
@@ -279,7 +240,6 @@ h6{
     font-weight:bold;
     text-decoration: none;
     color: $blanco;
-
     &:hover{
         color: $negro;
     }
@@ -300,6 +260,8 @@ h6{
 }
 .estilo-b a:hover{
     color: $naranja;
+    // transform: rotate(1turn);
+    // transition: transform 1s;
 }
 .parrafo{
     padding: 0;
@@ -316,6 +278,10 @@ h6{
     border-radius: 2rem;
     width: 60%;
     height: auto;
+}
+.rotar{
+    transform: rotate(3turn);
+    transition: transform 2s;
 }
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja{
@@ -343,14 +309,14 @@ h6{
 .burbuja:nth-child(3){
     width: 40px;
     height: 40px;
-    left:60%;
+    left:70%;
     animation-duration: 4s;
     animation-delay: 5s;
 }
 .burbuja:nth-child(4){
     width: 60px;
     height: 60px;
-    left:70%;
+    left:80%;
     animation-duration: 4s;
     animation-delay: 3s;
 }
@@ -364,6 +330,7 @@ h6{
 	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 /*****************  ANIMACION BURBUJAS ********************************/
 @keyframes contacto-animado{
     100%{
@@ -445,12 +412,6 @@ h6{
         width: 80%;
     }
 }
-/*********  MEDIA QUERY  1180 ******/  
-@media screen and (max-width: 1180px) {
-    .big-tip{
-        width: map-get($map: $mapa, $key:L)*4+6;
-    }
-}
 
 /*********  MEDIA QUERY  1024 ******/
 @media screen and (max-width: 1024px) {
@@ -495,14 +456,6 @@ h6{
     .card-text{
         padding-bottom: map-get($map: $mapa, $key:MS);
     }
-
-    .big-tip{
-        width: map-get($map: $mapa, $key:M)*6;
-    
-        &:hover{
-            transform:scale(1.20)
-        }
-    }
 }
 @media screen and (max-width: 991px) {
     .navbar-nav {
@@ -541,14 +494,6 @@ h6{
         font-size: map-get($map: $mapa, $key:S);
         margin: 0;
     }
-    .big{
-        width: map-get($map: $mapa, $key:M)*6+2;
-        margin-left: 0;
-        
-        &:hover{
-            transform:scale(1.20)
-        }
-    }
     /*Boton redes*/  
     .bi-facebook2{
         color:$color-fondo-formulario;
@@ -556,9 +501,6 @@ h6{
     .bi-facebook, .bi-instagram, .bi-whatsapp, .bi-facebook2 {
         font-size: map-get($map: $mapa, $key:S);
         padding-left: 0.5rem;
-    }
-    .big-tip{
-        width: 100%;
     }
     .form-check, .form-floating {
         font-size: map-get($map: $mapa, $key:XS);
@@ -587,9 +529,6 @@ h6{
         width: 80%;
         margin:0 auto;
     }
-    .big-tip{
-        width: 100%;
-    }  
     .centrar-404{
         text-align: center;
         justify-content: center;
@@ -654,7 +593,7 @@ h6{
         margin-left: 6rem;
     }
     .img-logo{
-        margin-left:70rem;
+        margin-left:170rem;
     }
     .navbar-toggler{
         margin-top:-5rem;
