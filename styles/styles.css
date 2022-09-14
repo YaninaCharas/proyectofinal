@@ -386,7 +386,6 @@ h6 {
   animation-direction: normal;
   animation-delay: 0s; }
 
-/****** ANIMACION FONDO BURBUJAS */
 .burbuja {
   background-image: url(../images/iconos/logo-burbuja.png);
   border-radius: 50%;
@@ -423,7 +422,6 @@ h6 {
   animation-duration: 4s;
   animation-delay: 3s; }
 
-/************************** ANIMACION PANTALLAS EN LA ENTRADA */
 .slide-in-elliptic-top-fwd {
   -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -432,7 +430,7 @@ h6 {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-/*****************  ANIMACION BURBUJAS ********************************/
+/*****************  ANIMACION ROTAR ********************************/
 @keyframes rotar {
   0% {
     transform: rotate(-360deg);
@@ -441,10 +439,12 @@ h6 {
     transform: rotate(-360deg);
     transition: all .3s ease-in-out; } }
 
+/*****************  ANIMACION CONTACTO ********************************/
 @keyframes contacto-animado {
   100% {
     width: 20%; } }
 
+/*****************  ANIMACION BURBUJAS ********************************/
 @keyframes burbujas {
   0% {
     bottom: 0;
@@ -457,6 +457,7 @@ h6 {
     bottom: 100vh;
     opacity: .8; } }
 
+/*****************  ANIMACION slide-in-elliptic-top-fwd *****************/
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
@@ -471,10 +472,7 @@ h6 {
     transform-origin: 50% 1400px;
     opacity: 1; } }
 
-/* ----------------------------------------
- * animation text-pop-up-top
- * ----------------------------------------
- */
+/***************** ANIMACION text-pop-up-top ******************/
 @keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
@@ -622,7 +620,7 @@ h6 {
 /*****************************/
 @media screen and (max-width: 490px) {
   .navbar-toggler {
-    margin-top: 0rem; }
+    margin-top: 0; }
   .container-tips {
     width: 90%;
     padding: 1.5rem; }
@@ -639,8 +637,6 @@ h6 {
 @media screen and (max-width: 484px) {
   *.footer_box :nth-child(2) {
     margin-left: 6rem; }
-  .img-logo {
-    margin-left: 170rem; }
   .navbar-toggler {
     margin-top: -5rem; }
   h1 {
@@ -706,7 +702,7 @@ h6 {
   h3 {
     margin-top: 1rem; }
   .centrar {
-    margin-top: 0rem; }
+    margin-top: 0; }
   .centrar-h2 {
     padding-top: 1rem;
     font-size: 2rem; }

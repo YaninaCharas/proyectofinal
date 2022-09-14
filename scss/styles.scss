@@ -7,7 +7,7 @@
 @import "./footer";
 
 .max-altura{
-    margin-top: 5rem;
+    margin-top: map-get($map: $mapa, $key:L)*2;
     width: 35%;
     height: auto;
 }
@@ -27,7 +27,7 @@
     color: $violeta5asec;
 }
 .container-index{
-    margin-top: 6rem;
+    margin-top: map-get($map: $mapa, $key:M)*3;
     padding: map-get($map: $mapa, $key:XS);
     width: 90%;
     height: auto;
@@ -76,7 +76,6 @@
     width: 90%;
     height: auto;
 }
-
 .navbar{
     height: 63px; 
 }
@@ -145,25 +144,23 @@ h4{
     font-size: map-get($map: $mapa, $key:S);
 }
 .h4-left{
-    margin: 1rem;   
+    margin: map-get($map: $mapa, $key:S);  
 }
-
 h6{
-    padding-top:map-get($map: $mapa, $key:XS);;
+    padding-top:map-get($map: $mapa, $key:XS);
 }
 .centrar-h1{
     padding: 0;
     margin: 0;
-    padding-top: 0.5rem;
+    padding-top: map-get($map: $mapa, $key:XS);
     color: $gris;
 }
 .centrar-h2{
     text-align: center;
     justify-content: center;
-    padding: 2rem;
+    padding: map-get($map: $mapa, $key:M);
     font-size: map-get($map: $mapa, $key:L)+1;
 }
-
 .form-control{
     color: $violeta5asec;
     text-align: left;
@@ -171,7 +168,7 @@ h6{
     border:none;
     background-color: transparent;
     border-bottom: 1px solid $naranja;
-    margin-top: 0.5rem;
+    margin-top: map-get($map: $mapa, $key:XS);
     &:hover{
         border:none;
         opacity: 0.5;
@@ -207,7 +204,7 @@ h6{
     width: 100%;
     height: auto;
     padding-bottom: 0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: map-get($map: $mapa, $key:S);
 }
 .card-text{
     border:none;
@@ -274,7 +271,7 @@ h6{
     background-image: url(../images/impg-404.jpg);
     text-align: center;
     justify-content: center;
-    border-radius: 3rem;
+    border-radius: map-get($map: $mapa, $key:XL);
     width: 35%;
     height: auto;
     position: relative;
@@ -284,7 +281,6 @@ h6{
     animation-direction: normal;
     animation-delay: 0s;
 }
-/****** ANIMACION FONDO BURBUJAS */
 .burbuja{
     background-image: url(../images/iconos/logo-burbuja.png);
     border-radius: 50%;
@@ -321,7 +317,6 @@ h6{
     animation-duration: 4s;
     animation-delay: 3s;
 }
-/************************** ANIMACION PANTALLAS EN LA ENTRADA */
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -332,7 +327,7 @@ h6{
 	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*****************  ANIMACION BURBUJAS ********************************/
+/*****************  ANIMACION ROTAR ********************************/
 @keyframes rotar{
     0%{
     transform: rotate(-360deg);
@@ -344,12 +339,13 @@ h6{
     }
 
 }
+/*****************  ANIMACION CONTACTO ********************************/
 @keyframes contacto-animado{
     100%{
         width: 20%;
     }
 }
-
+/*****************  ANIMACION BURBUJAS ********************************/
 @keyframes burbujas{
     0%{
         bottom: 0;
@@ -366,6 +362,7 @@ h6{
         opacity: .8;
     }
 }
+/*****************  ANIMACION slide-in-elliptic-top-fwd *****************/
 @-webkit-keyframes slide-in-elliptic-top-fwd {
     0% {
       -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
@@ -382,10 +379,7 @@ h6{
       opacity: 1;
     }
 }
-/* ----------------------------------------
- * animation text-pop-up-top
- * ----------------------------------------
- */
+/***************** ANIMACION text-pop-up-top ******************/
   @keyframes text-pop-up-top {
     0% {
       -webkit-transform: translateY(0);
@@ -401,8 +395,7 @@ h6{
               transform-origin: 10% 10%;
       text-shadow: 0 1px 0 #cccccc6a, 0 2px 0 #cccccc6a, 0 3px 0 #cccccc6a, 0 4px 0 #cccccc6a, 0 5px 0 #cccccc6a, 0 6px 0 #cccccc6a, 0 10px 13px rgba(0, 0, 0, 0.3);
     }
-  }
-      
+  }    
 /*********  MEDIA QUERY  1280 ******/  
 @media screen and (max-width: 1280px) {
     h1{
@@ -424,14 +417,13 @@ h6{
         width: 80%;
     }
 }
-
 /*********  MEDIA QUERY  1024 ******/
 @media screen and (max-width: 1024px) {
     *.navbar-nav a:last-child{
         margin-right: 0;
     }
     *.footer_box :nth-child(2) {
-        margin-left: 8rem;
+        margin-left: map-get($map: $mapa, $key:M)*4;
     }
     .rotar{
         width: 50%;
@@ -467,7 +459,7 @@ h6{
     }
     .card{
         padding: 0;
-        padding-bottom: 2rem;
+        padding-bottom: map-get($map: $mapa, $key:M);
     }
     .card-text{
         padding-bottom: map-get($map: $mapa, $key:MS);
@@ -516,7 +508,7 @@ h6{
     }
     .bi-facebook, .bi-instagram, .bi-whatsapp, .bi-facebook2 {
         font-size: map-get($map: $mapa, $key:S);
-        padding-left: 0.5rem;
+        padding-left: map-get($map: $mapa, $key:XS);
     }
     .form-check, .form-floating {
         font-size: map-get($map: $mapa, $key:XS);
@@ -526,17 +518,17 @@ h6{
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
     *.footer_box :nth-child(2) {
-        margin-left: 3rem;
+        margin-left: map-get($map: $mapa, $key:XL);
     }
     .container-contact , .container-mapa{
         width: 80%;
-        margin-bottom: 1rem;
+        margin-bottom: map-get($map: $mapa, $key:S);
     }
     .row {
         --bs-gutter-x: 0;
     }
     .col-md-3 {
-        margin-inline: 0.5rem;
+        margin-inline: map-get($map: $mapa, $key:XS);
     }
     .card2, .estilo-b{
         width: 90%;
@@ -555,8 +547,8 @@ h6{
     .footer_box{
         font-size: 8px;
         padding: 0.1rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: map-get($map: $mapa, $key:XS);
+        padding-bottom: map-get($map: $mapa, $key:XS);
     }
     .row{
         margin-left: 0;
@@ -584,15 +576,15 @@ h6{
 @media screen and (max-width: 490px) {
 
     .navbar-toggler{
-        margin-top: 0rem;     
+        margin-top: 0;     
     }
     .container-tips{
         width: 90%;
-        padding: 1.5rem;
+        padding: map-get($map: $mapa, $key:SM);
     }
     .container-tips img{
         width: 100%;
-        margin-bottom:1rem;
+        margin-bottom:map-get($map: $mapa, $key:S);
         margin-top: -1rem;
         padding: 0;
         &:hover{
@@ -605,10 +597,7 @@ h6{
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
     *.footer_box :nth-child(2) {
-        margin-left: 6rem;
-    }
-    .img-logo{
-        margin-left:170rem;
+        margin-left: map-get($map: $mapa, $key:M)*3;
     }
     .navbar-toggler{
         margin-top:-5rem;
@@ -628,13 +617,13 @@ h6{
     }
     .col-md-4{
         width: 95%;
-        margin-bottom: 2rem;
+        margin-bottom: map-get($map: $mapa, $key:M);
     }
     .centrar-h2{
         padding-top: map-get($map: $mapa, $key:SM)*3;
     }
     .centrar-h4{
-        padding-top: 0.5rem;
+        padding-top: map-get($map: $mapa, $key:XS);
 
         img{
             width: 100%;
@@ -673,7 +662,7 @@ h6{
         width: 65%;
     }
     .container-contact , .container-mapa{
-        margin-bottom: 1rem;
+        margin-bottom: map-get($map: $mapa, $key:S);
         width: 90%;
     }   
     .text-color:hover{
@@ -691,28 +680,27 @@ h6{
         }
     }
 }
-
 /*****************MOBIL Galaxy Fold- SMALL ONE*/
 @media screen and (max-width: 280px) {
     h1{
-        padding-top: 2rem;
-        font-size: 1rem;
+        padding-top: map-get($map: $mapa, $key:M);
+        font-size: map-get($map: $mapa, $key:S);
     }
     h3{
-        margin-top: 1rem;
+        margin-top: map-get($map: $mapa, $key:S);
     }
     .centrar{
-        margin-top:0rem;
+        margin-top:0;
     }    
     .centrar-h2{
-        padding-top: 1rem;
-        font-size: 2rem;
+        padding-top: map-get($map: $mapa, $key:S);
+        font-size: map-get($map: $mapa, $key:M);
     }
     .navbar-toggler{
         margin-top:-3rem;
     }
     .navbar-nav {
-        margin-top: 0.5rem;
+        margin-top: map-get($map: $mapa, $key:XS);
         width: 40%;
     }
     .form-check, .form-floating {
