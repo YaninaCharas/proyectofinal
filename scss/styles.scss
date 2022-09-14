@@ -217,10 +217,11 @@ h6{
     text-decoration: none;
     color:$violeta5asec;
     margin-bottom: map-get($map: $mapa, $key:XS);
-    &:hover{
+    &:hover:first-child{
         color: $violeta5asec;
+        color:$naranja;
+        transform:scale(1.4);
         transition: 1s;
-        transform:scale(1.2)
     }
 }
 .card2{
@@ -250,7 +251,7 @@ h6{
     height: 150px;
     border-right: 2px solid $naranja;
     border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;  
+    border-bottom-left-radius: 50%; 
 }
 .estilo-c{
     border-radius: 20px;
@@ -272,16 +273,19 @@ h6{
     font-size: map-get($map: $mapa , $key: S);
     letter-spacing: 2px;
 }
-.centrar-404{
+.rotar{
+    background-image: url(../images/impg-404.jpg);
     text-align: center;
     justify-content: center;
     border-radius: 2rem;
-    width: 60%;
-    height: auto;
-}
-.rotar{
-    transform: rotate(3turn);
-    transition: transform 2s;
+    width: 50%;
+    height: 25%;
+    position: relative;
+    animation-name: rotar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0s;
 }
 /****** ANIMACION FONDO BURBUJAS */
 .burbuja{
@@ -332,6 +336,17 @@ h6{
 }
 
 /*****************  ANIMACION BURBUJAS ********************************/
+@keyframes rotar{
+    0%{
+    transform: rotate(3turn);
+    transition: transform 1s;
+    }
+    10%{
+        transform: rotate(3turn);
+        transition: transform 1s;
+    }
+
+}
 @keyframes contacto-animado{
     100%{
         width: 20%;
@@ -528,13 +543,6 @@ h6{
         padding: 0;
         width: 80%;
         margin:0 auto;
-    }
-    .centrar-404{
-        text-align: center;
-        justify-content: center;
-        border-radius: 2rem;
-        width: 90%;
-        height: auto;
     }
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
