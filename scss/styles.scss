@@ -260,8 +260,6 @@ h6{
 }
 .estilo-b a:hover{
     color: $naranja;
-    // transform: rotate(1turn);
-    // transition: transform 1s;
 }
 .parrafo{
     padding: 0;
@@ -276,9 +274,9 @@ h6{
     background-image: url(../images/impg-404.jpg);
     text-align: center;
     justify-content: center;
-    border-radius: 2rem;
-    width: 50%;
-    height: 25%;
+    border-radius: 3rem;
+    width: 35%;
+    height: auto;
     position: relative;
     animation-name: rotar;
     animation-duration: 5s;
@@ -337,12 +335,12 @@ h6{
 /*****************  ANIMACION BURBUJAS ********************************/
 @keyframes rotar{
     0%{
-    transform: rotate(3turn);
-    transition: transform 1s;
+    transform: rotate(-360deg);
+    transition: all .3s ease-in-out;
     }
     10%{
-        transform: rotate(3turn);
-        transition: transform 1s;
+        transform: rotate(-360deg);
+        transition: all .3s ease-in-out;
     }
 
 }
@@ -435,6 +433,10 @@ h6{
     *.footer_box :nth-child(2) {
         margin-left: 8rem;
     }
+    .rotar{
+        width: 50%;
+        height: auto;
+        }
     .footer_box{
         position: relative;
     }
@@ -519,6 +521,7 @@ h6{
     .form-check, .form-floating {
         font-size: map-get($map: $mapa, $key:XS);
     }
+
 }
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
@@ -572,6 +575,10 @@ h6{
         width: 80%;
         margin: 0 auto;
     }
+    .rotar{
+        width: 70%;
+        height: auto;
+        }
 }
 /*****************************/
 @media screen and (max-width: 490px) {
@@ -593,6 +600,7 @@ h6{
             transform:scale(1.10)
         }
     }
+
 }
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {

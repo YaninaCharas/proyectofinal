@@ -376,9 +376,9 @@ h6 {
   background-image: url(../images/impg-404.jpg);
   text-align: center;
   justify-content: center;
-  border-radius: 2rem;
-  width: 50%;
-  height: 25%;
+  border-radius: 3rem;
+  width: 35%;
+  height: auto;
   position: relative;
   animation-name: rotar;
   animation-duration: 5s;
@@ -435,11 +435,11 @@ h6 {
 /*****************  ANIMACION BURBUJAS ********************************/
 @keyframes rotar {
   0% {
-    transform: rotate(3turn);
-    transition: transform 1s; }
+    transform: rotate(-360deg);
+    transition: all .3s ease-in-out; }
   10% {
-    transform: rotate(3turn);
-    transition: transform 1s; } }
+    transform: rotate(-360deg);
+    transition: all .3s ease-in-out; } }
 
 @keyframes contacto-animado {
   100% {
@@ -510,6 +510,9 @@ h6 {
     margin-right: 0; }
   *.footer_box :nth-child(2) {
     margin-left: 8rem; }
+  .rotar {
+    width: 50%;
+    height: auto; }
   .footer_box {
     position: relative; }
   .centrar-h2 {
@@ -611,7 +614,10 @@ h6 {
       transform: scale(1.35); }
   .card2, .card, .estilo-b {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .rotar {
+    width: 70%;
+    height: auto; } }
 
 /*****************************/
 @media screen and (max-width: 490px) {
