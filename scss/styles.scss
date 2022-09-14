@@ -218,7 +218,6 @@ h6{
     color:$violeta5asec;
     margin-bottom: map-get($map: $mapa, $key:XS);
     &:hover:first-child{
-        color: $violeta5asec;
         color:$naranja;
         transform:scale(1.4);
         transition: 1s;

@@ -322,7 +322,6 @@ h6 {
   color: #5b1257;
   margin-bottom: 0.5rem; }
   .card-text:hover:first-child {
-    color: #5b1257;
     color: #ed6c06;
     transform: scale(1.4);
     transition: 1s; }
