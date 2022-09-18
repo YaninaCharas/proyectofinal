@@ -672,7 +672,9 @@ h6{
     .bi-facebook, .bi-instagram, .bi-whatsapp {
         padding-left: 0.2rem;
     }
-
+    .estilo-c:hover{
+        transform:scale(1.30)  
+    }
     @keyframes contacto-animado{
         100%{
             width: 50%;
@@ -716,4 +718,5 @@ h6{
     .datos, .parrafo{
         font-size: map-get($map: $mapa, $key:SM)/2;
     }
+
 }
