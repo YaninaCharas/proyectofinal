@@ -621,16 +621,15 @@ h6 {
   .navbar-toggler {
     margin-top: 0; }
   .container-tips {
-    width: 90%;
+    width: 100%;
     padding: 1.5rem; }
   .container-tips img {
-    width: 100%;
     margin-bottom: 1rem;
     margin-top: -1rem;
     padding: 0; }
     .container-tips img:hover {
       transition: 0.5s;
-      transform: scale(1.1); } }
+      transform: scale(1.3); } }
 
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
@@ -689,8 +688,6 @@ h6 {
     color: rgba(0, 0, 0, 0.2); }
   .bi-facebook, .bi-instagram, .bi-whatsapp {
     padding-left: 0.2rem; }
-  .estilo-c:hover {
-    transform: scale(1.3); }
   @keyframes contacto-animado {
     100% {
       width: 50%; } } }
