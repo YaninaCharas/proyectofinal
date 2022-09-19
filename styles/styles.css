@@ -83,7 +83,6 @@ main {
     margin: 0; }
   main .container {
     background-color: rgba(255, 255, 255, 0.497);
-    font-weight: bold;
     border-radius: 20px;
     margin-top: 5rem;
     width: 70%; }
@@ -298,9 +297,8 @@ h3 {
 
 .card2 {
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.497);
+  background-color: rgba(128, 128, 128, 0.248);
   box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
   transition: all 400ms ease;
   padding-bottom: 0.2rem;
   width: 100%;
@@ -308,14 +306,6 @@ h3 {
   border-bottom-left-radius: 50%;
   border-top-right-radius: 50%;
   border-right: 2px solid #5b1257; }
-
-.card2-text {
-  font-size: medium;
-  font-weight: bold;
-  text-decoration: none;
-  color: white; }
-  .card2-text:hover {
-    color: black; }
 
 .estilo-b {
   margin-top: 0.5rem;
@@ -330,9 +320,6 @@ h3 {
   width: 80%;
   height: auto;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2); }
-
-.estilo-b a:hover {
-  color: #ed6c06; }
 
 .parrafo {
   padding: 0;
@@ -485,7 +472,7 @@ h3 {
   .footer_box {
     position: relative; }
   .centrar-h2 {
-    font-size: 3rem; }
+    font-size: 1.5rem; }
   .text-color {
     border: none;
     font-weight: bold; }
@@ -500,6 +487,7 @@ h3 {
     padding: 0;
     padding-bottom: 2rem; } }
 
+/*********  MEDIA QUERY  991 ******/
 @media screen and (max-width: 991px) {
   .navbar-nav {
     margin-top: -1rem;
@@ -608,8 +596,9 @@ h3 {
   .centrar-h1 {
     padding-top: 4.5rem; }
   .centrar-h2 {
-    padding-top: 1.5rem;
-    font-size: 1.5rem; }
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    background-color: rgba(128, 128, 128, 0.248); }
   .centrar-form {
     min-height: 500px; }
   .parrafo {
@@ -620,8 +609,10 @@ h3 {
     letter-spacing: 2px; }
   .card2, .estilo-b {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.248); }
   .card {
+    background-color: rgba(128, 128, 128, 0.248);
     padding: 0;
     width: 100%;
     margin: 0 auto;

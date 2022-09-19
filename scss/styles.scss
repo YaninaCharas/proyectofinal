@@ -194,9 +194,8 @@ h3{
 }
 .card2{
     justify-content: space-around;
-    background-color: $color-fondo-formulario;
+    background-color: $fondo-card2;
     box-shadow: 8px 1px 10px $negro-sombra;
-    cursor: default;
     transition: all 400ms ease;
     padding-bottom: 0.2rem;
     width: 100%;
@@ -204,15 +203,6 @@ h3{
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     border-right:2px solid $violeta5asec;
-}
-.card2-text{
-    font-size: medium;
-    font-weight:bold;
-    text-decoration: none;
-    color: $blanco;
-    &:hover{
-        color: $negro;
-    }
 }
 .estilo-b{
     margin-top: map-get($map: $mapa, $key:XS);
@@ -227,9 +217,6 @@ h3{
     width: 80%;
     height: auto;
     box-shadow: 10px 10px 5px 0px $negro-sombra;
-}
-.estilo-b a:hover{
-    color: $naranja;
 }
 .parrafo{
     padding: 0;
@@ -406,7 +393,7 @@ h3{
         position: relative;
     }
     .centrar-h2{
-        font-size: map-get($map: $mapa, $key:SM)*2;
+        font-size: map-get($map: $mapa, $key:SM);
     }
     .text-color{
         border:none;
@@ -430,6 +417,7 @@ h3{
         padding-bottom: map-get($map: $mapa, $key:MS);
     }
 }
+/*********  MEDIA QUERY  991 ******/
 @media screen and (max-width: 991px) {
     .navbar-nav {
         margin-top:-1rem;
@@ -571,8 +559,9 @@ h3{
         padding-top: map-get($map: $mapa, $key:SM)*3;
     }
     .centrar-h2{
-        padding-top: map-get($map: $mapa, $key:SM);
-        font-size:map-get($map: $mapa, $key:SM);
+        padding-top: map-get($map: $mapa, $key:S);
+        font-size:map-get($map: $mapa, $key:L)/2;
+        background-color: $fondo-card2;
     }
     .centrar-form{
         min-height: 500px;
@@ -587,8 +576,10 @@ h3{
     .card2, .estilo-b{
         width: 100%;
         margin:0 auto;
+        background-color: $fondo-card2;
     }
     .card{
+        background-color: $fondo-card2;
         padding:0;
         width: 100%;
         margin:0 auto;
