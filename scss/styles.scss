@@ -379,6 +379,8 @@ h3{
         width: 32%;
     }
     .card-text{
+        padding-bottom: map-get($map: $mapa, $key:XS);
+        margin: 0;
         &:first-child{
             font-size: map-get($map: $mapa, $key:S);
         }
@@ -454,8 +456,8 @@ h3{
     .navbar-toggler{
         margin-top:-5rem;
     }
-    h3{
-        font-weight: bold;
+    .parrafo{
+        letter-spacing: none;
     }
     .col-md-4{
         width: 95%;
@@ -465,7 +467,7 @@ h3{
         padding-top: map-get($map: $mapa, $key:SM)*3;
     }
     .centrar-h2{
-        font-size:map-get($map: $mapa, $key:M)/2;
+        font-size:map-get($map: $mapa, $key:L)/2;
         background-color: $fondo-card2;
     }
     .centrar-form{
@@ -491,12 +493,12 @@ h3{
     }
     @keyframes contacto-animado{
         100%{
-            width: 50%;
+            width: 35%;
         }
     }   
 }
 /*****************MOBIL Galaxy Fold- SMALL ONE*/
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 281px) {
     h1{
         padding-top: map-get($map: $mapa, $key:M);
         font-size: map-get($map: $mapa, $key:S);
@@ -532,4 +534,20 @@ h3{
     .datos, .parrafo{
         font-size: map-get($map: $mapa, $key:SM)/2;
     }
+    .max-altura{
+        padding-top: map-get($map: $mapa, $key:S)*4;
+    }
+    .btn-contacto{
+        position: fixed;
+        top:map-get($map: $mapa, $key:XS)*13;
+        right: 1.75rem;
+        letter-spacing: 0;
+        padding:map-get($map: $mapa, $key:XS);
+        font-size: map-get($map: $mapa, $key:S);
+    }
+    @keyframes contacto-animado{
+        100%{
+            width: 50%;
+        }
+    } 
 }

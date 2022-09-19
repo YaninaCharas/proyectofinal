@@ -40,14 +40,13 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     z-index: 100;
+    &:hover{
+        background-color: $naranja;
+        border-color: none;
+    }
+    a{
+        color:$blanco;
+        text-decoration: none;
+    }    
 }
     
-.btn-contacto:hover{
-    background-color: $naranja;
-    border-color: none;
-}
-    
-.btn-contacto a{
-    color:$blanco;
-    text-decoration: none;
-}
