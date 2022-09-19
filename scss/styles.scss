@@ -13,9 +13,7 @@
 }
 .container-proceso, .container-tips{
     background-color:$color-fondo-formulario;
-    font-weight: bold;
     border-radius: 20px;
-    color: $violeta5asec;
     border: 1px solid $violeta5asec;
     margin:0 auto;
 }
@@ -24,12 +22,14 @@
     height: auto;
 }
 .container-tips{
+    font-weight: bold;
+    color: $violeta5asec;
     padding: map-get($map: $mapa, $key:XS);
     width: 68%;
     height: auto;
 }
 .container-proceso img, .container-tips img{
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     margin-top: map-get($map: $mapa, $key:XS);
     margin-bottom: map-get($map: $mapa, $key:XS);
@@ -67,10 +67,10 @@
 } 
 .navbar-nav a{
     margin-left: map-get($map: $mapa, $key:S)*3;
-    transition: all 1ms ease;
     margin: 0;
     padding: map-get($map: $mapa, $key:S);
     background-color: $color-nav;
+    transition: all 1s ease;
     color: $naranja; 
     &:hover{
         color:$color-fondo-formulario;
@@ -88,14 +88,10 @@
     background: $item-elegido;
     text-decoration: none;
 }
-
 /* estilos de titulos h1---h3*/
-h1, .h2-404{
+h1{
     color: $naranja;
     font-weight: bold;
-    font-size: map-get($map: $mapa, $key:M);
-}
-h1{
     margin-top: map-get($map: $mapa, $key:L)+1;
     text-align:center;
     width: 100%;
@@ -108,12 +104,31 @@ h2{
     font-size: map-get($map: $mapa, $key:SM);
 }
 .h2-404{
-    margin-top: -2rem;
+    color: $naranja;
+    font-weight: bold;
 }
 h3{
     color:$gris;
     font-weight: bold;
     font-size: map-get($map: $mapa, $key:S);
+}
+.a-404{
+    background-color: $negro-sombra;
+    color:$blanco;
+    font-size: map-get($map: $mapa, $key:SM);
+    text-decoration: none;
+    font-weight: bold;
+    &:hover{
+        transition: 1s;
+        color: $naranja;
+    }
+}
+.img-fondo{
+    min-height: 100vh;
+    background-image: url(../images/impg-404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .centrar-h2{
     padding: 0;
@@ -138,7 +153,7 @@ h3{
     }
 }
 .form-textarea{
-    margin-top: 0.8rem;
+    margin-top: map-get($map: $mapa, $key: XS);
     padding: 0.1rem;
     font-size: map-get($map: $mapa, $key: S);
     background-color: transparent;
@@ -159,19 +174,21 @@ h3{
     width: 100%;
     height: auto;
     padding-bottom: 0.2rem;
-    margin-bottom: map-get($map: $mapa, $key:S);
+    margin-bottom: map-get($map: $mapa, $key:XS);
 }
 .card-text{
     border:none;
     padding-top: map-get($map: $mapa, $key:XS);
     font-size: map-get($map: $mapa, $key:S);
-    font-weight:bold;
     text-decoration: none;
     color:$violeta5asec;
     margin-bottom: map-get($map: $mapa, $key:XS);
+    &:first-child{
+        color:$color-nav;
+        font-size: map-get($map: $mapa, $key:XS)+1;
+    }
     &:hover:first-child{
         color:$naranja;
-        transform:scale(1.4);
         transition: 1s;
     }
 }
@@ -188,8 +205,8 @@ h3{
 }
 .estilo-b{
     margin-top: map-get($map: $mapa, $key:XS);
-    width: 90%;
-    height: 150px;
+    width: 100%;
+    height: auto;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%; 
     border-right: 2px solid $naranja;
@@ -208,19 +225,6 @@ h3{
     font-size: map-get($map: $mapa , $key: S);
     font-weight: bold;
     letter-spacing: 2px;
-}
-.rotar{
-    background-image: url(../images/impg-404.jpg);
-    text-align: center;
-    justify-content: center;
-    border-radius: map-get($map: $mapa, $key:XL);
-    width: 40%;
-    height: auto;
-    animation-name: rotar;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-delay: 0s;
 }
 .burbuja{
     background-image: url(../images/iconos/logo-burbuja.png);
@@ -268,18 +272,6 @@ h3{
 	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*****************  ANIMACION ROTAR ********************************/
-@keyframes rotar{
-    0%{
-    transform: scale(1, 1.1);
-    transition: all .2s ease-in-out;
-    }
-    10%{
-        transform: scale(1.1,1.2);
-        transition: all .2s ease-in-out;
-    }
-
-}
 /*****************  ANIMACION CONTACTO ********************************/
 @keyframes contacto-animado{
     100%{
@@ -293,7 +285,7 @@ h3{
         opacity: 0;
     }
     30%{
-        transform: translateX(30px);
+        transform: translateX(10px);
     }
     60%{
         opacity: .4;
@@ -342,14 +334,11 @@ h3{
     h1{
         font-size: map-get($map: $mapa, $key:L);
     }
-    .card2, .estilo-b{
-        width: 95%;
-    }
     .container-proceso{
         width: 50%;
     }
     .container-proceso img{
-        width: 100%;
+        width: 95%;
         &:hover{
             transform:scale(1.30)
         }
@@ -366,10 +355,6 @@ h3{
     *.footer_box :nth-child(2) {
         margin-left: map-get($map: $mapa, $key:M)*4;
     }
-    .rotar{
-        width: 50%;
-        height: auto;
-        }
     .centrar-h2{
         font-size: map-get($map: $mapa, $key:SM);
     }
@@ -379,36 +364,27 @@ h3{
     }
     .card{
         padding: 0;
-        padding-bottom: map-get($map: $mapa, $key:M);
+        padding-bottom: map-get($map: $mapa, $key:S);
     }
     .card-text{
-        padding-bottom: map-get($map: $mapa, $key:MS);
+        padding-bottom: map-get($map: $mapa, $key:S);
     }
 }
-/*********  MEDIA QUERY  991 ******/
+/*********  MEDIA QUERY  992 ******/
 @media screen and (max-width: 991px) {
     .navbar-nav {
         margin-top:-1rem;
         margin-left: -1rem;
         width: 32%;
     }
+    .card-text{
+        &:first-child{
+            font-size: map-get($map: $mapa, $key:S);
+        }
+    }
 }
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
-    .card2, .estilo-b{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .card{
-        width: 80%;
-        margin:0 auto;
-    }
-    .card-text{
-        margin-bottom: map-get($map: $mapa, $key:XS);
-        padding-top: map-get($map: $mapa, $key:XS);
-        font-size: map-get($map: $mapa, $key:S);
-        margin: 0;
-    }
     /*Boton redes*/  
     .bi-facebook2{
         color:$color-fondo-formulario;
@@ -430,16 +406,6 @@ h3{
         width: 80%;
         margin-bottom: map-get($map: $mapa, $key:S);
     }
-    .col-md-3 {
-        margin-inline: map-get($map: $mapa, $key:XS);
-    }
-    .card2, .estilo-b{
-        width: 90%;
-    }
-    .card{
-        width: 80%;
-        margin:0 auto;
-    }
 }
 /*********  MEDIA QUERY  610- Surface Duo******/
 @media screen and (max-width: 610px) {
@@ -447,34 +413,14 @@ h3{
         color: $violeta5asec;
     }
     .footer_box{
-        font-size: 8px;
+        font-size: map-get($map: $mapa, $key: XS);
         padding: 0.1rem;
         padding-top: map-get($map: $mapa, $key:XS);
         padding-bottom: map-get($map: $mapa, $key:XS);
     }
-    .row{
-        margin-left: 0;
-    }
     .container-tips, .container-proceso{
         width: 80%;
-    }
-
-    .card2,.card, .estilo-b{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .rotar{
-        width: 70%;
-        height: auto;
-        }
-        .container-proceso img{
-            width: 90%;
-            &:hover{
-                background-color: $fondo-formulario-contacto;
-                transition: 0.8s;
-                transform:scale(1.3)
-            }
-        }       
+    }   
 }
 /*****************************/
 @media screen and (max-width: 490px) {
@@ -491,7 +437,6 @@ h3{
         }
         img{
         margin-bottom:map-get($map: $mapa, $key:XS);
-        margin-top: -1rem;
         padding: 0;
         &:hover{
             transition: 0.5s;
@@ -503,7 +448,7 @@ h3{
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
     *.footer_box :nth-child(2) {
-        margin-left: map-get($map: $mapa, $key:M)*3;
+        margin-left: map-get($map: $mapa, $key:S)*3;
     }
     .navbar-toggler{
         margin-top:-5rem;
@@ -519,37 +464,18 @@ h3{
         padding-top: map-get($map: $mapa, $key:SM)*3;
     }
     .centrar-h2{
-        padding-top: map-get($map: $mapa, $key:S);
-        font-size:map-get($map: $mapa, $key:L)/2;
+        font-size:map-get($map: $mapa, $key:M)/2;
         background-color: $fondo-card2;
     }
     .centrar-form{
         min-height: 500px;
     }
-    .parrafo{
-        font-weight: 900;
-        color:$violeta5asec;
-        padding-top: map-get($map: $mapa , $key: S);
-        font-size: map-get($map: $mapa , $key: S);
-        letter-spacing: 2px;
-    }
     .card2, .estilo-b{
-        width: 100%;
-        margin:0 auto;
         background-color: $fondo-card2;
     }
     .card{
         background-color: $fondo-card2;
-        width: 100%;
-        margin:0 auto;
         font-size: map-get($map: $mapa, $key:S);
-    }
-
-    .botones{
-        width: 100px;
-    }  
-    .boton-centrado{
-        padding-left: 1.3rem;
     }
     .max-altura{
         padding-top: map-get($map: $mapa , $key: L);
@@ -594,11 +520,11 @@ h3{
     .form-check, .form-floating {
         font-size: map-get($map: $mapa, $key:XS)/2;
     }
-        .footer_box{
+    .footer_box{
         font-size: 5px;
         margin: 0;
     }
-        /*Boton redes*/
+    /*Boton redes*/
     .bi-facebook, .bi-instagram, .bi-whatsapp {
         font-size: map-get($map: $mapa, $key:XS)/2;
     }
