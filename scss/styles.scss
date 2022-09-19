@@ -122,9 +122,9 @@ h2{
 h3{
     color:$gris;
     font-weight: bold;
-    text-align: center;
+    // text-align: center;
     font-size: map-get($map: $mapa, $key:S);
-    padding-top: 0.8rem;
+    // padding-top: 0.8rem;
 }
 .centrar-h2{
     padding: 0;
@@ -132,12 +132,6 @@ h3{
     padding-top: map-get($map: $mapa, $key:XS);
     font-size: map-get($map: $mapa, $key:XL)/2;
     color: $gris;
-}
-.centrar-h4{
-    text-align: center;
-    justify-content: center;
-    padding: map-get($map: $mapa, $key:M);
-    font-size: map-get($map: $mapa, $key:L)+1;
 }
 .form-control{
     color: $violeta5asec;
@@ -579,15 +573,6 @@ h3{
         padding-top: map-get($map: $mapa, $key:SM);
         font-size:map-get($map: $mapa, $key:SM);
     }
-    .centrar-h4{
-        padding-top: map-get($map: $mapa, $key:XS);
-
-        img{
-            width: 100%;
-            height: 350px;
-
-        }
-    }    
     .centrar-form{
         min-height: 500px;
     }

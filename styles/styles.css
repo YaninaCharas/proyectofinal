@@ -230,9 +230,7 @@ h2 {
 h3 {
   color: #4b4747;
   font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
-  padding-top: 0.8rem; }
+  font-size: 1rem; }
 
 .centrar-h2 {
   padding: 0;
@@ -240,12 +238,6 @@ h3 {
   padding-top: 0.5rem;
   font-size: 1.5rem;
   color: #4b4747; }
-
-.centrar-h4 {
-  text-align: center;
-  justify-content: center;
-  padding: 2rem;
-  font-size: 3.5rem; }
 
 .form-control {
   color: #5b1257;
@@ -617,11 +609,6 @@ h3 {
   .centrar-h2 {
     padding-top: 1.5rem;
     font-size: 1.5rem; }
-  .centrar-h4 {
-    padding-top: 0.5rem; }
-    .centrar-h4 img {
-      width: 100%;
-      height: 350px; }
   .centrar-form {
     min-height: 500px; }
   .parrafo {
