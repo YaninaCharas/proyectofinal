@@ -604,24 +604,25 @@ h6 {
     margin-left: 0; }
   .container-tips, .container-proceso {
     width: 80%; }
-  .container-proceso img {
-    width: 100%; }
-    .container-proceso img:hover {
-      transition: 0.8s;
-      transform: scale(1.35); }
   .card2, .card, .estilo-b {
     width: 80%;
     margin: 0 auto; }
   .rotar {
     width: 70%;
-    height: auto; } }
+    height: auto; }
+  .container-proceso img {
+    width: 90%; }
+    .container-proceso img:hover {
+      background-color: rgba(255, 255, 255, 0.852);
+      transition: 0.8s;
+      transform: scale(1.3); } }
 
 /*****************************/
 @media screen and (max-width: 490px) {
   .navbar-toggler {
     margin-top: 0; }
   .container-tips {
-    width: 100%;
+    width: 95%;
     padding: 1.5rem; }
   .container-tips img {
     margin-bottom: 1rem;
