@@ -14,7 +14,6 @@
 .text-color{
     border:none;
     color:$blanco;
-
     &:hover{
     border:none;
     color:$gris;
@@ -25,17 +24,15 @@
     font-weight: bold;
     border-radius: 20px;
     color: $violeta5asec;
-}
-.container-proceso{
     border: 1px solid $negro;
     margin:0 auto;
+}
+.container-proceso{
     width: 40%;
     height: auto;
 }
 .container-tips{
     padding: map-get($map: $mapa, $key:XS);
-    border: 1px solid $negro;
-    margin:0 auto;
     width: 68%;
     height: auto;
 }
@@ -100,7 +97,7 @@
     text-decoration: none;
 }
 
-/* estilos de titulos h1---h6*/
+/* estilos de titulos h1---h3*/
 h1, .h2-404{
     color: $naranja;
     font-weight: bold;
@@ -112,6 +109,8 @@ h1{
     text-align:center;
     width: 100%;
     height: auto;
+    padding: map-get($map: $mapa, $key:M);
+    font-size: map-get($map: $mapa, $key:L)+1;
 }
 h2{
     color: $blanco;
@@ -120,36 +119,21 @@ h2{
 .h2-404{
     margin-top: -2rem;
 }
-h3, h5{
+h3{
     color:$gris;
     font-weight: bold;
     text-align: center;
     font-size: map-get($map: $mapa, $key:S);
-}
-h3{
     padding-top: 0.8rem;
 }
-h4, h6{
-    color: $violeta5asec;
-    font-weight: bold;
-}
-h4{
-    text-align: center;
-    font-size: map-get($map: $mapa, $key:S);
-}
-.h4-left{
-    margin: map-get($map: $mapa, $key:S);  
-}
-h6{
-    padding-top:map-get($map: $mapa, $key:XS);
-}
-.centrar-h1{
+.centrar-h2{
     padding: 0;
     margin: 0;
     padding-top: map-get($map: $mapa, $key:XS);
+    font-size: map-get($map: $mapa, $key:XL)/2;
     color: $gris;
 }
-.centrar-h2{
+.centrar-h4{
     text-align: center;
     justify-content: center;
     padding: map-get($map: $mapa, $key:M);
@@ -393,6 +377,7 @@ h6{
 @media screen and (max-width: 1280px) {
     h1{
         font-size: map-get($map: $mapa , $key: SM);
+        font-size: map-get($map: $mapa, $key:L);
     }
     .card2, .estilo-b{
         width: 95%;
@@ -438,14 +423,6 @@ h6{
             color:$violeta5asec;
         }
     }
-    h4{
-        font-size: map-get($map: $mapa, $key:S);
-    }
-    h6{
-        padding-top: 0.2rem;
-        padding: 0;
-        font-size: map-get($map: $mapa, $key:XS);
-    }
     iframe {
         width: 80%;
         height:auto;
@@ -467,16 +444,6 @@ h6{
 }
 /*********  MEDIA QUERY  900 ******/
 @media screen and (max-width: 900px) {
-    h5{
-        width: 48px;
-        padding-left: 0;
-        font-size: map-get($map: $mapa, $key:S);
-    }
-    h6{
-        padding-top: 0.2rem;
-        padding: 0;
-        font-size: map-get($map: $mapa, $key:XS);
-    }
     .text-color{
         color:$negro;
     }
@@ -506,7 +473,6 @@ h6{
     .form-check, .form-floating {
         font-size: map-get($map: $mapa, $key:XS);
     }
-
 }
 /*********  MEDIA QUERY  780******/
 @media screen and (max-width: 780px) {
@@ -565,12 +531,10 @@ h6{
                 transition: 0.8s;
                 transform:scale(1.3)
             }
-        }
-        
+        }       
 }
 /*****************************/
 @media screen and (max-width: 490px) {
-
     .navbar-toggler{
         margin-top: 0;     
     }
@@ -601,25 +565,19 @@ h6{
     .navbar-toggler{
         margin-top:-5rem;
     }
-    h1{
-        font-size: map-get($map: $mapa , $key: SM);
-    }
-    h2{
-        font-size: medium; 
-    }
     h3{
         font-weight: bold;
-    }
-    h6{
-        font-size: 0.8rem;
-        padding: 0;
     }
     .col-md-4{
         width: 95%;
         margin-bottom: map-get($map: $mapa, $key:M);
     }
-    .centrar-h2{
+    .centrar-h1{
         padding-top: map-get($map: $mapa, $key:SM)*3;
+    }
+    .centrar-h2{
+        padding-top: map-get($map: $mapa, $key:SM);
+        font-size:map-get($map: $mapa, $key:SM);
     }
     .centrar-h4{
         padding-top: map-get($map: $mapa, $key:XS);
@@ -677,8 +635,7 @@ h6{
         100%{
             width: 50%;
         }
-    }
-    
+    }   
 }
 /*****************MOBIL Galaxy Fold- SMALL ONE*/
 @media screen and (max-width: 280px) {
@@ -692,7 +649,7 @@ h6{
     .centrar{
         margin-top:0;
     }    
-    .centrar-h2{
+    .centrar-h1, .centrar-h2{
         padding-top: map-get($map: $mapa, $key:S);
         font-size: map-get($map: $mapa, $key:M);
     }
@@ -717,5 +674,4 @@ h6{
     .datos, .parrafo{
         font-size: map-get($map: $mapa, $key:SM)/2;
     }
-
 }
