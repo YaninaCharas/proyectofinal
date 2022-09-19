@@ -86,8 +86,7 @@ main {
     font-weight: bold;
     border-radius: 20px;
     margin-top: 5rem;
-    width: 70%;
-    height: auto; }
+    width: 70%; }
 
 .footer_box {
   color: white;
@@ -132,19 +131,13 @@ main {
   color: white; }
   .text-color:hover {
     border: none;
-    color: #4a4949; }
+    color: #4b4747; }
 
-.container-index, .container-proceso, .container-tips {
+.container-proceso, .container-tips {
   background-color: rgba(255, 255, 255, 0.497);
   font-weight: bold;
   border-radius: 20px;
   color: #5b1257; }
-
-.container-index {
-  margin-top: 6rem;
-  padding: 0.5rem;
-  width: 90%;
-  height: auto; }
 
 .container-proceso {
   border: 1px solid black;
@@ -235,7 +228,7 @@ h2 {
   margin-top: -2rem; }
 
 h3, h5 {
-  color: #4a4949;
+  color: #4b4747;
   font-weight: bold;
   text-align: center;
   font-size: 1rem; }
@@ -261,7 +254,7 @@ h6 {
   padding: 0;
   margin: 0;
   padding-top: 0.5rem;
-  color: #4a4949; }
+  color: #4b4747; }
 
 .centrar-h2 {
   text-align: center;
@@ -623,14 +616,18 @@ h6 {
     margin-top: 0; }
   .container-tips {
     width: 95%;
-    padding: 1.5rem; }
-  .container-tips img {
-    margin-bottom: 1rem;
-    margin-top: -1rem;
-    padding: 0; }
-    .container-tips img:hover {
-      transition: 0.5s;
-      transform: scale(1.3); } }
+    padding: 1.5rem;
+    background-color: transparent;
+    border: none; }
+    .container-tips span {
+      display: none; }
+    .container-tips img {
+      margin-bottom: 0.5rem;
+      margin-top: -1rem;
+      padding: 0; }
+      .container-tips img:hover {
+        transition: 0.5s;
+        transform: scale(1.3); } }
 
 /*********MEDIA QUERY - 481 *******/
 @media screen and (max-width: 484px) {
